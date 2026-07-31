@@ -1,0 +1,36 @@
++ for p in 1 2 4 8
+++ pinset 1
+++ echo 0-1
++ echo '=== pinning check, 1 PE(s): expecting cores 0-1 ==='
+=== pinning check, 1 PE(s): expecting cores 0-1 ===
+++ pinset 1
+++ echo 0-1
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 bash -c 'grep Cpus_allowed_list /proc/self/status'
+Cpus_allowed_list:	0-1
++ for p in 1 2 4 8
+++ pinset 2
+++ echo 0-2
++ echo '=== pinning check, 2 PE(s): expecting cores 0-2 ==='
+=== pinning check, 2 PE(s): expecting cores 0-2 ===
+++ pinset 2
+++ echo 0-2
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=3 --cpu-bind=none taskset -c 0-2 bash -c 'grep Cpus_allowed_list /proc/self/status'
+Cpus_allowed_list:	0-2
++ for p in 1 2 4 8
+++ pinset 4
+++ echo 0-4
++ echo '=== pinning check, 4 PE(s): expecting cores 0-4 ==='
+=== pinning check, 4 PE(s): expecting cores 0-4 ===
+++ pinset 4
+++ echo 0-4
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=5 --cpu-bind=none taskset -c 0-4 bash -c 'grep Cpus_allowed_list /proc/self/status'
+Cpus_allowed_list:	0-4
++ for p in 1 2 4 8
+++ pinset 8
+++ echo 0-8
++ echo '=== pinning check, 8 PE(s): expecting cores 0-8 ==='
+=== pinning check, 8 PE(s): expecting cores 0-8 ===
+++ pinset 8
+++ echo 0-8
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=9 --cpu-bind=none taskset -c 0-8 bash -c 'grep Cpus_allowed_list /proc/self/status'
+Cpus_allowed_list:	0-8

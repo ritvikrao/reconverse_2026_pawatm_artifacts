@@ -1,0 +1,26 @@
++ echo '### LCI shm_enable, as reported by the runtime ###'
+### LCI shm_enable, as reported by the runtime ###
++ head -20
++ grep -iE 'shm|packet'
++ LCI_LOG_LEVEL=info
++ timeout 120 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 20 16 64 2
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.001:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:16<lci:info:env> set packet_return_threshold to be 4096
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:18<lci:info:env> set imm_nbits_tag to be 16
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:20<lci:info:env> set imm_nbits_rcomp to be 15
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:37<lci:info:env> set rdv_protocol to be 0
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:41<lci:info:env> set alloc_default_device to be 1
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:43<lci:info:env> set alloc_default_packet_pool to be 1
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:45<lci:info:env> set alloc_default_matching_engine to be 1
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:47<lci:info:env> set packet_size to be 8192
+0:cn038.delta.ncsa.illinois.edu:3825426:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:49<lci:info:env> set npackets to be 65536
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.001:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:16<lci:info:env> set packet_return_threshold to be 4096
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.001:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:18<lci:info:env> set imm_nbits_tag to be 16
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:20<lci:info:env> set imm_nbits_rcomp to be 15
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:37<lci:info:env> set rdv_protocol to be 0
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:41<lci:info:env> set alloc_default_device to be 1
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:43<lci:info:env> set alloc_default_packet_pool to be 1
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:45<lci:info:env> set alloc_default_matching_engine to be 1
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:47<lci:info:env> set packet_size to be 8192
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:49<lci:info:env> set npackets to be 65536
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:65<lci:info:env> set matching_engine_type to be 1
+1:cn038.delta.ncsa.illinois.edu:3825427:0:0.002:/u/rao1/reconverse_main/build_shm/_deps/lci-src/src/binding/generated/binding.cpp:init_global_attr:69<lci:info:env> set sync_threshold to be 1

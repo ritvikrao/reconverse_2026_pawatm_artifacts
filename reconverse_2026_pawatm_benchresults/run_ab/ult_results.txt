@@ -1,0 +1,115 @@
+User-level thread (ULT) benchmarks: Reconverse vs original Converse
+==============================================================================
+
+Machine : NCSA Delta CPU node, 2x AMD EPYC 7763 (64 cores each), 1 node
+Source  : reconverse/tests/ult_bench (sched_rate.cpp, ctxswitch.cpp).
+          The same sources build against both layers; the Converse build
+          differs only in ConverseInit's argument count (see
+          /u/rao1/ult_bench_converse/converse_compat.h), so the measured
+          code paths are identical.
+Threads : Converse uses the Charm++ build's default ULT implementation
+          (generic64-light assembly threads); Reconverse uses its
+          boost-context based threads.
+Numbers : each PE reports its own best-of-repetitions figure; the tables
+          show the mean across PEs.  Lower is better throughout.
+
+Caveat  : in the sched_rate sweep both layers speed up at the largest
+          thread counts (>=512).  That is a property of the benchmark --
+          more runnable ULTs amortise the fixed per-repetition costs --
+          not of either runtime, and it shows up equally in both, so the
+          Converse/Reconverse ratio is the meaningful column.
+
+------------------------------------------------------------------------------
+Scheduling (dispatch) rate -- 1 PE(s)
+------------------------------------------------------------------------------
+A dispatch is one trip through the ready path: CthAwaken pushes the
+thread's token, CsdScheduler pops it, the thread resumes.  -threads
+sets how many ULTs are runnable at once (ready-queue depth).
+
+ threads     Reconverse       Converse     Reconverse       Converse    speedup
+            us/dispatch    us/dispatch       M disp/s       M disp/s (conv/recv)
+       1         0.1565         0.2368          6.390          4.222      1.51x
+       2         0.1258         0.2352          7.952          4.251      1.87x
+       4         0.1257         0.2392          7.955          4.181      1.90x
+       8         0.1281         0.2397          7.807          4.172      1.87x
+      16         0.1263         0.2400          7.916          4.166      1.90x
+      32         0.1307         0.2381          7.648          4.200      1.82x
+      64         0.1353         0.2399          7.389          4.168      1.77x
+     128         0.1379         0.2422          7.250          4.129      1.76x
+     256         0.1453         0.2425          6.881          4.124      1.67x
+     512         0.1515         0.2488          6.599          4.020      1.64x
+    1024         0.1655         0.2413          6.041          4.144      1.46x
+    2048         0.1254         0.1963          7.972          5.093      1.57x
+
+------------------------------------------------------------------------------
+Scheduling (dispatch) rate -- 4 PE(s)
+------------------------------------------------------------------------------
+A dispatch is one trip through the ready path: CthAwaken pushes the
+thread's token, CsdScheduler pops it, the thread resumes.  -threads
+sets how many ULTs are runnable at once (ready-queue depth).
+
+ threads     Reconverse       Converse     Reconverse       Converse    speedup
+            us/dispatch    us/dispatch       M disp/s       M disp/s (conv/recv)
+       1         0.1106         0.2928          9.044          3.415      2.65x
+       2         0.1504         0.3072          6.647          3.256      2.04x
+       4         0.1565         0.3032          6.391          3.299      1.94x
+       8         0.1571         0.3101          6.364          3.225      1.97x
+      16         0.1436         0.3064          6.965          3.264      2.13x
+      32         0.1574         0.3124          6.352          3.201      1.98x
+      64         0.1455         0.3133          6.871          3.192      2.15x
+     128         0.1461         0.3023          6.844          3.308      2.07x
+     256         0.1666         0.2993          6.003          3.342      1.80x
+     512         0.1612         0.2693          6.204          3.713      1.67x
+    1024         0.1406         0.2444          7.113          4.092      1.74x
+    2048         0.1234         0.2349          8.102          4.257      1.90x
+
+------------------------------------------------------------------------------
+ULT-to-ULT context switch cost vs concurrent flows -- 1 PE(s)
+------------------------------------------------------------------------------
+direct    : flows wired into a ring, each hands off with CthResume
+            (one swapcontext, no queue) -- the switch primitive alone.
+scheduler : the same flows hand off with CthYield -- two swapcontexts
+            plus a ready-queue push/pop and a handler dispatch.
+Total switches per repetition is held fixed as flows varies, so only
+the stack working set changes across a row.
+
+   flows    Reconverse      Converse    speedup    Reconverse      Converse    speedup
+             direct us     direct us (conv/recv)      sched us      sched us (conv/recv)
+       2        0.0192        0.0562      2.93x        0.1266        0.2188      1.73x
+       4        0.0224        0.0546      2.44x        0.1482        0.2175      1.47x
+       8        0.0250        0.0545      2.18x        0.1599        0.2198      1.38x
+      16        0.0263        0.0556      2.11x        0.1604        0.2199      1.37x
+      32        0.0242        0.0564      2.33x        0.1225        0.2191      1.79x
+      64        0.0235        0.0575      2.45x        0.1152        0.2227      1.93x
+     128        0.0214        0.0571      2.67x        0.1061        0.2227      2.10x
+     256        0.0199        0.0573      2.89x        0.1084        0.1796      1.66x
+     512        0.0204        0.0480      2.35x        0.1124        0.1843      1.64x
+    1024        0.0263        0.0541      2.06x        0.1233        0.1930      1.57x
+    2048        0.0298        0.0566      1.90x        0.1236        0.1912      1.55x
+    4096        0.0301        0.0566      1.88x        0.1187        0.1904      1.60x
+
+------------------------------------------------------------------------------
+ULT-to-ULT context switch cost vs concurrent flows -- 4 PE(s)
+------------------------------------------------------------------------------
+direct    : flows wired into a ring, each hands off with CthResume
+            (one swapcontext, no queue) -- the switch primitive alone.
+scheduler : the same flows hand off with CthYield -- two swapcontexts
+            plus a ready-queue push/pop and a handler dispatch.
+Total switches per repetition is held fixed as flows varies, so only
+the stack working set changes across a row.
+
+   flows    Reconverse      Converse    speedup    Reconverse      Converse    speedup
+             direct us     direct us (conv/recv)      sched us      sched us (conv/recv)
+       2        0.0192        0.0929      4.85x        0.1215        0.3046      2.51x
+       4        0.0210        0.0758      3.62x        0.1382        0.2832      2.05x
+       8        0.0245        0.0764      3.12x        0.1540        0.2668      1.73x
+      16        0.0266        0.0767      2.88x        0.1561        0.2660      1.70x
+      32        0.0282        0.0752      2.67x        0.1569        0.2437      1.55x
+      64        0.0297        0.0713      2.40x        0.1538        0.2397      1.56x
+     128        0.0278        0.0718      2.58x        0.1366        0.2384      1.74x
+     256        0.0252        0.0694      2.75x        0.1329        0.2456      1.85x
+     512        0.0247        0.0674      2.72x        0.1307        0.2450      1.88x
+    1024        0.0301        0.0673      2.23x        0.1401        0.2446      1.75x
+    2048        0.0345        0.0663      1.92x        0.1381        0.2290      1.66x
+    4096        0.0344        0.0641      1.86x        0.1370        0.2068      1.51x
+

@@ -1,0 +1,2590 @@
+=== system converse pes 4 iter 16384 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.281663e-02 seconds
+Elapsed time for run 2: 6.257980e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.257980e-02 seconds
+FLOP/s 1.340507e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8192 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 3.816377e-02 seconds
+Elapsed time for run 2: 3.792359e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.792359e-02 seconds
+FLOP/s 1.106056e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4096 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 2.286813e-02 seconds
+Elapsed time for run 2: 2.254442e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.254442e-02 seconds
+FLOP/s 9.303448e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2048 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.466937e-02 seconds
+Elapsed time for run 2: 1.451851e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.451851e-02 seconds
+FLOP/s 7.224102e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 1024 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 9.465968e-03 seconds
+Elapsed time for run 2: 9.381739e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 9.381739e-03 seconds
+FLOP/s 5.591117e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 512 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 8.463603e-03 seconds
+Elapsed time for run 2: 8.637508e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 8.637508e-03 seconds
+FLOP/s 3.037913e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 256 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.864712e-03 seconds
+Elapsed time for run 2: 7.866597e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 7.866597e-03 seconds
+FLOP/s 1.669439e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 128 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.687812e-03 seconds
+Elapsed time for run 2: 6.657292e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 6.657292e-03 seconds
+FLOP/s 9.882697e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 64 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.623279e-03 seconds
+Elapsed time for run 2: 6.676428e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 6.676428e-03 seconds
+FLOP/s 4.946358e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 32 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.159322e-03 seconds
+Elapsed time for run 2: 6.375971e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 6.375971e-03 seconds
+FLOP/s 2.609799e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.315906e-03 seconds
+Elapsed time for run 2: 6.483317e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 6.483317e-03 seconds
+FLOP/s 1.303037e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.644581e-03 seconds
+Elapsed time for run 2: 6.352643e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 6.352643e-03 seconds
+FLOP/s 6.850692e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.152966e-03 seconds
+Elapsed time for run 2: 6.199830e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 6.199830e-03 seconds
+FLOP/s 3.716231e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.364656e-03 seconds
+Elapsed time for run 2: 6.204300e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 6.204300e-03 seconds
+FLOP/s 2.063085e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16384 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.302155e-02 seconds
+Elapsed time for run 2: 6.272640e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.272640e-02 seconds
+FLOP/s 1.337374e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8192 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 3.847003e-02 seconds
+Elapsed time for run 2: 3.776630e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.776630e-02 seconds
+FLOP/s 1.110662e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4096 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 2.087402e-02 seconds
+Elapsed time for run 2: 2.094484e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.094484e-02 seconds
+FLOP/s 1.001396e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2048 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.432170e-02 seconds
+Elapsed time for run 2: 1.433797e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.433797e-02 seconds
+FLOP/s 7.315066e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 1024 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 9.969665e-03 seconds
+Elapsed time for run 2: 1.019574e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.019574e-02 seconds
+FLOP/s 5.144736e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 512 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 8.598537e-03 seconds
+Elapsed time for run 2: 8.378954e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 8.378954e-03 seconds
+FLOP/s 3.131656e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 256 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.206176e-03 seconds
+Elapsed time for run 2: 7.318970e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 7.318970e-03 seconds
+FLOP/s 1.794351e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 128 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.840763e-03 seconds
+Elapsed time for run 2: 6.948808e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 6.948808e-03 seconds
+FLOP/s 9.468099e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 64 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.511531e-03 seconds
+Elapsed time for run 2: 6.224621e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 6.224621e-03 seconds
+FLOP/s 5.305383e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 32 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.380717e-03 seconds
+Elapsed time for run 2: 6.311714e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 6.311714e-03 seconds
+FLOP/s 2.636368e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.399435e-03 seconds
+Elapsed time for run 2: 6.563842e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 6.563842e-03 seconds
+FLOP/s 1.287051e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.387422e-03 seconds
+Elapsed time for run 2: 6.166444e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 6.166444e-03 seconds
+FLOP/s 7.057552e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.219524e-03 seconds
+Elapsed time for run 2: 6.254374e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 6.254374e-03 seconds
+FLOP/s 3.683822e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.792852e-03 seconds
+Elapsed time for run 2: 6.132292e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 6.132292e-03 seconds
+FLOP/s 2.087311e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16384 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.351014e-02 seconds
+Elapsed time for run 2: 6.269474e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.269474e-02 seconds
+FLOP/s 1.338049e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8192 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 3.487911e-02 seconds
+Elapsed time for run 2: 3.474474e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.474474e-02 seconds
+FLOP/s 1.207250e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4096 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 2.266433e-02 seconds
+Elapsed time for run 2: 2.257291e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.257291e-02 seconds
+FLOP/s 9.291706e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2048 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.374180e-02 seconds
+Elapsed time for run 2: 1.360072e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.360072e-02 seconds
+FLOP/s 7.711592e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 1024 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.028737e-02 seconds
+Elapsed time for run 2: 9.951224e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 9.951224e-03 seconds
+FLOP/s 5.271151e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 512 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 8.662648e-03 seconds
+Elapsed time for run 2: 8.508578e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 8.508578e-03 seconds
+FLOP/s 3.083947e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 256 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.694366e-03 seconds
+Elapsed time for run 2: 7.335311e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 7.335311e-03 seconds
+FLOP/s 1.790354e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 128 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.851100e-03 seconds
+Elapsed time for run 2: 6.699125e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 6.699125e-03 seconds
+FLOP/s 9.820984e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 64 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.836364e-03 seconds
+Elapsed time for run 2: 6.582280e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 6.582280e-03 seconds
+FLOP/s 5.017107e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 32 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.619854e-03 seconds
+Elapsed time for run 2: 6.296070e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 6.296070e-03 seconds
+FLOP/s 2.642919e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.518864e-03 seconds
+Elapsed time for run 2: 6.288247e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 6.288247e-03 seconds
+FLOP/s 1.343459e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.095685e-03 seconds
+Elapsed time for run 2: 6.889931e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 6.889931e-03 seconds
+FLOP/s 6.316464e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.687601e-03 seconds
+Elapsed time for run 2: 6.685227e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 6.685227e-03 seconds
+FLOP/s 3.446405e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.155479e-03 seconds
+Elapsed time for run 2: 6.020196e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 6.020196e-03 seconds
+FLOP/s 2.126177e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16384 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.638756e-02 seconds
+Elapsed time for run 2: 7.557943e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 7.557943e-02 seconds
+FLOP/s 1.109940e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8192 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 3.504997e-02 seconds
+Elapsed time for run 2: 3.441428e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.441428e-02 seconds
+FLOP/s 1.218843e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4096 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 2.260061e-02 seconds
+Elapsed time for run 2: 2.242021e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.242021e-02 seconds
+FLOP/s 9.354990e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2048 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.417277e-02 seconds
+Elapsed time for run 2: 1.414547e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.414547e-02 seconds
+FLOP/s 7.414616e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 1024 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.023225e-02 seconds
+Elapsed time for run 2: 1.040818e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.040818e-02 seconds
+FLOP/s 5.039726e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 512 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 9.398557e-03 seconds
+Elapsed time for run 2: 8.857495e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 8.857495e-03 seconds
+FLOP/s 2.962463e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 256 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.715798e-03 seconds
+Elapsed time for run 2: 7.172921e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 7.172921e-03 seconds
+FLOP/s 1.830886e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 128 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.615586e-03 seconds
+Elapsed time for run 2: 6.714412e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 6.714412e-03 seconds
+FLOP/s 9.798624e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 64 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.660215e-03 seconds
+Elapsed time for run 2: 6.786349e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 6.786349e-03 seconds
+FLOP/s 4.866240e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 32 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.865200e-03 seconds
+Elapsed time for run 2: 6.760787e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 6.760787e-03 seconds
+FLOP/s 2.461252e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.628717e-03 seconds
+Elapsed time for run 2: 6.381199e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 6.381199e-03 seconds
+FLOP/s 1.323889e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.496157e-03 seconds
+Elapsed time for run 2: 6.399009e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 6.399009e-03 seconds
+FLOP/s 6.801053e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.352773e-03 seconds
+Elapsed time for run 2: 6.308843e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 6.308843e-03 seconds
+FLOP/s 3.652017e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.345650e-03 seconds
+Elapsed time for run 2: 6.149605e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 6.149605e-03 seconds
+FLOP/s 2.081434e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16384 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.298376e-02 seconds
+Elapsed time for run 2: 6.306233e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.306233e-02 seconds
+FLOP/s 1.330250e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8192 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 3.828323e-02 seconds
+Elapsed time for run 2: 3.804898e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.804898e-02 seconds
+FLOP/s 1.102411e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4096 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 2.284387e-02 seconds
+Elapsed time for run 2: 2.225127e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.225127e-02 seconds
+FLOP/s 9.426016e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2048 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.333216e-02 seconds
+Elapsed time for run 2: 1.354371e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.354371e-02 seconds
+FLOP/s 7.744051e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 1024 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 1.029958e-02 seconds
+Elapsed time for run 2: 1.033436e-02 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.033436e-02 seconds
+FLOP/s 5.075728e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 512 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 9.000599e-03 seconds
+Elapsed time for run 2: 9.077844e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 9.077844e-03 seconds
+FLOP/s 2.890554e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 256 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.114184e-03 seconds
+Elapsed time for run 2: 7.074374e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 7.074374e-03 seconds
+FLOP/s 1.856390e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 128 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.932456e-03 seconds
+Elapsed time for run 2: 6.807719e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 6.807719e-03 seconds
+FLOP/s 9.664324e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 64 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.577592e-03 seconds
+Elapsed time for run 2: 6.675161e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 6.675161e-03 seconds
+FLOP/s 4.947296e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 32 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.291522e-03 seconds
+Elapsed time for run 2: 6.580176e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 6.580176e-03 seconds
+FLOP/s 2.528808e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 16 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.885942e-03 seconds
+Elapsed time for run 2: 6.717693e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 6.717693e-03 seconds
+FLOP/s 1.257575e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 8 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.554195e-03 seconds
+Elapsed time for run 2: 6.300252e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 6.300252e-03 seconds
+FLOP/s 6.907660e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 4 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.051686e-03 seconds
+Elapsed time for run 2: 6.450411e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 6.450411e-03 seconds
+FLOP/s 3.571865e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system converse pes 4 iter 2 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 6.063909e-03 seconds
+Elapsed time for run 2: 6.246823e-03 seconds
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 6.246823e-03 seconds
+FLOP/s 2.049042e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program

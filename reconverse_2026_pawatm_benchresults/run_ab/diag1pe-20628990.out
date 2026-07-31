@@ -1,0 +1,213 @@
++ export PATH=/u/rao1/mpishim:/u/rao1/.vscode-server/bin/e4c7e7b1d6d060162f4aa7f8225271b67ce1df75/bin/remote-cli:/sw/external/python/anaconda3_cpu/bin:/sw/external/python/anaconda3_cpu/condabin:/u/rao1/.local/bin:/u/rao1/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.32/ofi/gnu/11.2/bin:/opt/cray/pe/mpich/8.1.32/bin:/opt/cray/libfabric/1.22.0/bin:/opt/cray/pe/craype/2.7.34/bin:/opt/rh/gcc-toolset-13/root/usr/bin:/sw/rh9.4/user/scripts:/sw/user/scripts:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/cray/pe/bin
++ PATH=/u/rao1/mpishim:/u/rao1/.vscode-server/bin/e4c7e7b1d6d060162f4aa7f8225271b67ce1df75/bin/remote-cli:/sw/external/python/anaconda3_cpu/bin:/sw/external/python/anaconda3_cpu/condabin:/u/rao1/.local/bin:/u/rao1/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.32/ofi/gnu/11.2/bin:/opt/cray/pe/mpich/8.1.32/bin:/opt/cray/libfabric/1.22.0/bin:/opt/cray/pe/craype/2.7.34/bin:/opt/rh/gcc-toolset-13/root/usr/bin:/sw/rh9.4/user/scripts:/sw/user/scripts:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/cray/pe/bin
++ source /u/rao1/bench_scripts/common.sh
+++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
+++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
+++ export PMI_MAX_KVS_ENTRIES=512
+++ PMI_MAX_KVS_ENTRIES=512
+++ export LCI_ATTR_PACKET_SIZE=8192
+++ LCI_ATTR_PACKET_SIZE=8192
+++ TB=/u/rao1/task-bench
+++ BIN_MPI=/u/rao1/task-bench/mpi/nonblock
+++ BIN_CHARM_OLD=/u/rao1/task-bench/charm++_oldconv/benchmark
+++ BIN_CHARM_RECONV=/u/rao1/task-bench/charm++_reconv/benchmark
+++ BIN_RECONVERSE=/u/rao1/task-bench/reconverse/build/task_bench
+++ BIN_RECONVERSE_MAIN=/u/rao1/task-bench/reconverse/build_main/task_bench
+++ BIN_CONVERSE=/u/rao1/task-bench/converse/task_bench
+++ BIN_KERNEL=/u/rao1/task-bench/kernel_bench/main
+++ ULT_RECONV_SCHED=/u/rao1/reconverse/build/tests/ult_bench/reconverse_sched_rate
+++ ULT_RECONV_CTX=/u/rao1/reconverse/build/tests/ult_bench/reconverse_ctxswitch
+++ ULT_CONV_SCHED=/u/rao1/ult_bench_converse/converse_sched_rate
+++ ULT_CONV_CTX=/u/rao1/ult_bench_converse/converse_ctxswitch
+++ SRUN='srun --mpi=cray_shasta'
++ LOG=/u/rao1/bench_results/run_ab/raw/diag_1pe.log
++ :
++ COARSE='-kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1'
++ R=/u/rao1/task-bench/reconverse/build/task_bench
++ C=/u/rao1/task-bench/converse/task_bench
++ run recon_taskset01_affin 2 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8
++ local name=recon_taskset01_affin cpus=2 ts=0-1
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_affin rep=1 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_affin rep=2 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_affin rep=3 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_affin rep=4 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_affin rep=5 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run recon_taskset01_noaffin 2 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8
++ local name=recon_taskset01_noaffin cpus=2 ts=0-1
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_noaffin rep=1 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_noaffin rep=2 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_noaffin rep=3 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_noaffin rep=4 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_noaffin rep=5 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run recon_notaskset_affin 2 - /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8
++ local name=recon_notaskset_affin cpus=2 ts=-
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_affin rep=1 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_affin rep=2 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_affin rep=3 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_affin rep=4 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_affin rep=5 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run recon_notaskset_noaffin 2 - /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8
++ local name=recon_notaskset_noaffin cpus=2 ts=-
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_noaffin rep=1 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_noaffin rep=2 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_noaffin rep=3 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_noaffin rep=4 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_notaskset_noaffin rep=5 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run recon_taskset07_affin 8 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8
++ local name=recon_taskset07_affin cpus=8 ts=0-7
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset07_affin rep=1 ==='
++ '[' 0-7 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 --cpu-bind=none taskset -c 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset07_affin rep=2 ==='
++ '[' 0-7 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 --cpu-bind=none taskset -c 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset07_affin rep=3 ==='
++ '[' 0-7 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 --cpu-bind=none taskset -c 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset07_affin rep=4 ==='
++ '[' 0-7 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 --cpu-bind=none taskset -c 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset07_affin rep=5 ==='
++ '[' 0-7 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=8 --cpu-bind=none taskset -c 0-7 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run recon_taskset01_1dev 2 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1
++ local name=recon_taskset01_1dev cpus=2 ts=0-1
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_1dev rep=1 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_1dev rep=2 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_1dev rep=3 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_1dev rep=4 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== recon_taskset01_1dev rep=5 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 1 -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run conv_taskset01_affin 2 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity
++ local name=conv_taskset01_affin cpus=2 ts=0-1
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== conv_taskset01_affin rep=1 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_taskset01_affin rep=2 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_taskset01_affin rep=3 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_taskset01_affin rep=4 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_taskset01_affin rep=5 ==='
++ '[' 0-1 = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none taskset -c 0-1 /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ run conv_notaskset_affin 2 - /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity
++ local name=conv_notaskset_affin cpus=2 ts=-
++ shift 3
++ for rep in 1 2 3 4 5
++ echo '=== conv_notaskset_affin rep=1 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_notaskset_affin rep=2 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_notaskset_affin rep=3 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_notaskset_affin rep=4 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ for rep in 1 2 3 4 5
++ echo '=== conv_notaskset_affin rep=5 ==='
++ '[' - = - ']'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d -steps 1000 -width 1
++ echo 'DIAG1PE DONE'
+DIAG1PE DONE

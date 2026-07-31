@@ -1,0 +1,49 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ RB=/u/rao1/reconverse_main/build_release/tests
++ LOG=/u/rao1/bench_results/pingpong/raw/diag_ndevices.log
++ :
++ for ver in rdma_pingpong/reconverse_rdma_pingpong persistent_pingpong/reconverse_persistent_pingpong orig-converse/pingpong/reconverse_pingpong
++ for nd in "" "+lci_ndevices 1" "+lci_ndevices 2" "+lci_ndevices 8"
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=1node
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ echo '=== rdma_pingpong nd='\''default'\'' 1node ==='
++ timeout 60 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 50 16 1024 2
++ echo '  rc=0'
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=2node
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ echo '=== rdma_pingpong nd='\''default'\'' 2node ==='
++ timeout 60 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 50 16 1024 2
++ echo '  rc=0'
++ for nd in "" "+lci_ndevices 1" "+lci_ndevices 2" "+lci_ndevices 8"
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=1node
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ echo '=== rdma_pingpong nd='\''+lci_ndevices 1'\'' 1node ==='
++ timeout 60 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
++ echo '  rc=0'
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=2node
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ echo '=== rdma_pingpong nd='\''+lci_ndevices 1'\'' 2node ==='
++ timeout 60 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
++ echo '  rc=0'
++ for nd in "" "+lci_ndevices 1" "+lci_ndevices 2" "+lci_ndevices 8"
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=1node
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ echo '=== rdma_pingpong nd='\''+lci_ndevices 2'\'' 1node ==='
++ timeout 60 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 2 50 16 1024 2
++ echo '  rc=124'
++ for place in "1node:-N 1 -n 2 --ntasks-per-node=2" "2node:-N 2 -n 2 --ntasks-per-node=1"
++ pl=2node
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ echo '=== rdma_pingpong nd='\''+lci_ndevices 2'\'' 2node ==='
++ timeout 60 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 2 50 16 1024 2
+[2026-07-31T12:54:04.243] error: *** JOB 20661001 ON cn110 CANCELLED AT 2026-07-31T12:54:04 DUE to SIGNAL Terminated ***

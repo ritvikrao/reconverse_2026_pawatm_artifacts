@@ -1,0 +1,2940 @@
+=== system charm_old pes 4 iter 16384 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 6.397700e-02
+Time for last run: 6.395793e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.395793e-02 seconds
+FLOP/s 1.311622e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8192 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 3.617311e-02
+Time for last run: 3.609610e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.609610e-02 seconds
+FLOP/s 1.162054e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4096 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 2.204204e-02
+Time for last run: 2.182603e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.182603e-02 seconds
+FLOP/s 9.609664e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2048 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.483512e-02
+Time for last run: 1.492119e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.492119e-02 seconds
+FLOP/s 7.029145e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 1024 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.180983e-02
+Time for last run: 1.147795e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.147795e-02 seconds
+FLOP/s 4.570016e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 512 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.029992e-02
+Time for last run: 1.012588e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 1.012588e-02 seconds
+FLOP/s 2.591381e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 256 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.041603e-02
+Time for last run: 1.079893e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 1.079893e-02 seconds
+FLOP/s 1.216120e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 128 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.705854e-03
+Time for last run: 8.849144e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 8.849144e-03 seconds
+FLOP/s 7.434843e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 64 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.089066e-03
+Time for last run: 8.320093e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 8.320093e-03 seconds
+FLOP/s 3.969186e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 32 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.427143e-03
+Time for last run: 8.256912e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 8.256912e-03 seconds
+FLOP/s 2.015281e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.068085e-03
+Time for last run: 8.215189e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 8.215189e-03 seconds
+FLOP/s 1.028339e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.189201e-03
+Time for last run: 8.370876e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 8.370876e-03 seconds
+FLOP/s 5.198978e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.291960e-03
+Time for last run: 8.111000e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 8.111000e-03 seconds
+FLOP/s 2.840587e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.999897e-03
+Time for last run: 8.548975e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 8.548975e-03 seconds
+FLOP/s 1.497256e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16384 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.372212e-02
+Time for last run: 7.362890e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 7.362890e-02 seconds
+FLOP/s 1.139344e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8192 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 3.596187e-02
+Time for last run: 3.593016e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.593016e-02 seconds
+FLOP/s 1.167420e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4096 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 2.190685e-02
+Time for last run: 2.187514e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.187514e-02 seconds
+FLOP/s 9.588088e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2048 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.591897e-02
+Time for last run: 1.587892e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.587892e-02 seconds
+FLOP/s 6.605186e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 1024 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.173210e-02
+Time for last run: 1.166797e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.166797e-02 seconds
+FLOP/s 4.495590e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 512 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.783983e-03
+Time for last run: 9.832859e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 9.832859e-03 seconds
+FLOP/s 2.668603e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 256 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.340048e-03
+Time for last run: 8.970022e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 8.970022e-03 seconds
+FLOP/s 1.464077e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 128 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.564949e-03
+Time for last run: 8.604050e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 8.604050e-03 seconds
+FLOP/s 7.646632e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 64 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.539915e-03
+Time for last run: 8.332014e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 8.332014e-03 seconds
+FLOP/s 3.963507e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 32 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.409023e-03
+Time for last run: 8.373976e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 8.373976e-03 seconds
+FLOP/s 1.987109e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.285999e-03
+Time for last run: 8.373022e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 8.373022e-03 seconds
+FLOP/s 1.008955e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.202076e-03
+Time for last run: 8.584023e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 8.584023e-03 seconds
+FLOP/s 5.069884e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.501053e-03
+Time for last run: 8.399963e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 8.399963e-03 seconds
+FLOP/s 2.742869e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.020878e-03
+Time for last run: 8.248091e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 8.248091e-03 seconds
+FLOP/s 1.551874e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16384 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.402992e-02
+Time for last run: 7.358193e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 7.358193e-02 seconds
+FLOP/s 1.140071e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8192 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 3.619409e-02
+Time for last run: 3.575110e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.575110e-02 seconds
+FLOP/s 1.173267e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4096 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 2.228904e-02
+Time for last run: 2.216601e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.216601e-02 seconds
+FLOP/s 9.462270e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2048 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.591206e-02
+Time for last run: 1.597500e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.597500e-02 seconds
+FLOP/s 6.565459e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 1024 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.146793e-02
+Time for last run: 1.163411e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.163411e-02 seconds
+FLOP/s 4.508673e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 512 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.002288e-02
+Time for last run: 1.006389e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 1.006389e-02 seconds
+FLOP/s 2.607343e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 256 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.166956e-03
+Time for last run: 9.522200e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 9.522200e-03 seconds
+FLOP/s 1.379177e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 128 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.778095e-03
+Time for last run: 8.669853e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 8.669853e-03 seconds
+FLOP/s 7.588594e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 64 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.555889e-03
+Time for last run: 8.594990e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 8.594990e-03 seconds
+FLOP/s 3.842238e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 32 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.486032e-03
+Time for last run: 8.479118e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 8.479118e-03 seconds
+FLOP/s 1.962468e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.448912e-03
+Time for last run: 7.514954e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 7.514954e-03 seconds
+FLOP/s 1.124159e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.244038e-03
+Time for last run: 8.368015e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 8.368015e-03 seconds
+FLOP/s 5.200755e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.116961e-03
+Time for last run: 8.335829e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 8.335829e-03 seconds
+FLOP/s 2.763972e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.545876e-03
+Time for last run: 8.460999e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 8.460999e-03 seconds
+FLOP/s 1.512824e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16384 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.378888e-02
+Time for last run: 7.445097e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 7.445097e-02 seconds
+FLOP/s 1.126764e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8192 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 3.610802e-02
+Time for last run: 3.596902e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.596902e-02 seconds
+FLOP/s 1.166159e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4096 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 2.353287e-02
+Time for last run: 2.341390e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.341390e-02 seconds
+FLOP/s 8.957962e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2048 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.595497e-02
+Time for last run: 1.559711e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.559711e-02 seconds
+FLOP/s 6.724530e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 1024 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.168919e-02
+Time for last run: 1.181316e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.181316e-02 seconds
+FLOP/s 4.440335e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 512 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.850025e-03
+Time for last run: 9.857893e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 9.857893e-03 seconds
+FLOP/s 2.661826e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 256 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.047031e-03
+Time for last run: 8.982897e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 8.982897e-03 seconds
+FLOP/s 1.461978e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 128 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.722067e-03
+Time for last run: 8.591175e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 8.591175e-03 seconds
+FLOP/s 7.658091e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 64 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.332014e-03
+Time for last run: 8.447886e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 8.447886e-03 seconds
+FLOP/s 3.909144e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 32 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.419991e-03
+Time for last run: 8.201838e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 8.201838e-03 seconds
+FLOP/s 2.028814e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.565903e-03
+Time for last run: 8.342981e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 8.342981e-03 seconds
+FLOP/s 1.012588e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.406950e-03
+Time for last run: 7.455111e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 7.455111e-03 seconds
+FLOP/s 5.837606e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 7.456064e-03
+Time for last run: 7.498026e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 7.498026e-03 seconds
+FLOP/s 3.072809e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2 rep 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.142948e-03
+Time for last run: 7.831097e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 7.831097e-03 seconds
+FLOP/s 1.634509e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16384 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 6.379700e-02
+Time for last run: 6.359911e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 6.359911e-02 seconds
+FLOP/s 1.319022e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8192 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8192
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 3.920197e-02
+Time for last run: 3.900909e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194560000
+Total Bytes 0
+Elapsed Time 3.900909e-02 seconds
+FLOP/s 1.075277e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4096 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4096
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 2.205396e-02
+Time for last run: 2.183008e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097408000
+Total Bytes 0
+Elapsed Time 2.183008e-02 seconds
+FLOP/s 9.607880e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2048 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2048
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.523018e-02
+Time for last run: 1.469612e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1048832000
+Total Bytes 0
+Elapsed Time 1.469612e-02 seconds
+FLOP/s 7.136795e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 1024 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 1024
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 1.164079e-02
+Time for last run: 1.161385e-02
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 524544000
+Total Bytes 0
+Elapsed Time 1.161385e-02 seconds
+FLOP/s 4.516540e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 512 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 512
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 9.958029e-03
+Time for last run: 9.979010e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 262400000
+Total Bytes 0
+Elapsed Time 9.979010e-03 seconds
+FLOP/s 2.629519e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 256 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 256
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.955002e-03
+Time for last run: 9.181023e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 131328000
+Total Bytes 0
+Elapsed Time 9.181023e-03 seconds
+FLOP/s 1.430429e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 128 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 128
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.704185e-03
+Time for last run: 8.893967e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 65792000
+Total Bytes 0
+Elapsed Time 8.893967e-03 seconds
+FLOP/s 7.397374e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 64 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 64
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.701801e-03
+Time for last run: 8.363008e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33024000
+Total Bytes 0
+Elapsed Time 8.363008e-03 seconds
+FLOP/s 3.948818e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 32 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 32
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.104801e-03
+Time for last run: 8.543968e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16640000
+Total Bytes 0
+Elapsed Time 8.543968e-03 seconds
+FLOP/s 1.947573e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 16 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.150816e-03
+Time for last run: 8.119822e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8448000
+Total Bytes 0
+Elapsed Time 8.119822e-03 seconds
+FLOP/s 1.040417e+09
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 8 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 8
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.168936e-03
+Time for last run: 8.168936e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4352000
+Total Bytes 0
+Elapsed Time 8.168936e-03 seconds
+FLOP/s 5.327499e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 4 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 4
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.060932e-03
+Time for last run: 8.040190e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2304000
+Total Bytes 0
+Elapsed Time 8.040190e-03 seconds
+FLOP/s 2.865604e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+=== system charm_old pes 4 iter 2 rep 5 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> cpu affinity enabled. 
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 5-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 4
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 2
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Time for last run: 8.391857e-03
+Time for last run: 8.208990e-03
+Total Tasks 4000
+Total Dependencies 9990
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 1280000
+Total Bytes 0
+Elapsed Time 8.208990e-03 seconds
+FLOP/s 1.559266e+08
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program

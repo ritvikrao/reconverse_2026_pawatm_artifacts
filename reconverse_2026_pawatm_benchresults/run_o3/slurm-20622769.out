@@ -1,0 +1,36 @@
++ export PATH=/u/rao1/mpishim:/u/rao1/.vscode-server/bin/e4c7e7b1d6d060162f4aa7f8225271b67ce1df75/bin/remote-cli:/sw/external/python/anaconda3_cpu/bin:/sw/external/python/anaconda3_cpu/condabin:/u/rao1/.local/bin:/u/rao1/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.32/ofi/gnu/11.2/bin:/opt/cray/pe/mpich/8.1.32/bin:/opt/cray/libfabric/1.22.0/bin:/opt/cray/pe/craype/2.7.34/bin:/opt/rh/gcc-toolset-13/root/usr/bin:/sw/rh9.4/user/scripts:/sw/user/scripts:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/cray/pe/bin
++ PATH=/u/rao1/mpishim:/u/rao1/.vscode-server/bin/e4c7e7b1d6d060162f4aa7f8225271b67ce1df75/bin/remote-cli:/sw/external/python/anaconda3_cpu/bin:/sw/external/python/anaconda3_cpu/condabin:/u/rao1/.local/bin:/u/rao1/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.32/ofi/gnu/11.2/bin:/opt/cray/pe/mpich/8.1.32/bin:/opt/cray/libfabric/1.22.0/bin:/opt/cray/pe/craype/2.7.34/bin:/opt/rh/gcc-toolset-13/root/usr/bin:/sw/rh9.4/user/scripts:/sw/user/scripts:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/cray/pe/bin
++ OUT=/u/rao1/bench_results/run_o3
++ mkdir -p /u/rao1/bench_results/run_o3/raw
++ source /u/rao1/bench_scripts/common.sh
+++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
+++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
+++ export PMI_MAX_KVS_ENTRIES=512
+++ PMI_MAX_KVS_ENTRIES=512
+++ export LCI_ATTR_PACKET_SIZE=8192
+++ LCI_ATTR_PACKET_SIZE=8192
+++ TB=/u/rao1/task-bench
+++ BIN_MPI=/u/rao1/task-bench/mpi/nonblock
+++ BIN_CHARM_OLD=/u/rao1/task-bench/charm++_oldconv/benchmark
+++ BIN_CHARM_RECONV=/u/rao1/task-bench/charm++_reconv/benchmark
+++ BIN_RECONVERSE=/u/rao1/task-bench/reconverse/build/task_bench
+++ BIN_CONVERSE=/u/rao1/task-bench/converse/task_bench
+++ BIN_KERNEL=/u/rao1/task-bench/kernel_bench/main
+++ ULT_RECONV_SCHED=/u/rao1/reconverse/build/tests/ult_bench/reconverse_sched_rate
+++ ULT_RECONV_CTX=/u/rao1/reconverse/build/tests/ult_bench/reconverse_ctxswitch
+++ ULT_CONV_SCHED=/u/rao1/ult_bench_converse/converse_sched_rate
+++ ULT_CONV_CTX=/u/rao1/ult_bench_converse/converse_ctxswitch
+++ SRUN='srun --mpi=cray_shasta'
++ /u/rao1/bench_scripts/run_peak.sh /u/rao1/bench_results/run_o3
+peak log -> /u/rao1/bench_results/run_o3/raw/kernel_bench_peak.log
++ /u/rao1/bench_scripts/run_taskbench.sh /u/rao1/bench_results/run_o3
+rep 1 of 5 complete
+rep 2 of 5 complete
+rep 3 of 5 complete
+rep 4 of 5 complete
+!!! LAUNCH FAILED: converse pe=1 iter=16 rep=5
+!!! LAUNCH FAILED: reconverse pe=1 iter=8 rep=5
+rep 5 of 5 complete
+sweep complete -> /u/rao1/bench_results/run_o3/raw
++ echo DONE
+DONE

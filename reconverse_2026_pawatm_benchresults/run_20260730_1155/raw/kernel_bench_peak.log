@@ -1,0 +1,381 @@
+=== peak pes 1 rep 1 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 1
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x1146ce0, 0x1146d00), 110.293865 ms, flop/s 3.802960e+10
+Total Tasks 2000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194432000
+Total Bytes 0
+Elapsed Time 1.102939e-01 seconds
+FLOP/s 3.802960e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430516203.458008, 1785430516313.751953) 110.293865 ms
+=== peak pes 1 rep 2 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 1
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0xb71ce0, 0xb71d00), 110.641956 ms, flop/s 3.790996e+10
+Total Tasks 2000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194432000
+Total Bytes 0
+Elapsed Time 1.106420e-01 seconds
+FLOP/s 3.790996e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430516425.735840, 1785430516536.377930) 110.641956 ms
+=== peak pes 1 rep 3 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 1
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0xb44ce0, 0xb44d00), 110.355854 ms, flop/s 3.800824e+10
+Total Tasks 2000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 4194432000
+Total Bytes 0
+Elapsed Time 1.103559e-01 seconds
+FLOP/s 3.800824e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430516633.177002, 1785430516743.532959) 110.355854 ms
+=== peak pes 2 rep 1 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 2
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x4bbd40, 0x4bbd60), 110.491037 ms, flop/s 3.796174e+10
+thread #1, nb_tasks 2000, time (0x4bbd48, 0x4bbd68), 137.995958 ms, flop/s 3.039532e+10
+Total Tasks 4000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 1.379960e-01 seconds
+FLOP/s 6.079065e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430516816.379150, 1785430516954.375000) 137.995958 ms
+=== peak pes 2 rep 2 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 2
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x17f9d40, 0x17f9d60), 110.342979 ms, flop/s 3.801268e+10
+thread #1, nb_tasks 2000, time (0x17f9d48, 0x17f9d68), 138.029099 ms, flop/s 3.038803e+10
+Total Tasks 4000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 1.380291e-01 seconds
+FLOP/s 6.077605e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430517041.980957, 1785430517180.010010) 138.029099 ms
+=== peak pes 2 rep 3 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 2
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x168ad40, 0x168ad60), 110.420942 ms, flop/s 3.798584e+10
+thread #1, nb_tasks 2000, time (0x168ad48, 0x168ad68), 137.937069 ms, flop/s 3.040830e+10
+Total Tasks 4000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 8388864000
+Total Bytes 0
+Elapsed Time 1.379371e-01 seconds
+FLOP/s 6.081660e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430517256.345947, 1785430517394.282959) 137.937069 ms
+=== peak pes 4 rep 1 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 4
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x1eeede0, 0x1eeee10), 110.527039 ms, flop/s 3.794937e+10
+thread #2, nb_tasks 2000, time (0x1eeedf0, 0x1eeee20), 137.903929 ms, flop/s 3.041561e+10
+thread #1, nb_tasks 2000, time (0x1eeede8, 0x1eeee18), 137.963057 ms, flop/s 3.040257e+10
+thread #3, nb_tasks 2000, time (0x1eeedf8, 0x1eeee28), 138.074160 ms, flop/s 3.037811e+10
+Total Tasks 8000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16777728000
+Total Bytes 0
+Elapsed Time 1.380751e-01 seconds
+FLOP/s 1.215116e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430517486.424072, 1785430517624.499023) 138.075113 ms
+=== peak pes 4 rep 2 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 4
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x1d12de0, 0x1d12e10), 110.398054 ms, flop/s 3.799371e+10
+thread #2, nb_tasks 2000, time (0x1d12df0, 0x1d12e20), 137.927055 ms, flop/s 3.041051e+10
+thread #3, nb_tasks 2000, time (0x1d12df8, 0x1d12e28), 137.959003 ms, flop/s 3.040347e+10
+thread #1, nb_tasks 2000, time (0x1d12de8, 0x1d12e18), 138.059855 ms, flop/s 3.038126e+10
+Total Tasks 8000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16777728000
+Total Bytes 0
+Elapsed Time 1.380649e-01 seconds
+FLOP/s 1.215206e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430517720.633057, 1785430517858.697998) 138.064861 ms
+=== peak pes 4 rep 3 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 4
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x1fdade0, 0x1fdae10), 110.470057 ms, flop/s 3.796895e+10
+thread #2, nb_tasks 2000, time (0x1fdadf0, 0x1fdae20), 137.931108 ms, flop/s 3.040962e+10
+thread #1, nb_tasks 2000, time (0x1fdade8, 0x1fdae18), 137.948036 ms, flop/s 3.040588e+10
+thread #3, nb_tasks 2000, time (0x1fdadf8, 0x1fdae28), 137.953997 ms, flop/s 3.040457e+10
+Total Tasks 8000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 16777728000
+Total Bytes 0
+Elapsed Time 1.379540e-01 seconds
+FLOP/s 1.216183e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430517958.684082, 1785430518096.637939) 137.953997 ms
+=== peak pes 8 rep 1 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 8
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x187f6a0, 0x187f600), 110.461950 ms, flop/s 3.797174e+10
+thread #6, nb_tasks 2000, time (0x187f6d0, 0x187f630), 137.982130 ms, flop/s 3.039837e+10
+thread #3, nb_tasks 2000, time (0x187f6b8, 0x187f618), 137.985945 ms, flop/s 3.039753e+10
+thread #1, nb_tasks 2000, time (0x187f6a8, 0x187f608), 137.988091 ms, flop/s 3.039706e+10
+thread #7, nb_tasks 2000, time (0x187f6d8, 0x187f638), 137.989044 ms, flop/s 3.039685e+10
+thread #4, nb_tasks 2000, time (0x187f6c0, 0x187f620), 138.005972 ms, flop/s 3.039312e+10
+thread #2, nb_tasks 2000, time (0x187f6b0, 0x187f610), 138.010025 ms, flop/s 3.039223e+10
+thread #5, nb_tasks 2000, time (0x187f6c8, 0x187f628), 138.021946 ms, flop/s 3.038960e+10
+Total Tasks 16000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33555456000
+Total Bytes 0
+Elapsed Time 1.380219e-01 seconds
+FLOP/s 2.431168e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430518186.635010, 1785430518324.656982) 138.021946 ms
+=== peak pes 8 rep 2 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 8
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x18b46a0, 0x18b4600), 110.576153 ms, flop/s 3.793252e+10
+thread #7, nb_tasks 2000, time (0x18b46d8, 0x18b4638), 137.918949 ms, flop/s 3.041230e+10
+thread #1, nb_tasks 2000, time (0x18b46a8, 0x18b4608), 137.937069 ms, flop/s 3.040830e+10
+thread #5, nb_tasks 2000, time (0x18b46c8, 0x18b4628), 137.951136 ms, flop/s 3.040520e+10
+thread #6, nb_tasks 2000, time (0x18b46d0, 0x18b4630), 137.942076 ms, flop/s 3.040720e+10
+thread #2, nb_tasks 2000, time (0x18b46b0, 0x18b4610), 137.959957 ms, flop/s 3.040326e+10
+thread #4, nb_tasks 2000, time (0x18b46c0, 0x18b4620), 137.979031 ms, flop/s 3.039905e+10
+thread #3, nb_tasks 2000, time (0x18b46b8, 0x18b4618), 138.046026 ms, flop/s 3.038430e+10
+Total Tasks 16000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33555456000
+Total Bytes 0
+Elapsed Time 1.380460e-01 seconds
+FLOP/s 2.430744e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430518424.983887, 1785430518563.030029) 138.046026 ms
+=== peak pes 8 rep 3 ===
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 2000
+      Max Width: 8
+      Dependence Type: trivial
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+thread #0, nb_tasks 2000, time (0x11c06a0, 0x11c0600), 110.341072 ms, flop/s 3.801333e+10
+thread #6, nb_tasks 2000, time (0x11c06d0, 0x11c0630), 137.922049 ms, flop/s 3.041161e+10
+thread #1, nb_tasks 2000, time (0x11c06a8, 0x11c0608), 137.936831 ms, flop/s 3.040835e+10
+thread #7, nb_tasks 2000, time (0x11c06d8, 0x11c0638), 137.927055 ms, flop/s 3.041051e+10
+thread #3, nb_tasks 2000, time (0x11c06b8, 0x11c0618), 137.949944 ms, flop/s 3.040546e+10
+thread #5, nb_tasks 2000, time (0x11c06c8, 0x11c0628), 137.950897 ms, flop/s 3.040525e+10
+thread #4, nb_tasks 2000, time (0x11c06c0, 0x11c0620), 137.928009 ms, flop/s 3.041030e+10
+thread #2, nb_tasks 2000, time (0x11c06b0, 0x11c0610), 138.036013 ms, flop/s 3.038651e+10
+Total Tasks 16000
+Total Dependencies 0
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 33555456000
+Total Bytes 0
+Elapsed Time 1.380370e-01 seconds
+FLOP/s 2.430904e+11
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+total time (1785430518662.908936, 1785430518800.946045) 138.036966 ms

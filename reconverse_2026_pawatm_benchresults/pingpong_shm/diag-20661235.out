@@ -1,0 +1,60 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ SHM=/u/rao1/reconverse_main/build_shm/tests
++ NOSHM=/u/rao1/reconverse_main/build_release/tests
++ LOG=/u/rao1/bench_results/pingpong_shm/raw/diag_persist_shm.log
++ :
++ run 'repo persistent test, NO shm' /u/rao1/reconverse_main/build_release/tests/persistent/reconverse_persistent +ppn 1 +lci_ndevices 1
++ echo '=== repo persistent test, NO shm ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/persistent/reconverse_persistent +ppn 1 +lci_ndevices 1
++ echo '  rc=0'
++ run 'repo persistent test, SHM' /u/rao1/reconverse_main/build_shm/tests/persistent/reconverse_persistent +ppn 1 +lci_ndevices 1
++ echo '=== repo persistent test, SHM ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent/reconverse_persistent +ppn 1 +lci_ndevices 1
++ echo '  rc=0'
++ LCI_ATTR_SHM_ENABLE=0
++ run 'persistent_pingpong, SHM build, shm DISABLED' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
++ echo '=== persistent_pingpong, SHM build, shm DISABLED ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
++ echo '  rc=0'
++ for mx in 16 32 64 128 256
++ run 'persistent_pingpong, SHM, sizes 16..16' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 16 2
++ echo '=== persistent_pingpong, SHM, sizes 16..16 ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 16 2
++ echo '  rc=134'
++ for mx in 16 32 64 128 256
++ run 'persistent_pingpong, SHM, sizes 16..32' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 32 2
++ echo '=== persistent_pingpong, SHM, sizes 16..32 ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 32 2
++ echo '  rc=134'
++ for mx in 16 32 64 128 256
++ run 'persistent_pingpong, SHM, sizes 16..64' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 64 2
++ echo '=== persistent_pingpong, SHM, sizes 16..64 ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 64 2
++ echo '  rc=134'
++ for mx in 16 32 64 128 256
++ run 'persistent_pingpong, SHM, sizes 16..128' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 128 2
++ echo '=== persistent_pingpong, SHM, sizes 16..128 ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 128 2
++ echo '  rc=124'
++ for mx in 16 32 64 128 256
++ run 'persistent_pingpong, SHM, sizes 16..256' /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 256 2
++ echo '=== persistent_pingpong, SHM, sizes 16..256 ==='
++ shift
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 256 2
++ echo '  rc=0'
++ echo '=== gdb backtrace ==='
++ timeout 150 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores gdb -q -batch -ex run -ex 'bt 25' --args /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 20 16 64 2
++ echo 'DIAG DONE'
+DIAG DONE

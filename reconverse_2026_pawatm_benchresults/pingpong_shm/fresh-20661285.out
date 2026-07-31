@@ -1,0 +1,57 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ SHM=/u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong
++ LOG=/u/rao1/bench_results/pingpong_shm/raw/diag_freshbuf.log
++ :
++ for mode in "forward:" "freshbuf:-freshbuf"
++ name=forward
++ flag=
++ for trial in 1 2 3 4 5
++ echo '=== forward trial 1 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 200 16 262144 2
++ echo '  rc=134'
++ for trial in 1 2 3 4 5
++ echo '=== forward trial 2 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 200 16 262144 2
++ echo '  rc=134'
++ for trial in 1 2 3 4 5
++ echo '=== forward trial 3 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 200 16 262144 2
++ echo '  rc=134'
++ for trial in 1 2 3 4 5
++ echo '=== forward trial 4 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 200 16 262144 2
++ echo '  rc=124'
++ for trial in 1 2 3 4 5
++ echo '=== forward trial 5 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 200 16 262144 2
++ echo '  rc=134'
++ for mode in "forward:" "freshbuf:-freshbuf"
++ name=freshbuf
++ flag=-freshbuf
++ for trial in 1 2 3 4 5
++ echo '=== freshbuf trial 1 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 -freshbuf 200 16 262144 2
++ echo '  rc=124'
++ for trial in 1 2 3 4 5
++ echo '=== freshbuf trial 2 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 -freshbuf 200 16 262144 2
++ echo '  rc=134'
++ for trial in 1 2 3 4 5
++ echo '=== freshbuf trial 3 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 -freshbuf 200 16 262144 2
++ echo '  rc=124'
++ for trial in 1 2 3 4 5
++ echo '=== freshbuf trial 4 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 -freshbuf 200 16 262144 2
++ echo '  rc=124'
++ for trial in 1 2 3 4 5
++ echo '=== freshbuf trial 5 ==='
++ timeout 90 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 -freshbuf 200 16 262144 2
++ echo '  rc=134'
++ echo 'FRESH DIAG DONE'
+FRESH DIAG DONE

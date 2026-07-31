@@ -1,0 +1,64 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ OUT=/u/rao1/bench_results/pingpong_shm
++ mkdir -p /u/rao1/bench_results/pingpong_shm/raw
++ NOSHM=/u/rao1/reconverse_main/build_release/tests
++ SHM=/u/rao1/reconverse_main/build_shm/tests
++ CONV=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ ARGS='1000 16 262144 2'
++ REPS=5
++ VERSIONS='converse recon_normal recon_normal_shm recon_rdma recon_rdma_shm recon_persist recon_persist_shm recon_normal_shm8k'
++ SMOKE=/u/rao1/bench_results/pingpong_shm/raw/smoke.log
++ :
++ smoke_failed=0
++ for ver in $VERSIONS
++ echo '=== smoke converse ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch converse
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_normal ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_normal
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_normal_shm ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_normal_shm
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_rdma ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_rdma
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_rdma_shm ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_rdma_shm
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_persist ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_persist
++ :
++ for ver in $VERSIONS
++ echo '=== smoke recon_persist_shm ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_persist_shm
++ echo '!!! SMOKE FAILED: recon_persist_shm'
++ tee -a /u/rao1/bench_results/pingpong_shm/raw/smoke.log
+!!! SMOKE FAILED: recon_persist_shm
++ smoke_failed=1
++ for ver in $VERSIONS
++ echo '=== smoke recon_normal_shm8k ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch recon_normal_shm8k
++ :
++ '[' 1 '!=' 0 ']'
++ echo 'SMOKE FAILED -- not running the sweep'
+SMOKE FAILED -- not running the sweep
++ exit 1

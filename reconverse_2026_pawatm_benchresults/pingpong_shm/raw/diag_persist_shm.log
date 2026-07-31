@@ -1,0 +1,69 @@
+=== repo persistent test, NO shm ===
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Persistent communication test on 2 PEs (2 nodes), buffer size 8192 bytes, 4 buffers per channel
+Phase 1: 100 pipelined sends per channel
+Phase 2: token ring, 50 hops per token
+Phase 3: 20 multicasts through a handle array
+Phase 4: teardown
+All persistent communication tests passed on 2 PEs
+  rc=0
+=== repo persistent test, SHM ===
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Persistent communication test on 2 PEs (2 nodes), buffer size 8192 bytes, 4 buffers per channel
+Phase 1: 100 pipelined sends per channel
+Phase 2: token ring, 50 hops per token
+Phase 3: 20 multicasts through a handle array
+Phase 4: teardown
+All persistent communication tests passed on 2 PEs
+  rc=0
+=== persistent_pingpong, SHM build, shm DISABLED ===
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=7.777214 microseconds one-way
+Size=32 bytes, time=7.519722 microseconds one-way
+Size=64 bytes, time=9.915829 microseconds one-way
+Size=128 bytes, time=9.117126 microseconds one-way
+Size=256 bytes, time=11.093616 microseconds one-way
+Size=512 bytes, time=9.956360 microseconds one-way
+Size=1024 bytes, time=10.204315 microseconds one-way
+  rc=0
+=== persistent_pingpong, SHM, sizes 16..16 ===
+srun: error: cn038: tasks 0-1: Aborted
+  rc=134
+=== persistent_pingpong, SHM, sizes 16..32 ===
+srun: error: cn038: tasks 0-1: Aborted
+  rc=134
+=== persistent_pingpong, SHM, sizes 16..64 ===
+srun: error: cn038: tasks 0-1: Aborted
+  rc=134
+=== persistent_pingpong, SHM, sizes 16..128 ===
+srun: error: cn038: task 0: Segmentation fault
+srun: forcing job termination
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-07-31T13:14:26.906] error: *** STEP 20661235.6 ON cn038 CANCELLED AT 2026-07-31T13:14:26 DUE to SIGNAL Killed ***
+srun: error: cn038: task 1: Killed
+  rc=124
+=== persistent_pingpong, SHM, sizes 16..256 ===
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 20, minMsgSize = 16, maxMsgSize = 256, increase factor = 2
+Size=16 bytes, time=4.494190 microseconds one-way
+Size=32 bytes, time=4.088879 microseconds one-way
+Size=64 bytes, time=6.872416 microseconds one-way
+Size=128 bytes, time=7.373095 microseconds one-way
+Size=256 bytes, time=7.569790 microseconds one-way
+  rc=0
+=== gdb backtrace ===
+warning: Could not trace the inferior process.
+warning: ptrace: Operation not permitted
+During startup program exited with code 127.
+No stack.
+warning: Could not trace the inferior process.
+warning: ptrace: Operation not permitted
+During startup program exited with code 127.
+No stack.
+srun: error: cn038: tasks 0-1: Exited with exit code 1

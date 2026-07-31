@@ -1,0 +1,250 @@
+=== smoke 1node converse ===
++ local place=1node ver=converse topo
++ case $place in
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042450]: mask 0x3 set
+cpu-bind=MASK - cn110, task  1  1 [3042451]: mask 0x30000 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 4-way SMP)
+Charm++> cpu topology info is gathered in 0.002 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.392070 microseconds one-way
+Size=32 bytes, time=2.649990 microseconds one-way
+Size=64 bytes, time=2.156160 microseconds one-way
+Size=128 bytes, time=2.256450 microseconds one-way
+Size=256 bytes, time=2.600190 microseconds one-way
+Size=512 bytes, time=3.493280 microseconds one-way
+Size=1024 bytes, time=3.519530 microseconds one-way
+[Partition 0][Node 0] End of program
+  (cumulative result lines: 7)
+=== smoke 1node recon_normal ===
++ local place=1node ver=recon_normal topo
++ case $place in
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn111, task  0  0 [127337]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  1 [127338]: mask 0x30000 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.007816 microseconds one-way
+Size=32 bytes, time=4.136562 microseconds one-way
+Size=64 bytes, time=3.359318 microseconds one-way
+Size=128 bytes, time=4.885197 microseconds one-way
+Size=256 bytes, time=5.052090 microseconds one-way
+Size=512 bytes, time=6.597042 microseconds one-way
+Size=1024 bytes, time=4.668236 microseconds one-way
+  (cumulative result lines: 14)
+=== smoke 1node recon_rdma ===
++ local place=1node ver=recon_rdma topo
++ case $place in
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042483]: mask 0x3 set
+cpu-bind=MASK - cn110, task  1  1 [3042484]: mask 0x30000 set
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=11.544228 microseconds one-way
+Size=32 bytes, time=11.317730 microseconds one-way
+Size=64 bytes, time=10.368824 microseconds one-way
+Size=128 bytes, time=11.086464 microseconds one-way
+Size=256 bytes, time=11.477470 microseconds one-way
+Size=512 bytes, time=11.029243 microseconds one-way
+Size=1024 bytes, time=10.120869 microseconds one-way
+  (cumulative result lines: 21)
+=== smoke 1node recon_persist ===
++ local place=1node ver=recon_persist topo
++ case $place in
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn111, task  0  0 [127360]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  1 [127361]: mask 0x30000 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=9.434223 microseconds one-way
+Size=32 bytes, time=8.175373 microseconds one-way
+Size=64 bytes, time=10.559559 microseconds one-way
+Size=128 bytes, time=10.578632 microseconds one-way
+Size=256 bytes, time=11.620522 microseconds one-way
+Size=512 bytes, time=10.685921 microseconds one-way
+Size=1024 bytes, time=11.134148 microseconds one-way
+  (cumulative result lines: 28)
+=== smoke 1node recon_normal_nd8 ===
++ local place=1node ver=recon_normal_nd8 topo
++ case $place in
++ topo='-N 1 -n 2 --ntasks-per-node=2'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 8'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 8 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042522]: mask 0x3 set
+cpu-bind=MASK - cn110, task  1  1 [3042523]: mask 0x30000 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.293919 microseconds one-way
+Size=32 bytes, time=4.384518 microseconds one-way
+Size=64 bytes, time=3.557205 microseconds one-way
+Size=128 bytes, time=4.904270 microseconds one-way
+Size=256 bytes, time=5.128384 microseconds one-way
+Size=512 bytes, time=5.114079 microseconds one-way
+Size=1024 bytes, time=4.484653 microseconds one-way
+  (cumulative result lines: 35)
+=== smoke 2node converse ===
++ local place=2node ver=converse topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042554]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [127383]: mask 0x3 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=8.817700 microseconds one-way
+Size=32 bytes, time=8.800670 microseconds one-way
+Size=64 bytes, time=11.669170 microseconds one-way
+Size=128 bytes, time=9.568310 microseconds one-way
+Size=256 bytes, time=42.439400 microseconds one-way
+Size=512 bytes, time=9.383560 microseconds one-way
+Size=1024 bytes, time=10.585230 microseconds one-way
+[Partition 0][Node 0] End of program
+  (cumulative result lines: 42)
+=== smoke 2node recon_normal ===
++ local place=2node ver=recon_normal topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042583]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [127402]: mask 0x3 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.465580 microseconds one-way
+Size=32 bytes, time=4.909039 microseconds one-way
+Size=64 bytes, time=3.449917 microseconds one-way
+Size=128 bytes, time=4.954338 microseconds one-way
+Size=256 bytes, time=4.956722 microseconds one-way
+Size=512 bytes, time=5.400181 microseconds one-way
+Size=1024 bytes, time=4.322529 microseconds one-way
+  (cumulative result lines: 49)
+=== smoke 2node recon_rdma ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn111, task  1  0 [127420]: mask 0x3 set
+cpu-bind=MASK - cn110, task  0  0 [3042610]: mask 0x3 set
+exitBenchmarkHandler called on PE 1
+exitBenchmarkHandler called on PE 0
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=11.003017 microseconds one-way
+Size=32 bytes, time=11.427402 microseconds one-way
+Size=64 bytes, time=10.926723 microseconds one-way
+Size=128 bytes, time=12.090206 microseconds one-way
+Size=256 bytes, time=11.594296 microseconds one-way
+Size=512 bytes, time=11.494160 microseconds one-way
+Size=1024 bytes, time=11.236668 microseconds one-way
+  (cumulative result lines: 56)
+=== smoke 2node recon_persist ===
++ local place=2node ver=recon_persist topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042637]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [127438]: mask 0x3 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=10.676384 microseconds one-way
+Size=32 bytes, time=9.167194 microseconds one-way
+Size=64 bytes, time=12.979507 microseconds one-way
+Size=128 bytes, time=11.775494 microseconds one-way
+Size=256 bytes, time=13.132095 microseconds one-way
+Size=512 bytes, time=11.789799 microseconds one-way
+Size=1024 bytes, time=12.745857 microseconds one-way
+  (cumulative result lines: 63)
+=== smoke 2node recon_normal_nd8 ===
++ local place=2node ver=recon_normal_nd8 topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 8'
++ local 'a=50 16 1024 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 8 50 16 1024 2
+cpu-bind=MASK - cn110, task  0  0 [3042665]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [127456]: mask 0x3 set
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.897118 microseconds one-way
+Size=32 bytes, time=4.498959 microseconds one-way
+Size=64 bytes, time=3.523827 microseconds one-way
+Size=128 bytes, time=5.190372 microseconds one-way
+Size=256 bytes, time=5.543232 microseconds one-way
+Size=512 bytes, time=5.452633 microseconds one-way
+Size=1024 bytes, time=4.985332 microseconds one-way
+  (cumulative result lines: 70)

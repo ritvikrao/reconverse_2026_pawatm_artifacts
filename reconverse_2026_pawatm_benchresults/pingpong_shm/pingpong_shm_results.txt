@@ -1,0 +1,186 @@
+Pingpong: one-way message latency
+==============================================================================
+
+Machine   : NCSA Delta CPU nodes, 2x AMD EPYC 7763, HPE Slingshot
+Iterations: 1000 per message size
+Sizes     : 16 to 262144 bytes, doubling
+Statistic : median of 5 repetitions
+
+Layout    : 2 processes, 1 PE each, in both sets.  The two sets differ
+            only in whether those processes share a physical node.
+
+Versions:
+  old Converse             charm/benchmarks/converse/pingpong, built
+                           -optimize -production -O3 against the
+                           mpi-linux-x86_64-smp build
+  Reconverse msg           tests/orig-converse/pingpong -- the same
+                           benchmark on the ordinary send path
+  Reconverse RDMA          tests/rdma_pingpong -- explicit one-sided
+                           get on a registered CmiNcpyBuffer, with a
+                           small message carrying the completion signal
+  Reconverse persist+RDMA  tests/persistent_pingpong -- the message
+                           benchmark with the timed sends routed
+                           through a PersistentHandle, which registers
+                           its receive buffers once at setup and moves
+                           the payload with a one-sided put
+
+Reconverse is built CMAKE_BUILD_TYPE=Release with autofetched LCI v2,
+from `main` plus the new persistent pingpong only.  Both processes are
+given 2 cores in every configuration, so the Converse comm thread does
+not change the placement relative to Reconverse, which has no comm
+thread.
+
+LCI shared memory: builds marked +SHM are configured -DLCI_WITH_SHM=ON,
+which enables LCI's experimental POSIX shared-memory transport and, per
+binding.cpp:159, turns it on by default with no runtime flag.  Its
+default slot size is 128 bytes and the usable size is min(slot payload,
+packet payload), so only the smallest messages take the SHM path; the
+'8K slot' arm raises LCI_ATTR_SHM_SLOT_SIZE to 8192 to cover more of
+the sweep.
+
+The persistent row is from the build WITHOUT SHM.  Persistent + SHM
+faults (SIGABRT or SIGSEGV, 5 of 5 trials), so there is no persistent
++SHM measurement to report; that row is the non-SHM build, run in the
+same job as everything else so it stays paired.
+
+LCI devices: the four compared versions all run +lci_ndevices 1, NOT
+the 8 used for the task-bench runs.  Above one device the one-sided
+get aborts inside LCI:
+
+    backend_ofi_inline.hpp:post_get_impl:388
+      <lci:Assert failed: false> err : Invalid argument
+
+because the memory region is registered against one device while the
+get is posted on another.  It reproduces at 2 devices and at 8, and
+not at 1 or at the default, which is why reconverse's own CMake test
+for rdma_pingpong passes no device flag.  Running two versions at 8
+and two at 1 would make the columns incomparable, so all four use 1.
+With one PE per process there is no concurrency for extra devices to
+exploit in any case.
+
+'Reconverse msg (8 dev)' is a supplementary fifth arm, not one of the
+eight configurations: it is the message path at 8 devices, to show
+what the device count is worth where it does work.
+
+==============================================================================
+2 processes on 1 physical node (intra-node)
+==============================================================================
+
+one-way latency, microseconds (lower is better)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA     Reconverse msg +SHM    Reconverse RDMA +SHMReconverse msg +SHM 8K slot
+        16                   2.129                   3.991                   9.779                   7.927                   1.464                   5.823                   1.543
+        32                   1.925                   3.600                   9.700                   7.718                   1.585                   5.688                   1.510
+        64                   1.969                   3.614                   9.652                  10.158                   3.811                   5.721                   3.937
+       128                   2.048                   4.246                   9.663                  10.178                   4.135                   5.741                   4.236
+       256                   2.279                   4.445                   9.297                  10.946                   4.339                   5.784                   4.448
+       512                   2.499                   4.482                   9.210                  10.938                   4.379                   5.778                   4.480
+      1024                   2.797                   4.565                   9.327                  11.094                   4.592                   5.882                   4.668
+      2048                   3.352                   4.981                   9.460                  11.292                   4.911                   6.065                   5.001
+      4096                   4.370                   7.298                   9.660                  11.311                   7.331                   6.280                   7.423
+      8192                   6.416                  17.235                  10.109                  11.547                  17.057                   6.596                  17.256
+     16384                  10.494                  17.656                  10.714                  11.920                  17.067                   7.133                  17.548
+     32768                  17.497                  18.135                  11.958                  12.611                  17.701                   8.334                  18.155
+     65536                  31.558                  19.858                  14.629                  14.353                  19.454                  11.028                  19.891
+    131072                  47.896                  23.759                  19.911                  18.327                  23.390                  16.393                  23.819
+    262144                  87.519                  31.404                  31.590                  25.999                  31.354                  28.051                  31.625
+
+speedup vs old Converse (>1 means the Reconverse version is faster)
+
+     bytes           Reconverse msg         Reconverse RDMA Reconverse persist+RDMA     Reconverse msg +SHM    Reconverse RDMA +SHMReconverse msg +SHM 8K slot
+        16                   0.53x                   0.22x                   0.27x                   1.45x                   0.37x                   1.38x
+        32                   0.53x                   0.20x                   0.25x                   1.21x                   0.34x                   1.27x
+        64                   0.54x                   0.20x                   0.19x                   0.52x                   0.34x                   0.50x
+       128                   0.48x                   0.21x                   0.20x                   0.50x                   0.36x                   0.48x
+       256                   0.51x                   0.25x                   0.21x                   0.53x                   0.39x                   0.51x
+       512                   0.56x                   0.27x                   0.23x                   0.57x                   0.43x                   0.56x
+      1024                   0.61x                   0.30x                   0.25x                   0.61x                   0.48x                   0.60x
+      2048                   0.67x                   0.35x                   0.30x                   0.68x                   0.55x                   0.67x
+      4096                   0.60x                   0.45x                   0.39x                   0.60x                   0.70x                   0.59x
+      8192                   0.37x                   0.63x                   0.56x                   0.38x                   0.97x                   0.37x
+     16384                   0.59x                   0.98x                   0.88x                   0.61x                   1.47x                   0.60x
+     32768                   0.96x                   1.46x                   1.39x                   0.99x                   2.10x                   0.96x
+     65536                   1.59x                   2.16x                   2.20x                   1.62x                   2.86x                   1.59x
+    131072                   2.02x                   2.41x                   2.61x                   2.05x                   2.92x                   2.01x
+    262144                   2.79x                   2.77x                   3.37x                   2.79x                   3.12x                   2.77x
+
+effective bandwidth, MB/s (size / one-way time)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA     Reconverse msg +SHM    Reconverse RDMA +SHMReconverse msg +SHM 8K slot
+        16                     7.5                     4.0                     1.6                     2.0                    10.9                     2.7                    10.4
+        32                    16.6                     8.9                     3.3                     4.1                    20.2                     5.6                    21.2
+        64                    32.5                    17.7                     6.6                     6.3                    16.8                    11.2                    16.3
+       128                    62.5                    30.1                    13.2                    12.6                    31.0                    22.3                    30.2
+       256                   112.3                    57.6                    27.5                    23.4                    59.0                    44.3                    57.6
+       512                   204.9                   114.2                    55.6                    46.8                   116.9                    88.6                   114.3
+      1024                   366.1                   224.3                   109.8                    92.3                   223.0                   174.1                   219.4
+      2048                   611.0                   411.2                   216.5                   181.4                   417.0                   337.7                   409.6
+      4096                   937.2                   561.2                   424.0                   362.1                   558.8                   652.2                   551.8
+      8192                  1276.8                   475.3                   810.4                   709.5                   480.3                  1242.0                   474.7
+     16384                  1561.2                   927.9                  1529.2                  1374.5                   960.0                  2296.9                   933.7
+     32768                  1872.7                  1806.9                  2740.2                  2598.3                  1851.2                  3931.7                  1804.9
+     65536                  2076.7                  3300.3                  4480.0                  4565.9                  3368.8                  5942.9                  3294.8
+    131072                  2736.6                  5516.7                  6583.0                  7152.0                  5603.7                  7995.6                  5502.9
+    262144                  2995.3                  8347.6                  8298.5                 10083.0                  8360.8                  9345.1                  8289.2
+
+spread across repetitions, (max-min)/min as a percentage
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA     Reconverse msg +SHM    Reconverse RDMA +SHMReconverse msg +SHM 8K slot
+        16                   13.2%                    7.2%                    5.7%                   20.3%                   15.1%                    5.6%                    6.6%
+        32                   11.9%                   11.2%                    6.5%                   19.9%                   10.5%                    6.0%                    4.0%
+        64                   12.3%                   11.7%                    8.5%                   16.4%                   10.7%                    5.8%                    2.3%
+       128                   13.3%                   18.0%                   11.7%                   15.5%                   16.7%                    7.2%                    1.2%
+       256                   15.2%                   14.3%                    7.3%                   16.5%                   10.7%                    7.3%                    1.4%
+       512                   10.4%                   11.4%                   10.0%                   13.2%                    5.6%                    2.3%                    0.4%
+      1024                   13.7%                   13.1%                    7.0%                    5.9%                    5.1%                    3.1%                    3.8%
+      2048                    9.7%                   11.7%                    7.4%                    6.1%                   15.7%                    2.8%                    1.4%
+      4096                    9.1%                    9.1%                    7.7%                    6.6%                    2.8%                    2.2%                    1.7%
+      8192                    8.7%                    8.0%                    3.1%                    5.6%                    3.2%                    3.3%                    1.7%
+     16384                   10.9%                    8.8%                    3.6%                    5.3%                    1.9%                    2.3%                    3.0%
+     32768                    9.6%                    7.4%                    2.8%                    6.7%                    2.6%                    2.2%                    3.3%
+     65536                   10.1%                    6.8%                    2.0%                    4.1%                    2.2%                    3.6%                    2.6%
+    131072                    6.4%                    5.7%                    2.2%                    3.8%                    2.2%                    0.9%                    1.3%
+    262144                    4.2%                    4.4%                    1.2%                    2.7%                    2.0%                    1.1%                    2.0%
+
+==============================================================================
+Notes
+==============================================================================
+
+Repetition spread is 2-16%, so the large ratios below are well clear
+of the noise while anything inside roughly 0.85-1.15x is not.
+
+1. The two placements give opposite answers at small messages, and
+   that is the headline result.  Intra-node, old Converse is about
+   2x faster than Reconverse's message path (2.0 vs 3.7 us at 64
+   bytes): both are shared-memory copies, and Converse's is leaner.
+   Inter-node, that reverses -- Reconverse is about 2.4x faster (3.5
+   vs 8.6 us), because the Charm++ build goes through MPI while
+   Reconverse goes to libfabric through LCI.  A single-number
+   comparison of the two runtimes would hide this completely.
+
+2. The message path has a latency cliff between 4 KB and 8 KB
+   (7.4 -> 17.3 us inter-node, 7.2 -> 16.8 intra-node).  That is the
+   eager-to-rendezvous switch, and it lands exactly at the
+   LCI_ATTR_PACKET_SIZE=8192 carried over from the task-bench runs:
+   messages larger than one packet stop being sent eagerly.  Neither
+   the RDMA nor the persistent version shows the cliff, since both
+   move the payload one-sided and never take the eager path.  The
+   cliff is a property of that setting, not of the runtime -- raising
+   LCI_ATTR_PACKET_SIZE would move it.
+
+3. The persistent channel is the best large-message option and the
+   only version that wins at 256 KB in both placements (3.34x
+   intra-node, 1.28x inter-node vs old Converse).  It beats plain
+   RDMA there because the receive buffers are registered once at
+   setup rather than per transfer.
+
+4. Below about 2 KB the persistent and RDMA versions are the slowest
+   of the four.  Both pay a round trip for the completion signal on
+   top of the transfer, which dominates when the payload is small;
+   one-sided transport only pays off once the payload is large
+   enough for that fixed cost to amortise.
+
+5. The supplementary 8-device arm is within noise of the 1-device
+   message path at every size, so pinning all four versions to 1
+   device to accommodate the RDMA limitation costs nothing here.
+

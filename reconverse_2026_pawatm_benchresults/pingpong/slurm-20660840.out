@@ -1,0 +1,84 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/math_libs/12.8/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/25.3/cuda/12.8/lib64:/opt/cray/libfabric/1.22.0/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ OUT=/u/rao1/bench_results/pingpong
++ mkdir -p /u/rao1/bench_results/pingpong/raw
++ RB=/u/rao1/reconverse_main/build_release/tests
++ CONV=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ ARGS='1000 16 262144 2'
++ REPS=5
++ VERSIONS='converse recon_normal recon_rdma recon_persist'
++ SMOKE=/u/rao1/bench_results/pingpong/raw/smoke.log
++ :
++ smoke_failed=0
++ for place in 1node 2node
++ for ver in $VERSIONS
++ echo '=== smoke 1node converse ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 1node converse
+++ grep -c 'microseconds one-way' /u/rao1/bench_results/pingpong/raw/smoke.log
++ n=7
++ echo '  (cumulative result lines: 7)'
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_normal ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 1node recon_normal
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
++ echo '!!! SMOKE FAILED: 1node recon_normal'
+!!! SMOKE FAILED: 1node recon_normal
++ smoke_failed=1
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_rdma ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 1node recon_rdma
++ echo '!!! SMOKE FAILED: 1node recon_rdma'
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
+!!! SMOKE FAILED: 1node recon_rdma
++ smoke_failed=1
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_persist ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 1node recon_persist
++ echo '!!! SMOKE FAILED: 1node recon_persist'
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
+!!! SMOKE FAILED: 1node recon_persist
++ smoke_failed=1
++ for place in 1node 2node
++ for ver in $VERSIONS
++ echo '=== smoke 2node converse ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 2node converse
+++ grep -c 'microseconds one-way' /u/rao1/bench_results/pingpong/raw/smoke.log
++ n=14
++ echo '  (cumulative result lines: 14)'
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_normal ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 2node recon_normal
++ echo '!!! SMOKE FAILED: 2node recon_normal'
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
+!!! SMOKE FAILED: 2node recon_normal
++ smoke_failed=1
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_rdma ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 2node recon_rdma
++ echo '!!! SMOKE FAILED: 2node recon_rdma'
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
+!!! SMOKE FAILED: 2node recon_rdma
++ smoke_failed=1
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_persist ==='
++ ARGS_OVERRIDE='50 16 1024 2'
++ launch 2node recon_persist
++ echo '!!! SMOKE FAILED: 2node recon_persist'
++ tee -a /u/rao1/bench_results/pingpong/raw/smoke.log
+!!! SMOKE FAILED: 2node recon_persist
++ smoke_failed=1
++ '[' 1 '!=' 0 ']'
++ echo 'SMOKE FAILED -- not running the sweep'
+SMOKE FAILED -- not running the sweep
++ exit 1

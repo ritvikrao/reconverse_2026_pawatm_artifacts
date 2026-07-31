@@ -1,0 +1,270 @@
+=== ult ctxswitch layer reconverse pes 1 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT context switch vs concurrency: flows 2..4096 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 1 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 0] flows=    2: direct 0.0192 us/switch (52.119 M/s), scheduler 0.1266 us/switch (7.900 M/s)
+DATA,ctxswitch,0,2,0.019187,0.126582
+[PE 0] flows=    4: direct 0.0224 us/switch (44.661 M/s), scheduler 0.1482 us/switch (6.746 M/s)
+DATA,ctxswitch,0,4,0.022391,0.148227
+[PE 0] flows=    8: direct 0.0250 us/switch (40.062 M/s), scheduler 0.1599 us/switch (6.256 M/s)
+DATA,ctxswitch,0,8,0.024961,0.159858
+[PE 0] flows=   16: direct 0.0263 us/switch (37.970 M/s), scheduler 0.1604 us/switch (6.236 M/s)
+DATA,ctxswitch,0,16,0.026337,0.160354
+[PE 0] flows=   32: direct 0.0242 us/switch (41.240 M/s), scheduler 0.1225 us/switch (8.162 M/s)
+DATA,ctxswitch,0,32,0.024248,0.122516
+[PE 0] flows=   64: direct 0.0235 us/switch (42.634 M/s), scheduler 0.1152 us/switch (8.682 M/s)
+DATA,ctxswitch,0,64,0.023456,0.115186
+[PE 0] flows=  128: direct 0.0214 us/switch (46.700 M/s), scheduler 0.1061 us/switch (9.427 M/s)
+DATA,ctxswitch,0,128,0.021413,0.106073
+[PE 0] flows=  256: direct 0.0199 us/switch (50.345 M/s), scheduler 0.1084 us/switch (9.222 M/s)
+DATA,ctxswitch,0,256,0.019863,0.108441
+[PE 0] flows=  512: direct 0.0204 us/switch (48.998 M/s), scheduler 0.1124 us/switch (8.896 M/s)
+DATA,ctxswitch,0,512,0.020409,0.112413
+[PE 0] flows= 1024: direct 0.0263 us/switch (38.066 M/s), scheduler 0.1233 us/switch (8.109 M/s)
+DATA,ctxswitch,0,1024,0.026270,0.123318
+[PE 0] flows= 2048: direct 0.0298 us/switch (33.502 M/s), scheduler 0.1236 us/switch (8.091 M/s)
+DATA,ctxswitch,0,2048,0.029849,0.123597
+[PE 0] flows= 4096: direct 0.0301 us/switch (33.219 M/s), scheduler 0.1187 us/switch (8.425 M/s)
+DATA,ctxswitch,0,4096,0.030103,0.118695
+=== ult ctxswitch layer converse pes 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT context switch vs concurrency: flows 2..4096 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 1 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 0] flows=    2: direct 0.0562 us/switch (17.791 M/s), scheduler 0.2188 us/switch (4.571 M/s)
+DATA,ctxswitch,0,2,0.056210,0.218769
+[PE 0] flows=    4: direct 0.0546 us/switch (18.316 M/s), scheduler 0.2175 us/switch (4.598 M/s)
+DATA,ctxswitch,0,4,0.054598,0.217503
+[PE 0] flows=    8: direct 0.0545 us/switch (18.340 M/s), scheduler 0.2198 us/switch (4.549 M/s)
+DATA,ctxswitch,0,8,0.054527,0.219812
+[PE 0] flows=   16: direct 0.0556 us/switch (17.993 M/s), scheduler 0.2199 us/switch (4.548 M/s)
+DATA,ctxswitch,0,16,0.055577,0.219885
+[PE 0] flows=   32: direct 0.0564 us/switch (17.728 M/s), scheduler 0.2191 us/switch (4.565 M/s)
+DATA,ctxswitch,0,32,0.056408,0.219058
+[PE 0] flows=   64: direct 0.0575 us/switch (17.383 M/s), scheduler 0.2227 us/switch (4.491 M/s)
+DATA,ctxswitch,0,64,0.057527,0.222652
+[PE 0] flows=  128: direct 0.0571 us/switch (17.511 M/s), scheduler 0.2227 us/switch (4.491 M/s)
+DATA,ctxswitch,0,128,0.057107,0.222651
+[PE 0] flows=  256: direct 0.0573 us/switch (17.442 M/s), scheduler 0.1796 us/switch (5.569 M/s)
+DATA,ctxswitch,0,256,0.057334,0.179577
+[PE 0] flows=  512: direct 0.0480 us/switch (20.831 M/s), scheduler 0.1843 us/switch (5.427 M/s)
+DATA,ctxswitch,0,512,0.048006,0.184258
+[PE 0] flows= 1024: direct 0.0541 us/switch (18.477 M/s), scheduler 0.1930 us/switch (5.181 M/s)
+DATA,ctxswitch,0,1024,0.054123,0.193000
+[PE 0] flows= 2048: direct 0.0566 us/switch (17.675 M/s), scheduler 0.1912 us/switch (5.229 M/s)
+DATA,ctxswitch,0,2048,0.056576,0.191232
+[PE 0] flows= 4096: direct 0.0566 us/switch (17.669 M/s), scheduler 0.1904 us/switch (5.252 M/s)
+DATA,ctxswitch,0,4096,0.056596,0.190408
+[Partition 0][Node 0] End of program
+=== ult ctxswitch layer reconverse pes 4 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT context switch vs concurrency: flows 2..4096 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 4 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 1] flows=    2: direct 0.0190 us/switch (52.596 M/s), scheduler 0.1208 us/switch (8.281 M/s)
+DATA,ctxswitch,1,2,0.019013,0.120753
+[PE 2] flows=    2: direct 0.0191 us/switch (52.246 M/s), scheduler 0.1211 us/switch (8.257 M/s)
+DATA,ctxswitch,2,2,0.019140,0.121114
+[PE 0] flows=    2: direct 0.0194 us/switch (51.603 M/s), scheduler 0.1209 us/switch (8.271 M/s)
+DATA,ctxswitch,0,2,0.019379,0.120912
+[PE 3] flows=    2: direct 0.0191 us/switch (52.278 M/s), scheduler 0.1233 us/switch (8.111 M/s)
+DATA,ctxswitch,3,2,0.019128,0.123286
+[PE 1] flows=    4: direct 0.0210 us/switch (47.676 M/s), scheduler 0.1280 us/switch (7.814 M/s)
+DATA,ctxswitch,1,4,0.020975,0.127982
+[PE 2] flows=    4: direct 0.0209 us/switch (47.741 M/s), scheduler 0.1402 us/switch (7.132 M/s)
+DATA,ctxswitch,2,4,0.020946,0.140216
+[PE 0] flows=    4: direct 0.0210 us/switch (47.617 M/s), scheduler 0.1402 us/switch (7.135 M/s)
+DATA,ctxswitch,0,4,0.021001,0.140156
+[PE 3] flows=    4: direct 0.0210 us/switch (47.671 M/s), scheduler 0.1445 us/switch (6.922 M/s)
+DATA,ctxswitch,3,4,0.020977,0.144477
+[PE 1] flows=    8: direct 0.0206 us/switch (48.554 M/s), scheduler 0.1275 us/switch (7.843 M/s)
+DATA,ctxswitch,1,8,0.020596,0.127509
+[PE 0] flows=    8: direct 0.0259 us/switch (38.643 M/s), scheduler 0.1592 us/switch (6.280 M/s)
+DATA,ctxswitch,0,8,0.025878,0.159231
+[PE 2] flows=    8: direct 0.0259 us/switch (38.604 M/s), scheduler 0.1611 us/switch (6.208 M/s)
+DATA,ctxswitch,2,8,0.025904,0.161070
+[PE 3] flows=    8: direct 0.0258 us/switch (38.831 M/s), scheduler 0.1682 us/switch (5.944 M/s)
+DATA,ctxswitch,3,8,0.025753,0.168227
+[PE 1] flows=   16: direct 0.0229 us/switch (43.748 M/s), scheduler 0.1300 us/switch (7.692 M/s)
+DATA,ctxswitch,1,16,0.022858,0.130002
+[PE 0] flows=   16: direct 0.0266 us/switch (37.607 M/s), scheduler 0.1600 us/switch (6.252 M/s)
+DATA,ctxswitch,0,16,0.026591,0.159954
+[PE 2] flows=   16: direct 0.0284 us/switch (35.251 M/s), scheduler 0.1644 us/switch (6.084 M/s)
+DATA,ctxswitch,2,16,0.028368,0.164361
+[PE 3] flows=   16: direct 0.0285 us/switch (35.116 M/s), scheduler 0.1701 us/switch (5.878 M/s)
+DATA,ctxswitch,3,16,0.028477,0.170116
+[PE 1] flows=   32: direct 0.0241 us/switch (41.501 M/s), scheduler 0.1305 us/switch (7.661 M/s)
+DATA,ctxswitch,1,32,0.024096,0.130529
+[PE 0] flows=   32: direct 0.0284 us/switch (35.214 M/s), scheduler 0.1630 us/switch (6.137 M/s)
+DATA,ctxswitch,0,32,0.028398,0.162954
+[PE 2] flows=   32: direct 0.0301 us/switch (33.227 M/s), scheduler 0.1645 us/switch (6.078 M/s)
+DATA,ctxswitch,2,32,0.030096,0.164540
+[PE 3] flows=   32: direct 0.0302 us/switch (33.142 M/s), scheduler 0.1694 us/switch (5.904 M/s)
+DATA,ctxswitch,3,32,0.030173,0.169390
+[PE 1] flows=   64: direct 0.0247 us/switch (40.452 M/s), scheduler 0.1359 us/switch (7.361 M/s)
+DATA,ctxswitch,1,64,0.024720,0.135852
+[PE 0] flows=   64: direct 0.0316 us/switch (31.648 M/s), scheduler 0.1603 us/switch (6.240 M/s)
+DATA,ctxswitch,0,64,0.031598,0.160255
+[PE 1] flows=  128: direct 0.0251 us/switch (39.846 M/s), scheduler 0.1293 us/switch (7.733 M/s)
+DATA,ctxswitch,1,128,0.025097,0.129317
+[PE 2] flows=   64: direct 0.0312 us/switch (32.015 M/s), scheduler 0.1606 us/switch (6.227 M/s)
+DATA,ctxswitch,2,64,0.031235,0.160581
+[PE 3] flows=   64: direct 0.0311 us/switch (32.178 M/s), scheduler 0.1586 us/switch (6.307 M/s)
+DATA,ctxswitch,3,64,0.031077,0.158552
+[PE 1] flows=  256: direct 0.0238 us/switch (41.984 M/s), scheduler 0.1232 us/switch (8.119 M/s)
+DATA,ctxswitch,1,256,0.023818,0.123174
+[PE 0] flows=  128: direct 0.0293 us/switch (34.154 M/s), scheduler 0.1411 us/switch (7.087 M/s)
+DATA,ctxswitch,0,128,0.029279,0.141102
+[PE 2] flows=  128: direct 0.0287 us/switch (34.880 M/s), scheduler 0.1386 us/switch (7.217 M/s)
+DATA,ctxswitch,2,128,0.028669,0.138554
+[PE 3] flows=  128: direct 0.0282 us/switch (35.434 M/s), scheduler 0.1376 us/switch (7.270 M/s)
+DATA,ctxswitch,3,128,0.028221,0.137553
+[PE 1] flows=  512: direct 0.0222 us/switch (45.074 M/s), scheduler 0.1088 us/switch (9.189 M/s)
+DATA,ctxswitch,1,512,0.022186,0.108830
+[PE 0] flows=  256: direct 0.0260 us/switch (38.480 M/s), scheduler 0.1367 us/switch (7.318 M/s)
+DATA,ctxswitch,0,256,0.025988,0.136655
+[PE 2] flows=  256: direct 0.0257 us/switch (38.842 M/s), scheduler 0.1356 us/switch (7.376 M/s)
+DATA,ctxswitch,2,256,0.025746,0.135568
+[PE 3] flows=  256: direct 0.0253 us/switch (39.560 M/s), scheduler 0.1360 us/switch (7.351 M/s)
+DATA,ctxswitch,3,256,0.025278,0.136030
+[PE 1] flows= 1024: direct 0.0243 us/switch (41.144 M/s), scheduler 0.1142 us/switch (8.758 M/s)
+DATA,ctxswitch,1,1024,0.024305,0.114183
+[PE 0] flows=  512: direct 0.0249 us/switch (40.128 M/s), scheduler 0.1420 us/switch (7.040 M/s)
+DATA,ctxswitch,0,512,0.024920,0.142037
+[PE 2] flows=  512: direct 0.0261 us/switch (38.285 M/s), scheduler 0.1355 us/switch (7.380 M/s)
+DATA,ctxswitch,2,512,0.026120,0.135506
+[PE 3] flows=  512: direct 0.0258 us/switch (38.803 M/s), scheduler 0.1362 us/switch (7.340 M/s)
+DATA,ctxswitch,3,512,0.025771,0.136241
+[PE 1] flows= 2048: direct 0.0303 us/switch (33.049 M/s), scheduler 0.1151 us/switch (8.689 M/s)
+DATA,ctxswitch,1,2048,0.030258,0.115087
+[PE 2] flows= 1024: direct 0.0316 us/switch (31.625 M/s), scheduler 0.1458 us/switch (6.858 M/s)
+DATA,ctxswitch,2,1024,0.031621,0.145807
+[PE 0] flows= 1024: direct 0.0327 us/switch (30.578 M/s), scheduler 0.1528 us/switch (6.542 M/s)
+DATA,ctxswitch,0,1024,0.032704,0.152849
+[PE 3] flows= 1024: direct 0.0320 us/switch (31.289 M/s), scheduler 0.1476 us/switch (6.775 M/s)
+DATA,ctxswitch,3,1024,0.031960,0.147611
+[PE 1] flows= 4096: direct 0.0304 us/switch (32.902 M/s), scheduler 0.1170 us/switch (8.546 M/s)
+DATA,ctxswitch,1,4096,0.030393,0.117012
+[PE 2] flows= 2048: direct 0.0359 us/switch (27.863 M/s), scheduler 0.1413 us/switch (7.076 M/s)
+DATA,ctxswitch,2,2048,0.035890,0.141320
+[PE 0] flows= 2048: direct 0.0358 us/switch (27.942 M/s), scheduler 0.1521 us/switch (6.576 M/s)
+DATA,ctxswitch,0,2048,0.035789,0.152068
+[PE 3] flows= 2048: direct 0.0359 us/switch (27.862 M/s), scheduler 0.1439 us/switch (6.947 M/s)
+DATA,ctxswitch,3,2048,0.035891,0.143937
+[PE 2] flows= 4096: direct 0.0361 us/switch (27.734 M/s), scheduler 0.1423 us/switch (7.029 M/s)
+DATA,ctxswitch,2,4096,0.036057,0.142272
+[PE 0] flows= 4096: direct 0.0358 us/switch (27.950 M/s), scheduler 0.1459 us/switch (6.854 M/s)
+DATA,ctxswitch,0,4096,0.035778,0.145907
+[PE 3] flows= 4096: direct 0.0356 us/switch (28.112 M/s), scheduler 0.1427 us/switch (7.009 M/s)
+DATA,ctxswitch,3,4096,0.035572,0.142673
+=== ult ctxswitch layer converse pes 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT context switch vs concurrency: flows 2..4096 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 4 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 1] flows=    2: direct 0.0926 us/switch (10.794 M/s), scheduler 0.2497 us/switch (4.005 M/s)
+DATA,ctxswitch,1,2,0.092646,0.249671
+[PE 0] flows=    2: direct 0.0929 us/switch (10.763 M/s), scheduler 0.2451 us/switch (4.080 M/s)
+DATA,ctxswitch,0,2,0.092908,0.245089
+[PE 2] flows=    2: direct 0.0931 us/switch (10.745 M/s), scheduler 0.3599 us/switch (2.779 M/s)
+DATA,ctxswitch,2,2,0.093070,0.359864
+[PE 3] flows=    2: direct 0.0931 us/switch (10.743 M/s), scheduler 0.3636 us/switch (2.750 M/s)
+DATA,ctxswitch,3,2,0.093086,0.363597
+[PE 1] flows=    4: direct 0.0865 us/switch (11.556 M/s), scheduler 0.2431 us/switch (4.114 M/s)
+DATA,ctxswitch,1,4,0.086535,0.243090
+[PE 0] flows=    4: direct 0.0796 us/switch (12.564 M/s), scheduler 0.2413 us/switch (4.144 M/s)
+DATA,ctxswitch,0,4,0.079592,0.241285
+[PE 2] flows=    4: direct 0.0600 us/switch (16.661 M/s), scheduler 0.2861 us/switch (3.495 M/s)
+DATA,ctxswitch,2,4,0.060020,0.286127
+[PE 3] flows=    4: direct 0.0772 us/switch (12.960 M/s), scheduler 0.3622 us/switch (2.761 M/s)
+DATA,ctxswitch,3,4,0.077158,0.362244
+[PE 1] flows=    8: direct 0.0843 us/switch (11.858 M/s), scheduler 0.2109 us/switch (4.742 M/s)
+DATA,ctxswitch,1,8,0.084332,0.210861
+[PE 0] flows=    8: direct 0.0834 us/switch (11.996 M/s), scheduler 0.2212 us/switch (4.521 M/s)
+DATA,ctxswitch,0,8,0.083362,0.221205
+[PE 2] flows=    8: direct 0.0514 us/switch (19.451 M/s), scheduler 0.2669 us/switch (3.746 M/s)
+DATA,ctxswitch,2,8,0.051411,0.266942
+[PE 1] flows=   16: direct 0.0855 us/switch (11.697 M/s), scheduler 0.2099 us/switch (4.764 M/s)
+DATA,ctxswitch,1,16,0.085493,0.209892
+[PE 0] flows=   16: direct 0.0792 us/switch (12.624 M/s), scheduler 0.2248 us/switch (4.448 M/s)
+DATA,ctxswitch,0,16,0.079212,0.224837
+[PE 3] flows=    8: direct 0.0866 us/switch (11.547 M/s), scheduler 0.3681 us/switch (2.716 M/s)
+DATA,ctxswitch,3,8,0.086602,0.368126
+[PE 2] flows=   16: direct 0.0523 us/switch (19.121 M/s), scheduler 0.2628 us/switch (3.806 M/s)
+DATA,ctxswitch,2,16,0.052298,0.262771
+[PE 1] flows=   32: direct 0.0796 us/switch (12.563 M/s), scheduler 0.2088 us/switch (4.790 M/s)
+DATA,ctxswitch,1,32,0.079598,0.208773
+[PE 0] flows=   32: direct 0.0772 us/switch (12.946 M/s), scheduler 0.2197 us/switch (4.552 M/s)
+DATA,ctxswitch,0,32,0.077246,0.219684
+[PE 2] flows=   32: direct 0.0555 us/switch (18.032 M/s), scheduler 0.2819 us/switch (3.548 M/s)
+DATA,ctxswitch,2,32,0.055458,0.281871
+[PE 1] flows=   64: direct 0.0784 us/switch (12.762 M/s), scheduler 0.2141 us/switch (4.671 M/s)
+DATA,ctxswitch,1,64,0.078357,0.214109
+[PE 3] flows=   16: direct 0.0896 us/switch (11.157 M/s), scheduler 0.3666 us/switch (2.728 M/s)
+DATA,ctxswitch,3,16,0.089628,0.366603
+[PE 0] flows=   64: direct 0.0757 us/switch (13.210 M/s), scheduler 0.2091 us/switch (4.782 M/s)
+DATA,ctxswitch,0,64,0.075701,0.209105
+[PE 1] flows=  128: direct 0.0796 us/switch (12.562 M/s), scheduler 0.2109 us/switch (4.741 M/s)
+DATA,ctxswitch,1,128,0.079604,0.210907
+[PE 2] flows=   64: direct 0.0578 us/switch (17.309 M/s), scheduler 0.2751 us/switch (3.635 M/s)
+DATA,ctxswitch,2,64,0.057772,0.275086
+[PE 0] flows=  128: direct 0.0761 us/switch (13.149 M/s), scheduler 0.2184 us/switch (4.578 M/s)
+DATA,ctxswitch,0,128,0.076050,0.218443
+[PE 3] flows=   32: direct 0.0885 us/switch (11.297 M/s), scheduler 0.2643 us/switch (3.784 M/s)
+DATA,ctxswitch,3,32,0.088516,0.264296
+[PE 1] flows=  256: direct 0.0773 us/switch (12.933 M/s), scheduler 0.2157 us/switch (4.636 M/s)
+DATA,ctxswitch,1,256,0.077319,0.215710
+[PE 2] flows=  128: direct 0.0576 us/switch (17.358 M/s), scheduler 0.2595 us/switch (3.854 M/s)
+DATA,ctxswitch,2,128,0.057612,0.259473
+[PE 0] flows=  256: direct 0.0757 us/switch (13.206 M/s), scheduler 0.2281 us/switch (4.384 M/s)
+DATA,ctxswitch,0,256,0.075725,0.228108
+[PE 3] flows=   64: direct 0.0733 us/switch (13.636 M/s), scheduler 0.2606 us/switch (3.837 M/s)
+DATA,ctxswitch,3,64,0.073334,0.260644
+[PE 1] flows=  512: direct 0.0757 us/switch (13.209 M/s), scheduler 0.2152 us/switch (4.647 M/s)
+DATA,ctxswitch,1,512,0.075704,0.215171
+[PE 2] flows=  256: direct 0.0531 us/switch (18.828 M/s), scheduler 0.2730 us/switch (3.663 M/s)
+DATA,ctxswitch,2,256,0.053111,0.272987
+[PE 0] flows=  512: direct 0.0719 us/switch (13.909 M/s), scheduler 0.2336 us/switch (4.281 M/s)
+DATA,ctxswitch,0,512,0.071896,0.233580
+[PE 3] flows=  128: direct 0.0740 us/switch (13.509 M/s), scheduler 0.2648 us/switch (3.776 M/s)
+DATA,ctxswitch,3,128,0.074025,0.264824
+[PE 1] flows= 1024: direct 0.0756 us/switch (13.222 M/s), scheduler 0.2225 us/switch (4.494 M/s)
+DATA,ctxswitch,1,1024,0.075629,0.222509
+[PE 2] flows=  512: direct 0.0533 us/switch (18.752 M/s), scheduler 0.2761 us/switch (3.622 M/s)
+DATA,ctxswitch,2,512,0.053329,0.276063
+[PE 0] flows= 1024: direct 0.0728 us/switch (13.727 M/s), scheduler 0.2417 us/switch (4.137 M/s)
+DATA,ctxswitch,0,1024,0.072847,0.241722
+[PE 3] flows=  256: direct 0.0713 us/switch (14.022 M/s), scheduler 0.2657 us/switch (3.764 M/s)
+DATA,ctxswitch,3,256,0.071317,0.265678
+[PE 1] flows= 2048: direct 0.0755 us/switch (13.243 M/s), scheduler 0.2223 us/switch (4.498 M/s)
+DATA,ctxswitch,1,2048,0.075514,0.222315
+[PE 2] flows= 1024: direct 0.0576 us/switch (17.370 M/s), scheduler 0.2863 us/switch (3.492 M/s)
+DATA,ctxswitch,2,1024,0.057570,0.286342
+[PE 0] flows= 2048: direct 0.0725 us/switch (13.793 M/s), scheduler 0.2416 us/switch (4.138 M/s)
+DATA,ctxswitch,0,2048,0.072501,0.241646
+[PE 3] flows=  512: direct 0.0687 us/switch (14.548 M/s), scheduler 0.2553 us/switch (3.917 M/s)
+DATA,ctxswitch,3,512,0.068738,0.255267
+[PE 1] flows= 4096: direct 0.0747 us/switch (13.392 M/s), scheduler 0.2206 us/switch (4.534 M/s)
+DATA,ctxswitch,1,4096,0.074674,0.220559
+[PE 2] flows= 2048: direct 0.0615 us/switch (16.272 M/s), scheduler 0.2430 us/switch (4.115 M/s)
+DATA,ctxswitch,2,2048,0.061454,0.243005
+[PE 3] flows= 1024: direct 0.0630 us/switch (15.870 M/s), scheduler 0.2277 us/switch (4.392 M/s)
+DATA,ctxswitch,3,1024,0.063011,0.227711
+[PE 0] flows= 4096: direct 0.0700 us/switch (14.287 M/s), scheduler 0.2007 us/switch (4.983 M/s)
+DATA,ctxswitch,0,4096,0.069992,0.200687
+[Partition 0][Node 0] End of program
+[PE 3] flows= 2048: direct 0.0557 us/switch (17.953 M/s), scheduler 0.2090 us/switch (4.784 M/s)
+DATA,ctxswitch,3,2048,0.055702,0.209042
+[PE 2] flows= 4096: direct 0.0554 us/switch (18.062 M/s), scheduler 0.2160 us/switch (4.629 M/s)
+DATA,ctxswitch,2,4096,0.055365,0.216015
+[PE 3] flows= 4096: direct 0.0565 us/switch (17.701 M/s), scheduler 0.1901 us/switch (5.261 M/s)
+DATA,ctxswitch,3,4096,0.056493,0.190071

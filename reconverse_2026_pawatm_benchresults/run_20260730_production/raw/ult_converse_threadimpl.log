@@ -1,0 +1,112 @@
+=== converse thread-impl default ctxswitch ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT context switch vs concurrency: flows 2..1024 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 1 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 0] flows=    2: direct 0.0584 us/switch (17.136 M/s), scheduler 0.2348 us/switch (4.260 M/s)
+DATA,ctxswitch,0,2,0.058358,0.234769
+[PE 0] flows=    4: direct 0.0584 us/switch (17.135 M/s), scheduler 0.2340 us/switch (4.273 M/s)
+DATA,ctxswitch,0,4,0.058361,0.234007
+[PE 0] flows=    8: direct 0.0587 us/switch (17.048 M/s), scheduler 0.2371 us/switch (4.218 M/s)
+DATA,ctxswitch,0,8,0.058659,0.237072
+[PE 0] flows=   16: direct 0.0600 us/switch (16.673 M/s), scheduler 0.2369 us/switch (4.222 M/s)
+DATA,ctxswitch,0,16,0.059977,0.236872
+[PE 0] flows=   32: direct 0.0608 us/switch (16.455 M/s), scheduler 0.2364 us/switch (4.229 M/s)
+DATA,ctxswitch,0,32,0.060773,0.236446
+[PE 0] flows=   64: direct 0.0620 us/switch (16.131 M/s), scheduler 0.2408 us/switch (4.153 M/s)
+DATA,ctxswitch,0,64,0.061992,0.240805
+[PE 0] flows=  128: direct 0.0618 us/switch (16.172 M/s), scheduler 0.2147 us/switch (4.658 M/s)
+DATA,ctxswitch,0,128,0.061834,0.214702
+[PE 0] flows=  256: direct 0.0529 us/switch (18.917 M/s), scheduler 0.1782 us/switch (5.613 M/s)
+DATA,ctxswitch,0,256,0.052862,0.178153
+[PE 0] flows=  512: direct 0.0468 us/switch (21.364 M/s), scheduler 0.1847 us/switch (5.415 M/s)
+DATA,ctxswitch,0,512,0.046807,0.184665
+[PE 0] flows= 1024: direct 0.0534 us/switch (18.730 M/s), scheduler 0.1929 us/switch (5.183 M/s)
+DATA,ctxswitch,0,1024,0.053391,0.192935
+[Partition 0][Node 0] End of program
+=== converse thread-impl default sched_rate ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 64064 dispatches in 0.011319 s -> 5.660 M/s, 0.1767 us each (create 0.204 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.011343 s -> 5.648 M/s, 0.1771 us each (create 0.114 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.011347 s -> 5.646 M/s, 0.1771 us each (create 0.115 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.011397 s -> 5.621 M/s, 0.1779 us each (create 0.117 us/thread)
+[PE 0] rep 4: 64064 dispatches in 0.011400 s -> 5.620 M/s, 0.1779 us each (create 0.111 us/thread)
+[PE 0] threads=64 yields=1000: best 0.1767 us/dispatch (5.660 M dispatches/s), mean 0.1773 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.176677,0.177339,5.660061
+[Partition 0][Node 0] End of program
+=== converse thread-impl context ctxswitch ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT context switch vs concurrency: flows 2..1024 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 1 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+[PE 0] flows=    2: direct 0.4854 us/switch (2.060 M/s), scheduler 0.8631 us/switch (1.159 M/s)
+DATA,ctxswitch,0,2,0.485433,0.863101
+[PE 0] flows=    4: direct 0.3880 us/switch (2.577 M/s), scheduler 0.8640 us/switch (1.157 M/s)
+DATA,ctxswitch,0,4,0.388001,0.863963
+[PE 0] flows=    8: direct 0.3889 us/switch (2.572 M/s), scheduler 0.8645 us/switch (1.157 M/s)
+DATA,ctxswitch,0,8,0.388857,0.864539
+[PE 0] flows=   16: direct 0.3889 us/switch (2.571 M/s), scheduler 0.8654 us/switch (1.156 M/s)
+DATA,ctxswitch,0,16,0.388932,0.865362
+[PE 0] flows=   32: direct 0.3971 us/switch (2.518 M/s), scheduler 0.8792 us/switch (1.137 M/s)
+DATA,ctxswitch,0,32,0.397071,0.879170
+[PE 0] flows=   64: direct 0.3974 us/switch (2.516 M/s), scheduler 0.8729 us/switch (1.146 M/s)
+DATA,ctxswitch,0,64,0.397443,0.872851
+[PE 0] flows=  128: direct 0.3974 us/switch (2.517 M/s), scheduler 0.8734 us/switch (1.145 M/s)
+DATA,ctxswitch,0,128,0.397361,0.873373
+[PE 0] flows=  256: direct 0.3971 us/switch (2.518 M/s), scheduler 0.8755 us/switch (1.142 M/s)
+DATA,ctxswitch,0,256,0.397089,0.875502
+[PE 0] flows=  512: direct 0.4079 us/switch (2.451 M/s), scheduler 0.8905 us/switch (1.123 M/s)
+DATA,ctxswitch,0,512,0.407921,0.890500
+[PE 0] flows= 1024: direct 0.4196 us/switch (2.383 M/s), scheduler 0.8997 us/switch (1.111 M/s)
+DATA,ctxswitch,0,1024,0.419571,0.899706
+[Partition 0][Node 0] End of program
+=== converse thread-impl context sched_rate ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 64064 dispatches in 0.056350 s -> 1.137 M/s, 0.8796 us each (create 0.664 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.056422 s -> 1.135 M/s, 0.8807 us each (create 2.477 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.056396 s -> 1.136 M/s, 0.8803 us each (create 0.632 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.056410 s -> 1.136 M/s, 0.8805 us each (create 0.508 us/thread)
+[PE 0] rep 4: 64064 dispatches in 0.056336 s -> 1.137 M/s, 0.8794 us each (create 1.711 us/thread)
+[PE 0] threads=64 yields=1000: best 0.8794 us/dispatch (1.137 M dispatches/s), mean 0.8801 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.879366,0.880101,1.137184
+[Partition 0][Node 0] End of program
+=== converse thread-impl pthreads ctxswitch ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT context switch vs concurrency: flows 2..1024 (doubling), 200000 switches x 5 reps per point, 65536 byte stacks, on 1 PEs
+Format: DATA,ctxswitch,{pe},{flows},{direct us/switch},{scheduler us/switch}
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-07-30T12:08:00.544] error: *** STEP 20612319.84 ON cn113 CANCELLED AT 2026-07-30T12:08:00 DUE to SIGNAL Killed ***
+srun: error: cn113: task 0: Killed

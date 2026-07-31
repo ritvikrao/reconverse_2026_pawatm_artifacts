@@ -1,0 +1,1410 @@
+=== ring cfg adaptive pes 4 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.002148,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.001944,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.001947,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.002136,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.001969,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.001931,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.002095,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.001984,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,0,2000,0.002019,0.2524,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.002190,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.002270,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.002179,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.002301,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.002176,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.002265,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.002192,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.002281,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,1,2000,0.002232,0.1395,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.002598,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.002361,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.002595,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.002371,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.002566,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.002376,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.002568,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.002364,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,2,2000,0.002475,0.1031,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.002712,slots=nodeq=53 threadq=9 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.003250,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.002712,slots=nodeq=47 threadq=15 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.003225,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.002706,slots=nodeq=43 threadq=19 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.003246,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.002711,slots=nodeq=44 threadq=18 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.003243,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,4,2000,0.002976,0.0744,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.003646,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.003630,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.003641,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.003626,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.003649,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.003635,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.003632,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.003611,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,8,2000,0.003634,0.0505,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.005846,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.005948,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.006013,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.006000,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.005908,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.005900,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.005888,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.005920,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,16,2000,0.005928,0.0436,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.010442,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.010454,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.010447,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.010542,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.010440,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.010504,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.010341,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.010582,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,32,2000,0.010469,0.0397,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.019934,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.019566,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.019355,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.019814,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.019822,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.019790,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.019788,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.019782,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,64,2000,0.019731,0.0379,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 4 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.002064,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.002066,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.002052,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.002058,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.002070,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.002063,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.002056,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.002067,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,0,2000,0.002062,0.2578,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.002266,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.002270,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.002230,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.002247,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.002239,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.002253,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.002239,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.002255,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,1,2000,0.002250,0.1406,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.002432,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.002418,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.002433,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.002440,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.002434,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.002419,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.002426,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.002423,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,2,2000,0.002428,0.1012,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.002816,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.002780,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.002757,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.002781,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.002787,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.002784,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.002755,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.002779,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,4,2000,0.002780,0.0695,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.003480,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.003470,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.003478,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.003491,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.003502,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.003510,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.003425,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.003471,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,8,2000,0.003478,0.0483,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.005864,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.005876,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.005860,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.005850,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.005897,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.005874,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.005863,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.005831,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,16,2000,0.005864,0.0431,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.010698,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.010770,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.010788,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.010677,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.010726,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.010706,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.010727,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.010683,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,32,2000,0.010722,0.0406,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.020435,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.020381,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.020537,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.020464,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.020489,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.020550,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.020503,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.020385,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,64,2000,0.020468,0.0394,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 4 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=4 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.002835,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.002597,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.002694,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.002628,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.002613,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.002598,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.002628,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.002711,slots=n/a
+DATA,ring,converse,4,-1,0,2000,0.002663,0.3329,n/a
+PHASE,converse,streams=1,phase=0,time=0.002978,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.002970,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.002834,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.002858,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.002806,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.002798,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.002873,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.003100,slots=n/a
+DATA,ring,converse,4,-1,1,2000,0.002902,0.1814,n/a
+PHASE,converse,streams=2,phase=0,time=0.003231,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.003072,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.003098,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.003102,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.003143,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.003055,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.003196,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.003176,slots=n/a
+DATA,ring,converse,4,-1,2,2000,0.003134,0.1306,n/a
+PHASE,converse,streams=4,phase=0,time=0.003775,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.003723,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.003646,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.003735,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.003763,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.003749,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.003700,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.003716,slots=n/a
+DATA,ring,converse,4,-1,4,2000,0.003726,0.0931,n/a
+PHASE,converse,streams=8,phase=0,time=0.004743,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.004835,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.004822,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.005024,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.004815,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.004845,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.004884,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.004746,slots=n/a
+DATA,ring,converse,4,-1,8,2000,0.004839,0.0672,n/a
+PHASE,converse,streams=16,phase=0,time=0.006951,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.006955,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.006960,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.006886,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.006928,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.006929,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.006926,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.006886,slots=n/a
+DATA,ring,converse,4,-1,16,2000,0.006928,0.0509,n/a
+PHASE,converse,streams=32,phase=0,time=0.011167,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.011238,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.011264,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.011256,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.011161,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.011126,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.011232,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.011209,slots=n/a
+DATA,ring,converse,4,-1,32,2000,0.011207,0.0424,n/a
+PHASE,converse,streams=64,phase=0,time=0.019889,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.019770,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.019875,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.019779,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.019802,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.019767,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.019681,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.019865,slots=n/a
+DATA,ring,converse,4,-1,64,2000,0.019803,0.0381,n/a
+[Partition 0][Node 0] End of program
+=== ring cfg adaptive pes 8 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.006420,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.006515,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.006489,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.006450,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.006486,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.006568,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.006408,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.006540,slots=nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,0,2000,0.006484,0.4053,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.006286,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.006601,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.006193,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.006665,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.006247,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.006606,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.006178,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.006577,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,1,2000,0.006419,0.2006,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.007312,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.006170,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.007709,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.006103,slots=nodeq=47 threadq=15 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.007262,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.006231,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.007570,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.006249,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,2,2000,0.006826,0.1422,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.006493,slots=nodeq=36 threadq=26 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.007853,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.006537,slots=nodeq=9 threadq=53 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.007806,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.006462,slots=nodeq=27 threadq=35 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.007860,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.006423,slots=nodeq=9 threadq=53 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.008049,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,4,2000,0.007185,0.0898,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.007662,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.007969,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.008027,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.007722,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.007540,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.007694,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.007863,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.007708,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,8,2000,0.007773,0.0540,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.011306,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.010803,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.011266,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.011359,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.011340,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.011305,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.011377,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.010912,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,16,2000,0.011209,0.0412,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.016129,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.016243,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.015951,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.015780,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.015348,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.015903,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.015889,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.016158,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,32,2000,0.015925,0.0302,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.026650,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.026623,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.026620,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.026614,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.026564,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.026528,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.026567,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.026664,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,64,2000,0.026604,0.0256,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 8 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.006168,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.006122,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.006082,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.006082,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.006035,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.006089,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.006071,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.006109,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,0,2000,0.006095,0.3809,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.006109,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.006148,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.006102,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.006094,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.006121,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.006140,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.006227,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.006139,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,1,2000,0.006135,0.1917,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.006165,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.006212,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.006167,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.006116,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.006128,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.006100,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.006088,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.006190,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,2,2000,0.006146,0.1280,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.006284,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.006202,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.006227,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.006224,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.006220,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.006207,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.006189,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.006293,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,4,2000,0.006231,0.0779,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.007029,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.007074,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.006952,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.007066,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.006991,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.007038,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.006999,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.007318,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,8,2000,0.007058,0.0490,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.011384,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.011355,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.011279,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.011160,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.011233,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.011765,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.011719,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.011253,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,16,2000,0.011393,0.0419,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.018079,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.018267,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.017761,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.017748,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.017756,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.017777,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.017730,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.018382,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,32,2000,0.017937,0.0340,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.030694,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.031313,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.030527,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.031364,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.031457,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.031403,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.031515,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.031623,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,64,2000,0.031237,0.0300,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 8 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=8 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.014573,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.014979,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.014486,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.014824,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.014443,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.014653,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.014566,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.014754,slots=n/a
+DATA,ring,converse,8,-1,0,2000,0.014660,0.9162,n/a
+PHASE,converse,streams=1,phase=0,time=0.015288,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.015347,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.015625,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.015569,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.015331,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.015182,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.015116,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.015371,slots=n/a
+DATA,ring,converse,8,-1,1,2000,0.015354,0.4798,n/a
+PHASE,converse,streams=2,phase=0,time=0.017098,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.017155,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.016470,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.016574,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.016173,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.016360,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.015857,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.015622,slots=n/a
+DATA,ring,converse,8,-1,2,2000,0.016414,0.3419,n/a
+PHASE,converse,streams=4,phase=0,time=0.017366,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.016998,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.017149,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.016673,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.016534,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.016713,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.016076,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.016022,slots=n/a
+DATA,ring,converse,8,-1,4,2000,0.016691,0.2086,n/a
+PHASE,converse,streams=8,phase=0,time=0.019266,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.019078,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.018542,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.018302,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.018142,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.018341,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.018340,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.018313,slots=n/a
+DATA,ring,converse,8,-1,8,2000,0.018541,0.1288,n/a
+PHASE,converse,streams=16,phase=0,time=0.024691,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.024698,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.024743,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.025973,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.023985,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.023772,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.024899,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.024585,slots=n/a
+DATA,ring,converse,8,-1,16,2000,0.024668,0.0907,n/a
+PHASE,converse,streams=32,phase=0,time=0.036574,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.037623,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.038656,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.037058,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.033405,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.032019,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.031293,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.032878,slots=n/a
+DATA,ring,converse,8,-1,32,2000,0.034938,0.0662,n/a
+PHASE,converse,streams=64,phase=0,time=0.066402,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.066534,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.066423,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.066524,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.066656,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.067038,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.066607,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.065067,slots=n/a
+DATA,ring,converse,8,-1,64,2000,0.066406,0.0639,n/a
+[Partition 0][Node 0] End of program
+=== ring cfg adaptive pes 4 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.001307,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.001254,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.001331,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.001261,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.001320,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.001262,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.001250,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.001301,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,0,2000,0.001286,0.1607,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.001400,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.001466,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.001411,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.001467,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.001416,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.001469,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.001403,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.001481,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,1,2000,0.001439,0.0899,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.001688,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.001532,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.001658,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.001523,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.001681,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.001518,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.001672,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.001525,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,2,2000,0.001600,0.0667,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.001751,slots=nodeq=32 threadq=30 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.002029,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.001747,slots=nodeq=39 threadq=23 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.002043,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.001763,slots=nodeq=38 threadq=24 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.002130,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.001758,slots=nodeq=36 threadq=26 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.002105,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,4,2000,0.001916,0.0479,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.002380,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.002438,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.002383,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.002419,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.002321,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.002409,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.002301,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.002422,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,8,2000,0.002384,0.0331,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.004027,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.003966,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.003997,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.003987,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.004012,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.004036,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.004026,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.003970,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,16,2000,0.004003,0.0294,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.007221,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.007214,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.007060,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.007121,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.007234,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.007191,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.007124,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.007108,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,32,2000,0.007159,0.0271,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.013196,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.013587,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.013521,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.013564,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.013264,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.013280,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.013447,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.013581,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,64,2000,0.013430,0.0258,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 4 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.001256,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.001325,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.001273,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.001259,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.001254,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.001259,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.001253,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.001250,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,0,2000,0.001266,0.1583,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.001365,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.001363,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.001366,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.001368,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.001373,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.001365,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.001375,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.001374,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,1,2000,0.001369,0.0855,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.001485,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.001478,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.001474,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.001487,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.001468,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.001487,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.001463,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.001474,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,2,2000,0.001477,0.0616,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.001702,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.001704,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.001712,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.001703,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.001700,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.001707,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.001714,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.001711,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,4,2000,0.001707,0.0427,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.002257,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.002276,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.002263,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.002279,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.002269,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.002203,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.002206,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.002210,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,8,2000,0.002245,0.0312,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.003968,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.003960,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.003962,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.003967,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.003957,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.003958,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.003947,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.003955,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,16,2000,0.003959,0.0291,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.007249,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.007189,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.007233,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.007264,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.007258,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.007228,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.007264,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.007244,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,32,2000,0.007241,0.0274,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.013838,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.013826,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.013807,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.013775,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.013898,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.013877,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.013833,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.013901,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,64,2000,0.013844,0.0266,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 4 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=4 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.002770,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.002620,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.002640,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.002695,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.002792,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.002731,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.002594,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.002714,slots=n/a
+DATA,ring,converse,4,-1,0,2000,0.002695,0.3368,n/a
+PHASE,converse,streams=1,phase=0,time=0.003031,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.003027,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.003145,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.002989,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.003045,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.003039,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.003051,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.003028,slots=n/a
+DATA,ring,converse,4,-1,1,2000,0.003044,0.1903,n/a
+PHASE,converse,streams=2,phase=0,time=0.003492,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.003205,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.003335,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.003356,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.003217,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.003258,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.003331,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.003353,slots=n/a
+DATA,ring,converse,4,-1,2,2000,0.003318,0.1383,n/a
+PHASE,converse,streams=4,phase=0,time=0.003790,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.003744,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.003708,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.003837,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.003839,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.003889,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.003873,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.003860,slots=n/a
+DATA,ring,converse,4,-1,4,2000,0.003817,0.0954,n/a
+PHASE,converse,streams=8,phase=0,time=0.004836,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.004888,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.004794,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.004862,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.004855,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.004839,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.004912,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.004784,slots=n/a
+DATA,ring,converse,4,-1,8,2000,0.004846,0.0673,n/a
+PHASE,converse,streams=16,phase=0,time=0.006766,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.006787,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.006756,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.006827,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.006952,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.006847,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.006793,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.006790,slots=n/a
+DATA,ring,converse,4,-1,16,2000,0.006815,0.0501,n/a
+PHASE,converse,streams=32,phase=0,time=0.010757,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.010824,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.010723,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.010748,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.010723,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.010674,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.010703,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.010550,slots=n/a
+DATA,ring,converse,4,-1,32,2000,0.010713,0.0406,n/a
+PHASE,converse,streams=64,phase=0,time=0.018066,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.017870,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.017884,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.017727,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.017537,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.017480,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.017362,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.017193,slots=n/a
+DATA,ring,converse,4,-1,64,2000,0.017640,0.0339,n/a
+[Partition 0][Node 0] End of program
+=== ring cfg adaptive pes 8 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.006867,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.006720,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.006591,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.006831,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.006779,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.006646,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.006852,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.006906,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,0,2000,0.006774,0.4234,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.006616,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.006730,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.006592,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.007196,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.006657,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.007161,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.006600,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.006856,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,1,2000,0.006801,0.2125,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.007184,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.006671,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.007631,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.006594,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.007671,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.006498,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.007174,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.006629,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,2,2000,0.007007,0.1460,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.006539,slots=nodeq=52 threadq=10 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.007817,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.006633,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.007543,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.006587,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.007645,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.006498,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.007474,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,4,2000,0.007092,0.0886,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.007191,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.007676,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.007213,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.007210,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.007653,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.007224,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.007682,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.007238,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,8,2000,0.007386,0.0513,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.009228,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.009236,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.009258,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.009157,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.009219,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.009160,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.009146,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.009107,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,16,2000,0.009189,0.0338,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.012995,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.012950,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.012923,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.012909,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.012817,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.012805,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.012746,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.012791,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,32,2000,0.012867,0.0244,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.020622,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.020282,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.020514,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.020494,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.020548,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.020484,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.020532,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.020999,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,64,2000,0.020559,0.0198,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 8 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.005382,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.005440,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.005467,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.005392,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.005389,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.005352,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.005360,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.005329,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,0,2000,0.005389,0.3368,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.005415,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.005363,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.005468,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.005338,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.005378,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.005415,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.005348,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.005413,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,1,2000,0.005392,0.1685,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.005426,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.005479,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.005481,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.005461,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.005374,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.005447,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.005434,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.005471,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,2,2000,0.005447,0.1135,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.005476,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.005543,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.005430,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.005495,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.005495,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.005546,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.005574,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.005416,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,4,2000,0.005497,0.0687,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.006877,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.006812,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.006809,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.006856,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.006773,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.006839,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.006810,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.006785,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,8,2000,0.006820,0.0474,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.009910,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.009389,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.008404,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.008304,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.008415,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.008344,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.008412,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.008396,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,16,2000,0.008697,0.0320,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.013557,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.013091,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.013019,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.013163,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.013203,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.013368,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.013120,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.012454,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,32,2000,0.013122,0.0249,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.025012,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.024950,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.025424,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.024930,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.024643,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.024840,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.024814,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.024972,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,64,2000,0.024948,0.0240,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 8 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=8 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.020672,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.021988,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.013672,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.015437,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.011168,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.011157,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.011245,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.011359,slots=n/a
+DATA,ring,converse,8,-1,0,2000,0.014587,0.9117,n/a
+PHASE,converse,streams=1,phase=0,time=0.011415,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.011308,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.011472,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.011524,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.011317,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.011569,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.011453,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.011272,slots=n/a
+DATA,ring,converse,8,-1,1,2000,0.011416,0.3568,n/a
+PHASE,converse,streams=2,phase=0,time=0.012180,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.011795,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.011772,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.011797,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.011855,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.011551,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.011978,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.011688,slots=n/a
+DATA,ring,converse,8,-1,2,2000,0.011827,0.2464,n/a
+PHASE,converse,streams=4,phase=0,time=0.011881,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.012087,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.012010,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.012179,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.011419,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.012422,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.012238,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.012544,slots=n/a
+DATA,ring,converse,8,-1,4,2000,0.012097,0.1512,n/a
+PHASE,converse,streams=8,phase=0,time=0.013182,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.012729,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.012839,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.012613,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.013342,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.013670,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.013633,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.013475,slots=n/a
+DATA,ring,converse,8,-1,8,2000,0.013185,0.0916,n/a
+PHASE,converse,streams=16,phase=0,time=0.017926,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.020151,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.018436,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.017000,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.018044,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.017844,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.015707,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.016835,slots=n/a
+DATA,ring,converse,8,-1,16,2000,0.017743,0.0652,n/a
+PHASE,converse,streams=32,phase=0,time=0.030814,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.031240,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.030765,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.030939,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.030502,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.030781,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.030882,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.030699,slots=n/a
+DATA,ring,converse,8,-1,32,2000,0.030828,0.0584,n/a
+PHASE,converse,streams=64,phase=0,time=0.060975,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.059584,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.059653,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.059948,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.059070,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.059531,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.059469,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.059372,slots=n/a
+DATA,ring,converse,8,-1,64,2000,0.059700,0.0574,n/a
+[Partition 0][Node 0] End of program
+=== ring cfg adaptive pes 4 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.001384,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.001587,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.001302,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.001373,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.001596,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.001615,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.001357,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.001644,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,0,2000,0.001482,0.1853,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.001762,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.002048,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.001987,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.002134,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.001787,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.001906,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.001845,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.001991,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,1,2000,0.001933,0.1208,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.002110,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.001971,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.002317,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.002143,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.002282,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.001684,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.002295,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.002012,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,2,2000,0.002102,0.0876,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.002478,slots=nodeq=52 threadq=10 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.002431,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.002303,slots=nodeq=56 threadq=6 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.002723,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.002236,slots=nodeq=47 threadq=15 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.002182,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.002271,slots=nodeq=47 threadq=15 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.002579,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,4,2000,0.002401,0.0600,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.003174,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.003254,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.003208,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.002976,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.003337,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.003168,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.003310,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.003287,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,8,2000,0.003214,0.0446,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.005081,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.004868,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.004703,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.005243,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.005331,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.005329,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.005091,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.005108,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,16,2000,0.005094,0.0375,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.009768,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.009838,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.009744,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.009994,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.010180,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.010362,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.010579,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.010520,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,32,2000,0.010123,0.0383,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.019601,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.019644,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.019652,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.019516,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.019016,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.018891,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.019170,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.019068,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,4,1,64,2000,0.019320,0.0372,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 4 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_ring: layer=reconverse pes=4 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.001768,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.001776,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.001733,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.001701,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.001706,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.001711,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.001695,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.001723,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,0,2000,0.001727,0.2158,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.001840,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.001825,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.001838,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.001831,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.001818,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.001834,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.001826,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.001803,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,1,2000,0.001827,0.1142,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.001984,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.001956,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.001978,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.001957,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.001957,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.001952,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.001964,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.001955,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,2,2000,0.001963,0.0818,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.002244,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.002218,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.002237,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.002237,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.002223,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.002242,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.002233,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.002223,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,4,2000,0.002232,0.0558,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.002965,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.003050,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.003053,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.002971,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.003063,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.003066,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.003062,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.002964,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,8,2000,0.003024,0.0420,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.005383,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.005367,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.005388,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.005388,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.005287,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.005388,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.005310,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.005394,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,16,2000,0.005363,0.0394,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.009903,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.009897,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.009943,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.009904,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.009924,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.009926,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.009978,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.009968,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,32,2000,0.009930,0.0376,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.019224,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.019110,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.019424,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.019130,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.019251,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.019088,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.019197,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.019135,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,4,0,64,2000,0.019195,0.0369,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 4 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=4 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.002754,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.002636,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.002747,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.002694,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.002754,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.002811,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.002844,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.002808,slots=n/a
+DATA,ring,converse,4,-1,0,2000,0.002756,0.3445,n/a
+PHASE,converse,streams=1,phase=0,time=0.003010,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.003147,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.003145,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.003242,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.003146,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.003058,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.003204,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.003173,slots=n/a
+DATA,ring,converse,4,-1,1,2000,0.003141,0.1963,n/a
+PHASE,converse,streams=2,phase=0,time=0.003458,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.003491,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.003521,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.003447,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.003530,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.003486,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.003554,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.003477,slots=n/a
+DATA,ring,converse,4,-1,2,2000,0.003495,0.1456,n/a
+PHASE,converse,streams=4,phase=0,time=0.004162,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.003969,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.004214,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.004023,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.003860,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.004009,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.003868,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.003945,slots=n/a
+DATA,ring,converse,4,-1,4,2000,0.004006,0.1002,n/a
+PHASE,converse,streams=8,phase=0,time=0.005254,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.005248,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.005207,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.005188,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.005164,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.005116,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.005209,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.005162,slots=n/a
+DATA,ring,converse,4,-1,8,2000,0.005194,0.0721,n/a
+PHASE,converse,streams=16,phase=0,time=0.007439,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.007476,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.007473,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.007351,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.007418,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.007380,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.007330,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.007189,slots=n/a
+DATA,ring,converse,4,-1,16,2000,0.007382,0.0543,n/a
+PHASE,converse,streams=32,phase=0,time=0.011859,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.011865,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.011807,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.011818,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.011762,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.011686,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.011758,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.011903,slots=n/a
+DATA,ring,converse,4,-1,32,2000,0.011807,0.0447,n/a
+PHASE,converse,streams=64,phase=0,time=0.020681,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.020644,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.020697,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.020610,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.020516,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.020627,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.020683,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.020853,slots=n/a
+DATA,ring,converse,4,-1,64,2000,0.020664,0.0397,n/a
+[Partition 0][Node 0] End of program
+=== ring cfg adaptive pes 8 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.006385,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=1,time=0.006432,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=2,time=0.006613,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=3,time=0.006640,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=4,time=0.006620,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=5,time=0.006774,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=6,time=0.006693,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=0,phase=7,time=0.006653,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,0,2000,0.006601,0.4126,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=0,time=0.006340,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=1,time=0.007194,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=2,time=0.006477,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=3,time=0.007171,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=4,time=0.006373,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=5,time=0.006763,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=6,time=0.006419,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=1,phase=7,time=0.007141,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,1,2000,0.006735,0.2105,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=0,time=0.007751,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=1,time=0.006338,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=2,time=0.007426,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=3,time=0.006459,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=4,time=0.007140,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=5,time=0.006530,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=6,time=0.007965,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=2,phase=7,time=0.006487,slots=nodeq=61 threadq=1 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,2,2000,0.007012,0.1461,nodeq=61 threadq=1 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=0,time=0.006490,slots=nodeq=9 threadq=53 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=1,time=0.007949,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=2,time=0.006446,slots=nodeq=27 threadq=35 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=3,time=0.008762,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=4,time=0.006578,slots=nodeq=9 threadq=53 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=5,time=0.007636,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=6,time=0.006582,slots=nodeq=13 threadq=49 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=4,phase=7,time=0.009003,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,4,2000,0.007431,0.0929,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=0,time=0.007777,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=1,time=0.007969,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=2,time=0.007975,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=3,time=0.008385,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=4,time=0.008083,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=5,time=0.008386,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=6,time=0.008048,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=8,phase=7,time=0.008333,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,8,2000,0.008119,0.0564,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=0,time=0.011352,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=1,time=0.011265,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=2,time=0.011373,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=3,time=0.011276,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=4,time=0.011289,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=5,time=0.011328,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=6,time=0.011788,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=16,phase=7,time=0.011417,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,16,2000,0.011386,0.0419,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=0,time=0.017816,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=1,time=0.017780,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=2,time=0.018007,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=3,time=0.017907,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=4,time=0.017541,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=5,time=0.017652,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=6,time=0.017573,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=32,phase=7,time=0.017523,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,32,2000,0.017725,0.0336,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=0,time=0.028602,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=1,time=0.028330,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=2,time=0.028654,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=3,time=0.028630,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=4,time=0.028506,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=5,time=0.028484,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=6,time=0.028667,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+PHASE,reconverse,streams=64,phase=7,time=0.028704,slots=nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,ring,reconverse,8,1,64,2000,0.028572,0.0275,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== ring cfg static pes 8 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_ring: layer=reconverse pes=8 adaptive=0 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,reconverse,streams=0,phase=0,time=0.006216,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=1,time=0.006110,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=2,time=0.006092,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=3,time=0.006085,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=4,time=0.006097,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=5,time=0.006118,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=6,time=0.006140,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=0,phase=7,time=0.006196,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,0,2000,0.006132,0.3832,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=0,time=0.006123,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=1,time=0.006128,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=2,time=0.006107,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=3,time=0.006158,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=4,time=0.006077,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=5,time=0.006131,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=6,time=0.006083,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=1,phase=7,time=0.006157,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,1,2000,0.006120,0.1913,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=0,time=0.006186,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=1,time=0.006113,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=2,time=0.006239,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=3,time=0.006215,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=4,time=0.006210,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=5,time=0.006190,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=6,time=0.006207,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=2,phase=7,time=0.006175,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,2,2000,0.006192,0.1290,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=0,time=0.006345,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=1,time=0.006339,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=2,time=0.006350,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=3,time=0.006260,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=4,time=0.006335,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=5,time=0.006311,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=6,time=0.006298,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=4,phase=7,time=0.006289,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,4,2000,0.006316,0.0789,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=0,time=0.007632,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=1,time=0.007228,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=2,time=0.007269,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=3,time=0.007569,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=4,time=0.007463,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=5,time=0.007578,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=6,time=0.007615,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=8,phase=7,time=0.008093,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,8,2000,0.007556,0.0525,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=0,time=0.011478,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=1,time=0.010779,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=2,time=0.011575,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=3,time=0.010774,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=4,time=0.010684,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=5,time=0.011825,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=6,time=0.011303,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=16,phase=7,time=0.011088,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,16,2000,0.011188,0.0411,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=0,time=0.017367,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=1,time=0.017469,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=2,time=0.017396,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=3,time=0.017667,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=4,time=0.018425,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=5,time=0.018728,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=6,time=0.018733,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=32,phase=7,time=0.019288,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,32,2000,0.018134,0.0343,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=0,time=0.032354,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=1,time=0.032521,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=2,time=0.031816,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=3,time=0.031876,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=4,time=0.031901,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=5,time=0.031943,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=6,time=0.031654,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+PHASE,reconverse,streams=64,phase=7,time=0.031125,slots=nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,ring,reconverse,8,0,64,2000,0.031899,0.0307,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== ring cfg converse pes 8 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_ring: layer=converse pes=8 adaptive=-1 m=2000 phases=8 warmup=3
+Format: DATA,ring,{layer},{pes},{adaptive},{streams},{m},{mean phase s},{us per message},{slots}
+PHASE,converse,streams=0,phase=0,time=0.014405,slots=n/a
+PHASE,converse,streams=0,phase=1,time=0.014948,slots=n/a
+PHASE,converse,streams=0,phase=2,time=0.014302,slots=n/a
+PHASE,converse,streams=0,phase=3,time=0.014832,slots=n/a
+PHASE,converse,streams=0,phase=4,time=0.014179,slots=n/a
+PHASE,converse,streams=0,phase=5,time=0.014613,slots=n/a
+PHASE,converse,streams=0,phase=6,time=0.014372,slots=n/a
+PHASE,converse,streams=0,phase=7,time=0.013923,slots=n/a
+DATA,ring,converse,8,-1,0,2000,0.014447,0.9029,n/a
+PHASE,converse,streams=1,phase=0,time=0.014443,slots=n/a
+PHASE,converse,streams=1,phase=1,time=0.013337,slots=n/a
+PHASE,converse,streams=1,phase=2,time=0.013889,slots=n/a
+PHASE,converse,streams=1,phase=3,time=0.014074,slots=n/a
+PHASE,converse,streams=1,phase=4,time=0.014463,slots=n/a
+PHASE,converse,streams=1,phase=5,time=0.014129,slots=n/a
+PHASE,converse,streams=1,phase=6,time=0.014128,slots=n/a
+PHASE,converse,streams=1,phase=7,time=0.013598,slots=n/a
+DATA,ring,converse,8,-1,1,2000,0.014008,0.4377,n/a
+PHASE,converse,streams=2,phase=0,time=0.013637,slots=n/a
+PHASE,converse,streams=2,phase=1,time=0.013546,slots=n/a
+PHASE,converse,streams=2,phase=2,time=0.013235,slots=n/a
+PHASE,converse,streams=2,phase=3,time=0.013252,slots=n/a
+PHASE,converse,streams=2,phase=4,time=0.013143,slots=n/a
+PHASE,converse,streams=2,phase=5,time=0.013264,slots=n/a
+PHASE,converse,streams=2,phase=6,time=0.012963,slots=n/a
+PHASE,converse,streams=2,phase=7,time=0.013195,slots=n/a
+DATA,ring,converse,8,-1,2,2000,0.013279,0.2767,n/a
+PHASE,converse,streams=4,phase=0,time=0.012851,slots=n/a
+PHASE,converse,streams=4,phase=1,time=0.012868,slots=n/a
+PHASE,converse,streams=4,phase=2,time=0.013090,slots=n/a
+PHASE,converse,streams=4,phase=3,time=0.012769,slots=n/a
+PHASE,converse,streams=4,phase=4,time=0.012813,slots=n/a
+PHASE,converse,streams=4,phase=5,time=0.012972,slots=n/a
+PHASE,converse,streams=4,phase=6,time=0.013092,slots=n/a
+PHASE,converse,streams=4,phase=7,time=0.013392,slots=n/a
+DATA,ring,converse,8,-1,4,2000,0.012981,0.1623,n/a
+PHASE,converse,streams=8,phase=0,time=0.015690,slots=n/a
+PHASE,converse,streams=8,phase=1,time=0.015559,slots=n/a
+PHASE,converse,streams=8,phase=2,time=0.015011,slots=n/a
+PHASE,converse,streams=8,phase=3,time=0.014770,slots=n/a
+PHASE,converse,streams=8,phase=4,time=0.014726,slots=n/a
+PHASE,converse,streams=8,phase=5,time=0.014953,slots=n/a
+PHASE,converse,streams=8,phase=6,time=0.014567,slots=n/a
+PHASE,converse,streams=8,phase=7,time=0.014436,slots=n/a
+DATA,ring,converse,8,-1,8,2000,0.014964,0.1039,n/a
+PHASE,converse,streams=16,phase=0,time=0.016291,slots=n/a
+PHASE,converse,streams=16,phase=1,time=0.017329,slots=n/a
+PHASE,converse,streams=16,phase=2,time=0.016327,slots=n/a
+PHASE,converse,streams=16,phase=3,time=0.016980,slots=n/a
+PHASE,converse,streams=16,phase=4,time=0.016581,slots=n/a
+PHASE,converse,streams=16,phase=5,time=0.016682,slots=n/a
+PHASE,converse,streams=16,phase=6,time=0.015512,slots=n/a
+PHASE,converse,streams=16,phase=7,time=0.016151,slots=n/a
+DATA,ring,converse,8,-1,16,2000,0.016481,0.0606,n/a
+PHASE,converse,streams=32,phase=0,time=0.031325,slots=n/a
+PHASE,converse,streams=32,phase=1,time=0.031670,slots=n/a
+PHASE,converse,streams=32,phase=2,time=0.031677,slots=n/a
+PHASE,converse,streams=32,phase=3,time=0.031557,slots=n/a
+PHASE,converse,streams=32,phase=4,time=0.031037,slots=n/a
+PHASE,converse,streams=32,phase=5,time=0.031701,slots=n/a
+PHASE,converse,streams=32,phase=6,time=0.031845,slots=n/a
+PHASE,converse,streams=32,phase=7,time=0.031268,slots=n/a
+DATA,ring,converse,8,-1,32,2000,0.031510,0.0597,n/a
+PHASE,converse,streams=64,phase=0,time=0.060194,slots=n/a
+PHASE,converse,streams=64,phase=1,time=0.059995,slots=n/a
+PHASE,converse,streams=64,phase=2,time=0.061136,slots=n/a
+PHASE,converse,streams=64,phase=3,time=0.060842,slots=n/a
+PHASE,converse,streams=64,phase=4,time=0.060234,slots=n/a
+PHASE,converse,streams=64,phase=5,time=0.059863,slots=n/a
+PHASE,converse,streams=64,phase=6,time=0.061110,slots=n/a
+PHASE,converse,streams=64,phase=7,time=0.059445,slots=n/a
+DATA,ring,converse,8,-1,64,2000,0.060352,0.0580,n/a
+[Partition 0][Node 0] End of program

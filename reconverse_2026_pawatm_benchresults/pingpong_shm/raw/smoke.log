@@ -1,0 +1,146 @@
+=== smoke converse ===
++ local ver=converse bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 50 16 1024 2
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 1 hosts (2 sockets x 2 cores x 1 PUs = 4-way SMP)
+Charm++> cpu topology info is gathered in 0.002 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=3.794540 microseconds one-way
+Size=32 bytes, time=2.214060 microseconds one-way
+Size=64 bytes, time=2.039240 microseconds one-way
+Size=128 bytes, time=1.976220 microseconds one-way
+Size=256 bytes, time=2.665420 microseconds one-way
+Size=512 bytes, time=2.287010 microseconds one-way
+Size=1024 bytes, time=2.992230 microseconds one-way
+[Partition 0][Node 0] End of program
+=== smoke recon_normal ===
++ local ver=recon_normal bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=4.031658 microseconds one-way
+Size=32 bytes, time=4.324913 microseconds one-way
+Size=64 bytes, time=3.461838 microseconds one-way
+Size=128 bytes, time=4.832745 microseconds one-way
+Size=256 bytes, time=4.920959 microseconds one-way
+Size=512 bytes, time=5.002022 microseconds one-way
+Size=1024 bytes, time=4.496574 microseconds one-way
+=== smoke recon_normal_shm ===
++ local ver=recon_normal_shm bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_shm/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=1.437664 microseconds one-way
+Size=32 bytes, time=1.444817 microseconds one-way
+Size=64 bytes, time=4.663467 microseconds one-way
+Size=128 bytes, time=4.026890 microseconds one-way
+Size=256 bytes, time=4.568100 microseconds one-way
+Size=512 bytes, time=4.754066 microseconds one-way
+Size=1024 bytes, time=5.073547 microseconds one-way
+=== smoke recon_rdma ===
++ local ver=recon_rdma bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=11.403561 microseconds one-way
+Size=32 bytes, time=11.348724 microseconds one-way
+Size=64 bytes, time=10.476112 microseconds one-way
+Size=128 bytes, time=11.389256 microseconds one-way
+Size=256 bytes, time=10.986328 microseconds one-way
+Size=512 bytes, time=10.924339 microseconds one-way
+Size=1024 bytes, time=10.218620 microseconds one-way
+=== smoke recon_rdma_shm ===
++ local ver=recon_rdma_shm bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_shm/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=5.536079 microseconds one-way
+Size=32 bytes, time=5.741119 microseconds one-way
+Size=64 bytes, time=5.698204 microseconds one-way
+Size=128 bytes, time=6.556511 microseconds one-way
+Size=256 bytes, time=5.390644 microseconds one-way
+Size=512 bytes, time=5.400181 microseconds one-way
+Size=1024 bytes, time=5.545616 microseconds one-way
+=== smoke recon_persist ===
++ local ver=recon_persist bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ timeout 300 env srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=8.747578 microseconds one-way
+Size=32 bytes, time=8.211136 microseconds one-way
+Size=64 bytes, time=10.581017 microseconds one-way
+Size=128 bytes, time=9.202957 microseconds one-way
+Size=256 bytes, time=10.397434 microseconds one-way
+Size=512 bytes, time=9.701252 microseconds one-way
+Size=1024 bytes, time=10.428429 microseconds one-way
+=== smoke recon_normal_shm8k ===
++ local ver=recon_normal_shm8k bin flags
++ local 'a=50 16 1024 2'
++ local pre=
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_shm/tests/orig-converse/pingpong/reconverse_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ pre=LCI_ATTR_SHM_SLOT_SIZE=8192
++ timeout 300 env LCI_ATTR_SHM_SLOT_SIZE=8192 srun --mpi=cray_shasta -N 1 -n 2 --ntasks-per-node=2 --cpus-per-task=2 --cpu-bind=cores /u/rao1/reconverse_main/build_shm/tests/orig-converse/pingpong/reconverse_pingpong +ppn 1 +lci_ndevices 1 50 16 1024 2
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=1.380444 microseconds one-way
+Size=32 bytes, time=1.323223 microseconds one-way
+Size=64 bytes, time=4.484653 microseconds one-way
+Size=128 bytes, time=3.898144 microseconds one-way
+Size=256 bytes, time=4.570484 microseconds one-way
+Size=512 bytes, time=4.546642 microseconds one-way
+Size=1024 bytes, time=4.549026 microseconds one-way

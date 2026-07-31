@@ -1,0 +1,160 @@
+=== place 2node version recon_rdma rep 1 ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 262144 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 1000 16 262144 2
+cpu-bind=MASK - cn111, task  1  0 [127897]: mask 0x3 set
+cpu-bind=MASK - cn110, task  0  0 [3043191]: mask 0x3 set
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 262144, increase factor = 2
+Size=16 bytes, time=10.111570 microseconds one-way
+Size=32 bytes, time=10.018587 microseconds one-way
+Size=64 bytes, time=9.914756 microseconds one-way
+Size=128 bytes, time=9.952903 microseconds one-way
+Size=256 bytes, time=10.097742 microseconds one-way
+Size=512 bytes, time=10.077834 microseconds one-way
+Size=1024 bytes, time=10.153532 microseconds one-way
+Size=2048 bytes, time=10.366440 microseconds one-way
+Size=4096 bytes, time=10.820031 microseconds one-way
+Size=8192 bytes, time=10.759592 microseconds one-way
+Size=16384 bytes, time=11.256576 microseconds one-way
+Size=32768 bytes, time=12.659669 microseconds one-way
+Size=65536 bytes, time=15.432000 microseconds one-way
+Size=131072 bytes, time=20.233989 microseconds one-way
+Size=262144 bytes, time=30.408978 microseconds one-way
+=== place 2node version recon_rdma rep 2 ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 262144 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 1000 16 262144 2
+cpu-bind=MASK - cn111, task  1  0 [128015]: mask 0x3 set
+cpu-bind=MASK - cn110, task  0  0 [3043397]: mask 0x3 set
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 262144, increase factor = 2
+Size=16 bytes, time=10.070324 microseconds one-way
+Size=32 bytes, time=10.046005 microseconds one-way
+Size=64 bytes, time=9.928823 microseconds one-way
+Size=128 bytes, time=10.135889 microseconds one-way
+Size=256 bytes, time=9.917498 microseconds one-way
+Size=512 bytes, time=10.087013 microseconds one-way
+Size=1024 bytes, time=10.804892 microseconds one-way
+Size=2048 bytes, time=10.348916 microseconds one-way
+Size=4096 bytes, time=10.356903 microseconds one-way
+Size=8192 bytes, time=10.852575 microseconds one-way
+Size=16384 bytes, time=11.261463 microseconds one-way
+Size=32768 bytes, time=12.706757 microseconds one-way
+Size=65536 bytes, time=15.229464 microseconds one-way
+Size=131072 bytes, time=20.095944 microseconds one-way
+Size=262144 bytes, time=30.409694 microseconds one-way
+=== place 2node version recon_rdma rep 3 ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 262144 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 1000 16 262144 2
+cpu-bind=MASK - cn110, task  0  0 [3043626]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [128141]: mask 0x3 set
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 262144, increase factor = 2
+Size=16 bytes, time=10.084152 microseconds one-way
+Size=32 bytes, time=10.073185 microseconds one-way
+Size=64 bytes, time=10.177851 microseconds one-way
+Size=128 bytes, time=10.061860 microseconds one-way
+Size=256 bytes, time=9.951353 microseconds one-way
+Size=512 bytes, time=10.119319 microseconds one-way
+Size=1024 bytes, time=10.170221 microseconds one-way
+Size=2048 bytes, time=10.067821 microseconds one-way
+Size=4096 bytes, time=10.239244 microseconds one-way
+Size=8192 bytes, time=10.693908 microseconds one-way
+Size=16384 bytes, time=11.278152 microseconds one-way
+Size=32768 bytes, time=12.624860 microseconds one-way
+Size=65536 bytes, time=15.202165 microseconds one-way
+Size=131072 bytes, time=20.205259 microseconds one-way
+Size=262144 bytes, time=30.255079 microseconds one-way
+=== place 2node version recon_rdma rep 4 ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 262144 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 1000 16 262144 2
+cpu-bind=MASK - cn111, task  1  0 [128371]: mask 0x3 set
+cpu-bind=MASK - cn110, task  0  0 [3043981]: mask 0x3 set
+exitBenchmarkHandler called on PE 1
+exitBenchmarkHandler called on PE 0
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 262144, increase factor = 2
+Size=16 bytes, time=10.041952 microseconds one-way
+Size=32 bytes, time=10.080457 microseconds one-way
+Size=64 bytes, time=10.011911 microseconds one-way
+Size=128 bytes, time=10.037065 microseconds one-way
+Size=256 bytes, time=9.993911 microseconds one-way
+Size=512 bytes, time=10.149956 microseconds one-way
+Size=1024 bytes, time=10.663390 microseconds one-way
+Size=2048 bytes, time=10.566235 microseconds one-way
+Size=4096 bytes, time=10.435224 microseconds one-way
+Size=8192 bytes, time=10.819554 microseconds one-way
+Size=16384 bytes, time=11.436820 microseconds one-way
+Size=32768 bytes, time=12.826204 microseconds one-way
+Size=65536 bytes, time=15.397429 microseconds one-way
+Size=131072 bytes, time=20.353556 microseconds one-way
+Size=262144 bytes, time=30.422807 microseconds one-way
+=== place 2node version recon_rdma rep 5 ===
++ local place=2node ver=recon_rdma topo
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 262144 2'
++ timeout 300 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_main/build_release/tests/rdma_pingpong/reconverse_rdma_pingpong +ppn 1 +lci_ndevices 1 1000 16 262144 2
+cpu-bind=MASK - cn110, task  0  0 [3044194]: mask 0x3 set
+cpu-bind=MASK - cn111, task  1  0 [128484]: mask 0x3 set
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 262144, increase factor = 2
+Size=16 bytes, time=9.916425 microseconds one-way
+Size=32 bytes, time=9.866714 microseconds one-way
+Size=64 bytes, time=9.778380 microseconds one-way
+Size=128 bytes, time=9.804010 microseconds one-way
+Size=256 bytes, time=9.756207 microseconds one-way
+Size=512 bytes, time=9.861231 microseconds one-way
+Size=1024 bytes, time=9.996414 microseconds one-way
+Size=2048 bytes, time=10.147452 microseconds one-way
+Size=4096 bytes, time=10.266185 microseconds one-way
+Size=8192 bytes, time=10.764837 microseconds one-way
+Size=16384 bytes, time=11.332989 microseconds one-way
+Size=32768 bytes, time=12.750506 microseconds one-way
+Size=65536 bytes, time=15.198350 microseconds one-way
+Size=131072 bytes, time=20.341635 microseconds one-way
+Size=262144 bytes, time=30.540228 microseconds one-way

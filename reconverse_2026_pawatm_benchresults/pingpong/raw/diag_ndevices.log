@@ -1,0 +1,77 @@
+=== rdma_pingpong nd='default' 1node ===
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=10.616779 microseconds one-way
+Size=32 bytes, time=11.003017 microseconds one-way
+Size=64 bytes, time=10.325909 microseconds one-way
+Size=128 bytes, time=11.365414 microseconds one-way
+Size=256 bytes, time=10.881424 microseconds one-way
+Size=512 bytes, time=11.630058 microseconds one-way
+Size=1024 bytes, time=10.571480 microseconds one-way
+  rc=0
+=== rdma_pingpong nd='default' 2node ===
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=10.280609 microseconds one-way
+Size=32 bytes, time=11.150837 microseconds one-way
+Size=64 bytes, time=10.209084 microseconds one-way
+Size=128 bytes, time=10.628700 microseconds one-way
+Size=256 bytes, time=11.000633 microseconds one-way
+Size=512 bytes, time=9.956360 microseconds one-way
+Size=1024 bytes, time=10.309219 microseconds one-way
+  rc=0
+=== rdma_pingpong nd='+lci_ndevices 1' 1node ===
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=11.801720 microseconds one-way
+Size=32 bytes, time=10.945797 microseconds one-way
+Size=64 bytes, time=10.507107 microseconds one-way
+Size=128 bytes, time=10.972023 microseconds one-way
+Size=256 bytes, time=12.927055 microseconds one-way
+Size=512 bytes, time=11.725426 microseconds one-way
+Size=1024 bytes, time=10.063648 microseconds one-way
+  rc=0
+=== rdma_pingpong nd='+lci_ndevices 1' 2node ===
+exitBenchmarkHandler called on PE 0
+exitBenchmarkHandler called on PE 1
+Charm++> Running in SMP mode on 2 nodes and 2 PEs
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 50, minMsgSize = 16, maxMsgSize = 1024, increase factor = 2
+Size=16 bytes, time=12.283325 microseconds one-way
+Size=32 bytes, time=11.978149 microseconds one-way
+Size=64 bytes, time=10.821819 microseconds one-way
+Size=128 bytes, time=11.096001 microseconds one-way
+Size=256 bytes, time=11.081696 microseconds one-way
+Size=512 bytes, time=11.191368 microseconds one-way
+Size=1024 bytes, time=10.888577 microseconds one-way
+  rc=0
+=== rdma_pingpong nd='+lci_ndevices 2' 1node ===
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  0:3041535:0:/u/rao1/reconverse_main/build_release/_deps/lci-src/src/./network/ofi/backend_ofi_inline.hpp:post_get_impl:388<lci:Assert failed: false> err : Invalid argument (/u/rao1/reconverse_main/build_release/_deps/lci-src/src/./network/ofi/backend_ofi_inline.hpp:388)
+
+srun: error: cn110: task 0: Aborted
+srun: forcing job termination
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-07-31T12:53:48.748] error: *** STEP 20661001.4 ON cn110 CANCELLED AT 2026-07-31T12:53:48 DUE to SIGNAL Killed ***
+srun: error: cn110: task 1: Killed
+  rc=124
+=== rdma_pingpong nd='+lci_ndevices 2' 2node ===
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  0:3041938:0:/u/rao1/reconverse_main/build_release/_deps/lci-src/src/./network/ofi/backend_ofi_inline.hpp:post_get_impl:388<lci:Assert failed: false> err : Key was rejected by service (/u/rao1/reconverse_main/build_release/_deps/lci-src/src/./network/ofi/backend_ofi_inline.hpp:388)
+
+srun: error: cn110: task 0: Aborted
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

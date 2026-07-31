@@ -1,0 +1,259 @@
+Adaptive queue polling: does re-apportioning the polling table help?
+==============================================================================
+
+Machine : NCSA Delta CPU node, 2x AMD EPYC 7763, 1 node, 1 process
+Layers  : Reconverse (register-queues branch, with the adaptation added)
+          vs the original Converse inside Charm++, which has a fixed
+          scheduler and is the baseline.  Same benchmark sources build
+          against both.
+Runs    : all PEs in one process; progress polling left unregistered
+          (+no_progress_polling) since a single process has no network
+          traffic for it to progress.
+Stat    : absolute columns are the median over repetitions.  The
+          comparison columns are PAIRED -- the median of the per-
+          repetition ratio -- because this node drifts between clock
+          states and a whole repetition can be 40% slower than the next
+          for every configuration alike.  The four configurations are
+          launched back to back within a repetition, so the within-
+          repetition ratio is drift-free.  (range) is min..max of those
+          per-repetition ratios: where it straddles zero, the effect is
+          smaller than the run-to-run noise and should not be read as a
+          result.
+
+How the adaptation works
+------------------------------------------------------------------------------
+The scheduler walks a 64-slot table; each slot holds a queue-polling
+function, so the number of slots a queue holds is how often it is
+polled.  Each PE counts the messages it pulls per queue.  Every 10 trips
+around the table (640 scheduler iterations) those counters are
+re-apportioned into slot counts by largest-remainder, and each queue's
+slots are spread as evenly over the table as they fit.  Every registered
+queue keeps at least one slot, so a queue that goes quiet can still be
+found again when its traffic returns.
+
+Registered frequencies at startup are nodeq=1, threadq=16, nodeprio=1,
+threadprio=16 -- i.e. out of the box the per-PE thread queue is polled
+16x more often than the shared node queue.
+
+Queue mapping used by both benchmarks:
+  shared / remote  CmiSyncNodeSendAndFree -> node queue, drained by every
+                   PE on the node        (polled by pollConverseNodeQueue)
+  local            CmiSyncSendAndFree(self) -> this PE's thread queue
+                                        (polled by pollConverseThreadQueue)
+A plain inter-PE send inside one process lands in the destination PE's
+thread queue -- the same registered queue as a self-send -- so the table
+would have nothing to distinguish.  The remote leg has to go through the
+node queue to be a separate queue at all.
+
+==============================================================================
+Benchmark 1: parallel ring + local self-send streams
+==============================================================================
+Every PE injects one ring token into the shared queue (so the shared
+queue is essentially never empty) and `streams` tokens into its own
+local queue; each token is handled m times.  Sweeping `streams`
+moves the traffic mix from all-shared to overwhelmingly-local.
+
+------------------------------------------------------------------------------
+4 PEs -- time per message (us, lower is better)
+------------------------------------------------------------------------------
+streams       count     hitrate      static    Converse
+      0      0.1869      0.1948      0.2230      0.3609
+      1      0.1005      0.0951      0.1196      0.2021
+      2      0.0776      0.0742      0.0850      0.1432
+      4      0.0612      0.0585      0.0582      0.1013
+      8      0.0492      0.0472      0.0432      0.0710
+     16      0.0415      0.0408      0.0409      0.0544
+     32      0.0389      0.0371      0.0386      0.0451
+     64      0.0366      0.0352      0.0375      0.0398
+
+  paired comparisons (median of per-repetition ratios, and their min..max):
+  streams  cnt v stat (range)      cnt v Conv (range)      stat v Conv (range)     
+        0  +15.2%    [-13..+32]   +49.0%    [+32..+63]   +42.4%    [+27..+46]  
+        1  +17.9%    [-8..+36]    +50.9%    [+37..+66]   +42.4%    [+24..+47]  
+        2  +11.2%    [-14..+32]   +47.6%    [+32..+61]   +41.4%    [+25..+47]  
+        4  +1.3%     [-25..+24]   +44.5%    [+27..+56]   +42.5%    [+26..+48]  
+        8  -10.3%    [-35..+15]   +35.4%    [+20..+51]   +40.6%    [+27..+50]  
+       16  +3.2%     [-16..+23]   +28.4%    [+14..+44]   +26.1%    [+15..+39]  
+       32  +3.1%     [-9..+30]    +17.1%    [+5..+38]    +15.0%    [+6..+30]   
+       64  +7.6%     [-4..+33]    +12.3%    [+4..+35]    +6.8%     [-17..+19]  
+
+  hitrate rule: streams=0 +14.0% [+4..+25], streams=1 +24.3% [+15..+37], streams=2 +17.9% [+8..+30], streams=4 +6.2% [-4..+18], streams=8 -6.6% [-13..+4], streams=16 +3.3% [-3..+9], streams=32 +7.6% [-7..+11], streams=64 +6.7% [-3..+24]
+
+  Polling table the adaptive runs settled on (slots out of 64):
+    streams=0    nodeq=61 threadq=1 nodeprio=1 threadprio=1
+    streams=1    nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    streams=2    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=4    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=8    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=16   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=32   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=64   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    static       nodeq=3 threadq=29 nodeprio=3 threadprio=29
+
+------------------------------------------------------------------------------
+8 PEs -- time per message (us, lower is better)
+------------------------------------------------------------------------------
+streams       count     hitrate      static    Converse
+      0      0.3924      0.3902      0.3664      0.8336
+      1      0.1955      0.1924      0.1819      0.3863
+      2      0.1409      0.1392      0.1209      0.2620
+      4      0.0924      0.0956      0.0725      0.1660
+      8      0.0600      0.0625      0.0489      0.1005
+     16      0.0418      0.0454      0.0366      0.0666
+     32      0.0313      0.0340      0.0307      0.0588
+     64      0.0242      0.0273      0.0252      0.0586
+
+  paired comparisons (median of per-repetition ratios, and their min..max):
+  streams  cnt v stat (range)      cnt v Conv (range)      stat v Conv (range)     
+        0  -5.9%     [-15..+3]    +52.3%    [+46..+57]   +54.1%    [+50..+61]  
+        1  -7.4%     [-16..+5]    +49.8%    [+46..+58]   +53.1%    [+50..+60]  
+        2  -17.0%    [-24..-6]    +47.4%    [+37..+56]   +54.6%    [+44..+62]  
+        4  -31.0%    [-39..-16]   +44.1%    [+19..+52]   +57.8%    [+36..+64]  
+        8  -21.7%    [-36..-13]   +41.9%    [+10..+48]   +53.3%    [+26..+60]  
+       16  -12.1%    [-27..+1]    +32.1%    [+26..+50]   +45.4%    [+26..+56]  
+       32  -2.3%     [-22..+15]   +49.7%    [+40..+64]   +49.6%    [+41..+64]  
+       64  +6.2%     [-18..+16]   +59.7%    [+52..+66]   +56.9%    [+52..+63]  
+
+  hitrate rule: streams=0 -6.9% [-13..-2], streams=1 -4.0% [-12..+1], streams=2 -12.7% [-22..-5], streams=4 -25.2% [-50..+3], streams=8 -25.5% [-43..+3], streams=16 -20.4% [-35..-7], streams=32 -14.1% [-30..+3], streams=64 -10.5% [-17..+9]
+
+  Polling table the adaptive runs settled on (slots out of 64):
+    streams=0    nodeq=61 threadq=1 nodeprio=1 threadprio=1
+    streams=1    nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    streams=2    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=4    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=8    nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=16   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=32   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    streams=64   nodeq=1 threadq=61 nodeprio=1 threadprio=1
+    static       nodeq=3 threadq=29 nodeprio=3 threadprio=29
+
+==============================================================================
+Benchmark 2: x shared-queue messages vs y local messages, drifting
+==============================================================================
+Each PE keeps x messages circulating through handler r (shared queue)
+and y through handler l (its own local queue); each handler counts up
+to m.  x and y are stepped slowly so the adaptation has time to
+settle.  Total work per leg is ~p*m regardless of x and y -- x and y
+set how many messages are in flight, i.e. the queue occupancy mix, so
+what moves is the polling split rather than the amount of work.
+
+------------------------------------------------------------------------------
+4 PEs -- mean iteration time (ms, lower is better)
+------------------------------------------------------------------------------
+step    x    y       count     hitrate      static    Converse
+   0   16    0      0.4030      0.4030      0.4640      1.2270
+   1   14    2      0.4400      0.3810      0.5010      1.2600
+   2   12    4      0.4340      0.3800      0.5060      1.2800
+   3   10    6      0.4360      0.3770      0.5020      1.2830
+   4    8    8      0.4330      0.3780      0.5040      1.2680
+   5    6   10      0.4380      0.3730      0.5040      1.2740
+   6    4   12      0.4350      0.3790      0.5040      1.2590
+   7    2   14      0.4370      0.3800      0.5030      1.2300
+   8    0   16      0.0720      0.0720      0.0790      0.0980
+
+  paired comparisons (median of per-repetition ratios, and their min..max):
+  step    x    y  cnt v stat (range)      cnt v Conv (range)      stat v Conv (range)     
+     0   16    0  +14.7%    [+4..+36]    +66.4%    [+59..+76]   +60.1%    [+56..+64]  
+     1   14    2  +15.0%    [-1..+37]    +65.8%    [+57..+76]   +60.4%    [+52..+65]  
+     2   12    4  +14.7%    [-0..+38]    +65.4%    [+60..+77]   +60.8%    [+51..+65]  
+     3   10    6  +15.5%    [+0..+37]    +65.1%    [+58..+78]   +61.4%    [+53..+66]  
+     4    8    8  +14.1%    [-2..+39]    +65.3%    [+62..+76]   +59.8%    [+55..+62]  
+     5    6   10  +15.7%    [-2..+37]    +66.2%    [+58..+74]   +60.3%    [+53..+65]  
+     6    4   12  +15.1%    [+0..+38]    +65.8%    [+60..+74]   +61.0%    [+49..+64]  
+     7    2   14  +14.6%    [-2..+38]    +63.8%    [+57..+76]   +58.8%    [+52..+62]  
+     8    0   16  +7.8%     [-3..+30]    +24.5%    [+5..+50]    +18.1%    [-9..+44]   
+
+  hitrate rule: step0 +19.6% [+9..+40], step1 +28.5% [+19..+47], step2 +28.9% [+20..+36], step3 +29.4% [+19..+32], step4 +29.8% [+20..+33], step5 +29.1% [+18..+36], step6 +29.9% [+20..+39], step7 +29.3% [+19..+38], step8 +6.4% [+2..+16]
+
+  Polling table the adaptive runs settled on (slots out of 64):
+    x=16  y=0   nodeq=52 threadq=10 nodeprio=1 threadprio=1
+    x=14  y=2   nodeq=30 threadq=32 nodeprio=1 threadprio=1
+    x=12  y=4   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=10  y=6   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=8   y=8   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=6   y=10  nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=4   y=12  nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=2   y=14  nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=0   y=16  nodeq=1 threadq=61 nodeprio=1 threadprio=1
+
+------------------------------------------------------------------------------
+8 PEs -- mean iteration time (ms, lower is better)
+------------------------------------------------------------------------------
+step    x    y       count     hitrate      static    Converse
+   0   16    0      1.9160      1.6800      1.8690      5.8170
+   1   14    2      1.9360      1.6140      1.8780      5.8880
+   2   12    4      1.9310      1.6110      1.9050      5.9940
+   3   10    6      1.9240      1.6250      1.8710      5.9280
+   4    8    8      1.9320      1.6310      1.9230      6.0370
+   5    6   10      1.9380      1.6230      1.9140      6.0250
+   6    4   12      1.9200      1.6250      1.8950      6.3400
+   7    2   14      1.9210      1.6390      1.8930      5.9360
+   8    0   16      0.0930      0.1070      0.1140      0.3640
+
+  paired comparisons (median of per-repetition ratios, and their min..max):
+  step    x    y  cnt v stat (range)      cnt v Conv (range)      stat v Conv (range)     
+     0   16    0  -2.7%     [-16..+10]   +65.8%    [+62..+69]   +67.4%    [+63..+70]  
+     1   14    2  -4.0%     [-23..+11]   +66.9%    [+63..+69]   +68.1%    [+63..+74]  
+     2   12    4  -2.4%     [-23..+11]   +67.1%    [+64..+69]   +68.8%    [+60..+74]  
+     3   10    6  -5.4%     [-22..+10]   +67.7%    [+63..+69]   +68.6%    [+63..+73]  
+     4    8    8  -0.9%     [-15..+11]   +67.7%    [+63..+71]   +68.1%    [+61..+70]  
+     5    6   10  -1.0%     [-12..+11]   +67.6%    [+63..+71]   +68.6%    [+64..+72]  
+     6    4   12  -0.3%     [-13..+11]   +69.7%    [+62..+70]   +69.5%    [+62..+72]  
+     7    2   14  +0.1%     [-13..+13]   +66.8%    [+62..+69]   +67.8%    [+62..+70]  
+     8    0   16  +19.3%    [-10..+40]   +71.8%    [+69..+80]   +66.8%    [+62..+72]  
+
+  hitrate rule: step0 +9.3% [+6..+27], step1 +15.5% [-8..+29], step2 +16.9% [-7..+29], step3 +14.6% [-6..+26], step4 +15.2% [+8..+27], step5 +15.6% [+10..+28], step6 +15.3% [+8..+29], step7 +14.2% [+7..+28], step8 +8.8% [-8..+14]
+
+  Polling table the adaptive runs settled on (slots out of 64):
+    x=16  y=0   nodeq=53 threadq=9 nodeprio=1 threadprio=1
+    x=14  y=2   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=12  y=4   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=10  y=6   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=8   y=8   nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=6   y=10  nodeq=32 threadq=30 nodeprio=1 threadprio=1
+    x=4   y=12  nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=2   y=14  nodeq=31 threadq=31 nodeprio=1 threadprio=1
+    x=0   y=16  nodeq=1 threadq=61 nodeprio=1 threadprio=1
+
+==============================================================================
+Reading these tables
+==============================================================================
+A comparison is only meaningful where its (range) excludes zero.  The
+node's clock drift makes whole repetitions 30-40% faster or slower than
+each other, which is far larger than any of the effects here, so a
+median alone would be misleading.
+
+From the 9-repetition run of 2026-07-30:
+
+* Reconverse beats Converse at 32 of the 34 measured points, paired,
+  with ranges that exclude zero -- by +15% to +70%.  The two remaining
+  points (benchmark 1, 4 PEs, streams=64, and one 8-PE point) sit
+  within the run-to-run noise.  Comparing the two non-adaptive
+  configurations (Reconverse static vs Converse) isolates the layer
+  itself; that is the 'stat v Conv' column.  This is the largest and
+  most consistent effect in the data.
+
+* Adaptation helps on benchmark 2 at both PE counts, and on benchmark 1
+  at 4 PEs when the traffic is shared-queue-heavy.  The hitrate variant
+  is the stronger of the two rules: +19..+30% over the static table on
+  benchmark 2 at 4 PEs and +9..+17% at 8 PEs, with ranges that mostly
+  exclude zero.  The literal count rule gains less and its ranges
+  usually straddle zero.
+
+* Adaptation HURTS on benchmark 1 at 8 PEs in the mixed regime
+  (streams 2-8): -17% to -31% for count, -13% to -25% for hitrate, with
+  ranges that exclude zero.  The slot tables show why -- from streams=2
+  on, the table hands the per-PE thread queue 61 of 64 slots and leaves
+  the shared node queue 1.  At 8 PEs the ring in that shared queue is
+  the critical path, and starving it costs more than the extra local
+  polling gains.  Allocating slots in proportion to message volume is
+  the wrong objective when the low-volume queue is the latency-critical
+  one.
+
+* The allocation itself is stable and reproducible: every repetition of
+  a given configuration settles on the same split, moving monotonically
+  from nodeq=61/threadq=1 with no local streams, through 31/31, to
+  nodeq=1/threadq=61 once local traffic dominates.  The mechanism does
+  what it was asked to do; it is the objective that is wrong for the
+  8-PE ring case.
+

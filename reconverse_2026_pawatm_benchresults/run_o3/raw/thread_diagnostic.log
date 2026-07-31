@@ -1,0 +1,103 @@
++ echo '### thread/affinity diagnostic, 1 PE, coarse granularity ###'
+### thread/affinity diagnostic, 1 PE, coarse granularity ###
++ for sys in converse reconverse
++ echo '--- converse ---'
+--- converse ---
++ case $sys in
++ BIN=/u/rao1/task-bench/converse/task_bench
++ ARGS='+ppn 1 +setcpuaffinity'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none bash -c '
+        /u/rao1/task-bench/converse/task_bench +ppn 1 +setcpuaffinity -kernel compute_bound -iter 16384 -type stencil_1d              -steps 1000 -width 1 & p=$!
+        sleep 4
+        echo '\''threads:'\''; ls /proc/$p/task | wc -l
+        for t in /proc/$p/task/*; do
+          printf '\''  tid %s  cpu %s  affinity %s  %s\n'\''             "$(basename $t)" "$(awk '\''{print $39}'\'' $t/stat 2>/dev/null)"             "$(taskset -pc $(basename $t) 2>/dev/null | sed '\''s/.*: //'\'')"             "$(cat $t/comm 2>/dev/null)"
+        done
+        wait $p'
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 1
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 5.616360e-02 seconds
+Elapsed time for run 2: 5.659487e-02 seconds
+Total Tasks 1000
+Total Dependencies 999
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097216000
+Total Bytes 0
+Elapsed Time 5.659487e-02 seconds
+FLOP/s 3.705664e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+[Partition 0][Node 0] End of program
+threads:
+ls: cannot access '/proc/1790464/task': No such file or directory
+0
+  tid *  cpu   affinity   
++ for sys in converse reconverse
++ echo '--- reconverse ---'
+--- reconverse ---
++ case $sys in
++ BIN=/u/rao1/task-bench/reconverse/build/task_bench
++ ARGS='+pe 1 +setcpuaffinity +lci_ndevices 8'
++ srun --mpi=cray_shasta -N 1 -n 1 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=none bash -c '
+        /u/rao1/task-bench/reconverse/build/task_bench +pe 1 +setcpuaffinity +lci_ndevices 8 -kernel compute_bound -iter 16384 -type stencil_1d              -steps 1000 -width 1 & p=$!
+        sleep 4
+        echo '\''threads:'\''; ls /proc/$p/task | wc -l
+        for t in /proc/$p/task/*; do
+          printf '\''  tid %s  cpu %s  affinity %s  %s\n'\''             "$(basename $t)" "$(awk '\''{print $39}'\'' $t/stat 2>/dev/null)"             "$(taskset -pc $(basename $t) 2>/dev/null | sed '\''s/.*: //'\'')"             "$(cat $t/comm 2>/dev/null)"
+        done
+        wait $p'
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+Running Task Benchmark
+  Configuration:
+    Task Graph 1:
+      Time Steps: 1000
+      Max Width: 1
+      Dependence Type: stencil_1d
+      Radix: 3
+      Period: 0
+      Fraction Connected: 0.250000
+      Kernel:
+        Type: compute_bound
+        Iterations: 16384
+        Samples: 16
+        Imbalance: 0.000000
+      Output Bytes: 16
+      Scratch Bytes: 0
+Elapsed time for run 1: 7.284641e-02 seconds
+Elapsed time for run 2: 7.259631e-02 seconds
+Total Tasks 1000
+Total Dependencies 999
+  Unable to estimate local/nonlocal dependencies
+Total FLOPs 2097216000
+Total Bytes 0
+Elapsed Time 7.259631e-02 seconds
+FLOP/s 2.888874e+10
+B/s 0.000000e+00
+Transfer (estimated):
+  Unable to estimate local/nonlocal transfer
+threads:
+ls: cannot access '/proc/1790502/task': No such file or directory
+0
+  tid *  cpu   affinity   

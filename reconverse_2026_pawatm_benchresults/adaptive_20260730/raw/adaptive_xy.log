@@ -1,0 +1,762 @@
+=== xy cfg adaptive pes 4 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,1,0,16,0,500,0.000321,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000381,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000319,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000420,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000381,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000347,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000424,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000360,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000418,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000323,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000440,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000322,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000323,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000418,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000322,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000438,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000320,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000433,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000326,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000433,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000323,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000342,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000432,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000327,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000432,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000317,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000321,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000323,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000439,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000403,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000431,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000430,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000053,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000054,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000053,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000053,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 4 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,0,0,16,0,500,0.000431,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000432,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000456,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000467,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000551,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000543,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000528,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000550,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000514,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000521,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000526,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000515,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000511,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000536,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000516,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000519,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000560,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000525,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000527,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000528,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000532,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000535,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000559,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000546,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000543,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000564,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000559,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000568,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000089,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000090,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000090,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000092,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 4 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=4 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,4,-1,0,16,0,500,0.001254,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001204,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001293,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001235,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001356,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001267,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001413,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001281,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001299,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001360,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001284,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001367,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001378,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001304,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001306,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001228,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001342,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001338,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001268,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001193,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001321,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001271,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001227,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001202,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001251,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001292,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001216,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001319,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001225,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001205,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001288,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001174,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000113,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000120,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000109,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000130,n/a
+[Partition 0][Node 0] End of program
+=== xy cfg adaptive pes 8 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,1,0,16,0,500,0.002251,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002649,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002611,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002658,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001934,nodeq=26 threadq=36 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001955,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001990,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001944,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001963,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001952,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001946,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001935,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001962,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001934,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001932,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001970,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001925,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001951,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001918,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001978,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001954,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001957,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001931,nodeq=31 threadq=31 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001950,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001944,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001969,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001962,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001957,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001974,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001977,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001970,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001953,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000127,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000122,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000110,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000112,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 8 rep 1 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,0,0,16,0,500,0.001979,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001943,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001932,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001931,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.002006,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001942,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001968,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001941,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001951,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001939,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001951,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001948,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001933,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001941,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001968,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001929,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001951,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001961,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001945,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001960,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001947,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001959,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001958,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001965,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001978,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001968,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001950,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001973,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001955,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001961,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001952,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001938,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000127,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000121,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000118,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000127,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 8 rep 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=8 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,8,-1,0,16,0,500,0.010125,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.011513,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005536,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005592,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005618,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005586,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005587,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005771,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005732,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005482,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005544,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005471,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005650,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005688,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005724,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005478,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005811,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005504,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005853,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005624,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005625,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005542,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005465,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005693,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005869,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.006164,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.006042,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005950,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005939,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.006031,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005570,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005795,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000401,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000398,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000399,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000396,n/a
+[Partition 0][Node 0] End of program
+=== xy cfg adaptive pes 4 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,1,0,16,0,500,0.000443,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000428,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000431,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000437,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000453,nodeq=25 threadq=37 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000440,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000446,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000441,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000439,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000433,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000436,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000437,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000436,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000433,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000435,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000432,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000437,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000435,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000440,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000437,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000440,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000434,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000434,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000441,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000428,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000432,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000429,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000433,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000432,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000435,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000435,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000436,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000073,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000071,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000071,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000073,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 4 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,0,0,16,0,500,0.000459,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000457,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000453,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000501,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000501,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000493,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000497,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000497,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000494,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000492,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000493,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000496,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000499,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000492,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000494,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000493,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000489,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000492,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000493,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000077,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000076,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000076,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000078,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 4 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=4 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,4,-1,0,16,0,500,0.001199,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001225,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001101,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001179,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001172,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001226,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001213,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001257,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001234,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001259,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001223,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001222,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001232,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001241,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001219,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001180,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001207,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001243,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001270,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001227,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001261,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001270,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001212,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001211,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001201,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001187,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001218,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001170,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001159,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001230,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001168,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001226,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000097,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000135,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000137,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000131,n/a
+[Partition 0][Node 0] End of program
+=== xy cfg adaptive pes 8 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,1,0,16,0,500,0.002034,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.001999,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002004,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002173,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.002017,nodeq=46 threadq=16 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001994,nodeq=38 threadq=24 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001970,nodeq=38 threadq=24 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001968,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001964,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001991,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001964,nodeq=38 threadq=24 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001955,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001995,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001978,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001960,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001969,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001958,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001969,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001966,nodeq=38 threadq=24 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001985,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001972,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001945,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001947,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001951,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001970,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001972,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001963,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001975,nodeq=39 threadq=23 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001957,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001984,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001973,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001946,nodeq=37 threadq=25 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000086,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000085,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000085,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000081,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 8 rep 2 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,0,0,16,0,500,0.001957,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001934,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001955,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001934,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001991,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001975,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001975,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001980,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001977,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001982,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001991,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001995,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001974,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001983,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001986,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001965,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001982,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001985,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001985,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001983,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001991,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001965,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001950,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001972,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001984,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001974,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.001986,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001964,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001973,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.002004,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000108,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000111,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000110,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000118,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 8 rep 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=8 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,8,-1,0,16,0,500,0.005483,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005459,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005537,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005503,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005678,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005803,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005792,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005759,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005652,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005663,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005671,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005774,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005724,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005566,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005696,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005730,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005639,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005783,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005688,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005886,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005704,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005594,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005673,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005885,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005805,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005640,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005514,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005708,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005967,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.006150,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005829,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.006132,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000353,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000375,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000374,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000358,n/a
+[Partition 0][Node 0] End of program
+=== xy cfg adaptive pes 4 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,1,0,16,0,500,0.000442,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000465,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000418,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,0,16,0,500,0.000469,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000445,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000443,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000435,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,1,14,2,500,0.000436,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000435,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000433,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000433,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,2,12,4,500,0.000436,nodeq=30 threadq=32 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000432,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000433,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000426,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,3,10,6,500,0.000433,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000432,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000435,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000431,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,4,8,8,500,0.000434,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000431,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000430,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000425,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,5,6,10,500,0.000433,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000427,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000432,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000429,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,6,4,12,500,0.000432,nodeq=28 threadq=34 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000428,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000432,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000429,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,7,2,14,500,0.000429,nodeq=27 threadq=35 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000071,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000071,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000070,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,4,1,8,0,16,500,0.000070,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 4 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+adapt_xy: layer=reconverse pes=4 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,4,0,0,16,0,500,0.000463,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000442,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000473,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,0,16,0,500,0.000465,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000491,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,1,14,2,500,0.000490,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000502,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,2,12,4,500,0.000486,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000486,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000487,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000488,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,3,10,6,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000486,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000481,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000483,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,4,8,8,500,0.000478,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000481,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000480,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000477,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,5,6,10,500,0.000482,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000476,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000481,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000477,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,6,4,12,500,0.000483,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000486,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000482,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000484,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,7,2,14,500,0.000480,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000077,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000076,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000076,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,4,0,8,0,16,500,0.000077,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 4 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=4 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,4,-1,0,16,0,500,0.001173,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001205,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001250,n/a
+DATA,xy,converse,4,-1,0,16,0,500,0.001267,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001186,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001312,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001208,n/a
+DATA,xy,converse,4,-1,1,14,2,500,0.001259,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001208,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001189,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001186,n/a
+DATA,xy,converse,4,-1,2,12,4,500,0.001376,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001249,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001268,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001258,n/a
+DATA,xy,converse,4,-1,3,10,6,500,0.001224,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001134,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001231,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001154,n/a
+DATA,xy,converse,4,-1,4,8,8,500,0.001189,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001252,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001174,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001264,n/a
+DATA,xy,converse,4,-1,5,6,10,500,0.001236,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001278,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001288,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001239,n/a
+DATA,xy,converse,4,-1,6,4,12,500,0.001240,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001226,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001281,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001197,n/a
+DATA,xy,converse,4,-1,7,2,14,500,0.001221,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000078,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000080,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000078,n/a
+DATA,xy,converse,4,-1,8,0,16,500,0.000083,n/a
+[Partition 0][Node 0] End of program
+=== xy cfg adaptive pes 8 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,1,0,16,0,500,0.002338,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002293,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002288,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,0,16,0,500,0.002310,nodeq=60 threadq=2 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001881,nodeq=29 threadq=33 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001884,nodeq=39 threadq=23 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001885,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,1,14,2,500,0.001874,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001883,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001864,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001881,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,2,12,4,500,0.001871,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001892,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001874,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001891,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,3,10,6,500,0.001868,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001876,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001877,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001865,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,4,8,8,500,0.001877,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001884,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001854,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001851,nodeq=35 threadq=27 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,5,6,10,500,0.001881,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001889,nodeq=36 threadq=26 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001876,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001861,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,6,4,12,500,0.001866,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001878,nodeq=34 threadq=28 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001877,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001849,nodeq=33 threadq=29 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,7,2,14,500,0.001884,nodeq=32 threadq=30 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000091,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000092,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000091,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+DATA,xy,reconverse,8,1,8,0,16,500,0.000092,nodeq=1 threadq=61 nodeprio=1 threadprio=1
+=== xy cfg static pes 8 rep 3 ===
+Charm++> Running in SMP mode on 1 nodes and 8 PEs
+adapt_xy: layer=reconverse pes=8 adaptive=0 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,reconverse,8,0,0,16,0,500,0.001999,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001963,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,0,16,0,500,0.001951,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.002013,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001984,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001987,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,1,14,2,500,0.001983,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001967,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001995,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.001978,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,2,12,4,500,0.002016,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001984,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.002013,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,3,10,6,500,0.002009,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001987,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001997,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.001999,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,4,8,8,500,0.002009,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.002019,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.001987,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,5,6,10,500,0.002005,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.002005,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.002001,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.002001,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,6,4,12,500,0.002001,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.002003,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001989,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001999,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,7,2,14,500,0.001990,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000102,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000101,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000103,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+DATA,xy,reconverse,8,0,8,0,16,500,0.000101,nodeq=3 threadq=29 nodeprio=3 threadprio=29
+=== xy cfg converse pes 8 rep 3 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 8 worker threads (PEs) + 1 comm threads per process, 8 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+adapt_xy: layer=converse pes=8 adaptive=-1 m=500 iters=5 phases_per_step=4 steps=9 x0=16 y0=0 dx=-2 dy=2
+Format: DATA,xy,{layer},{pes},{adaptive},{step},{x},{y},{m},{mean iter s},{slots}
+DATA,xy,converse,8,-1,0,16,0,500,0.005060,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.005010,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.004888,n/a
+DATA,xy,converse,8,-1,0,16,0,500,0.004869,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.004984,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005265,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005172,n/a
+DATA,xy,converse,8,-1,1,14,2,500,0.005123,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005094,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.004933,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005003,n/a
+DATA,xy,converse,8,-1,2,12,4,500,0.005244,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.004972,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.004986,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005102,n/a
+DATA,xy,converse,8,-1,3,10,6,500,0.005148,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005025,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005014,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.004998,n/a
+DATA,xy,converse,8,-1,4,8,8,500,0.005208,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005149,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.004962,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005064,n/a
+DATA,xy,converse,8,-1,5,6,10,500,0.005021,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005177,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005073,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.005087,n/a
+DATA,xy,converse,8,-1,6,4,12,500,0.004933,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.004959,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.004882,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.004941,n/a
+DATA,xy,converse,8,-1,7,2,14,500,0.005116,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000337,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000336,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000335,n/a
+DATA,xy,converse,8,-1,8,0,16,500,0.000338,n/a
+[Partition 0][Node 0] End of program

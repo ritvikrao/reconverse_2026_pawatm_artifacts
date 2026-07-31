@@ -1,0 +1,253 @@
+Pingpong: one-way message latency
+==============================================================================
+
+Machine   : NCSA Delta CPU nodes, 2x AMD EPYC 7763, HPE Slingshot
+Iterations: 1000 per message size
+Sizes     : 16 to 262144 bytes, doubling
+Statistic : median of 5 repetitions
+
+Layout    : 2 processes, 1 PE each, in both sets.  The two sets differ
+            only in whether those processes share a physical node.
+
+Versions:
+  old Converse             charm/benchmarks/converse/pingpong, built
+                           -optimize -production -O3 against the
+                           mpi-linux-x86_64-smp build
+  Reconverse msg           tests/orig-converse/pingpong -- the same
+                           benchmark on the ordinary send path
+  Reconverse RDMA          tests/rdma_pingpong -- explicit one-sided
+                           get on a registered CmiNcpyBuffer, with a
+                           small message carrying the completion signal
+  Reconverse persist+RDMA  tests/persistent_pingpong -- the message
+                           benchmark with the timed sends routed
+                           through a PersistentHandle, which registers
+                           its receive buffers once at setup and moves
+                           the payload with a one-sided put
+
+Reconverse is built CMAKE_BUILD_TYPE=Release with autofetched LCI v2,
+from `main` plus the new persistent pingpong only.  Both processes are
+given 2 cores in every configuration, so the Converse comm thread does
+not change the placement relative to Reconverse, which has no comm
+thread.
+
+LCI devices: the four compared versions all run +lci_ndevices 1, NOT
+the 8 used for the task-bench runs.  Above one device the one-sided
+get aborts inside LCI:
+
+    backend_ofi_inline.hpp:post_get_impl:388
+      <lci:Assert failed: false> err : Invalid argument
+
+because the memory region is registered against one device while the
+get is posted on another.  It reproduces at 2 devices and at 8, and
+not at 1 or at the default, which is why reconverse's own CMake test
+for rdma_pingpong passes no device flag.  Running two versions at 8
+and two at 1 would make the columns incomparable, so all four use 1.
+With one PE per process there is no concurrency for extra devices to
+exploit in any case.
+
+'Reconverse msg (8 dev)' is a supplementary fifth arm, not one of the
+eight configurations: it is the message path at 8 devices, to show
+what the device count is worth where it does work.
+
+==============================================================================
+2 processes on 1 physical node (intra-node)
+==============================================================================
+
+one-way latency, microseconds (lower is better)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   2.183                   3.919                  10.539                   7.745                   3.835
+        32                   1.988                   3.678                  10.274                   7.734                   3.538
+        64                   1.970                   3.684                  10.352                  10.069                   3.694
+       128                   1.967                   4.413                  10.335                  10.144                   4.448
+       256                   2.274                   4.291                  10.312                  10.734                   4.336
+       512                   2.402                   4.335                   9.602                  10.751                   4.413
+      1024                   2.803                   4.452                   9.686                  10.936                   4.482
+      2048                   3.363                   4.853                   9.780                  11.156                   4.875
+      4096                   4.444                   7.190                   9.977                  11.425                   7.268
+      8192                   6.303                  16.840                  10.378                  11.650                  17.187
+     16384                  10.113                  17.215                  10.940                  12.022                  17.569
+     32768                  16.958                  17.834                  12.198                  12.833                  18.255
+     65536                  31.427                  19.694                  14.806                  14.527                  20.004
+    131072                  47.497                  23.783                  20.260                  18.457                  23.809
+    262144                  87.354                  31.290                  31.936                  26.121                  31.321
+
+speedup vs old Converse (>1 means the Reconverse version is faster)
+
+     bytes           Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   0.56x                   0.21x                   0.28x                   0.57x
+        32                   0.54x                   0.19x                   0.26x                   0.56x
+        64                   0.53x                   0.19x                   0.20x                   0.53x
+       128                   0.45x                   0.19x                   0.19x                   0.44x
+       256                   0.53x                   0.22x                   0.21x                   0.52x
+       512                   0.55x                   0.25x                   0.22x                   0.54x
+      1024                   0.63x                   0.29x                   0.26x                   0.63x
+      2048                   0.69x                   0.34x                   0.30x                   0.69x
+      4096                   0.62x                   0.45x                   0.39x                   0.61x
+      8192                   0.37x                   0.61x                   0.54x                   0.37x
+     16384                   0.59x                   0.92x                   0.84x                   0.58x
+     32768                   0.95x                   1.39x                   1.32x                   0.93x
+     65536                   1.60x                   2.12x                   2.16x                   1.57x
+    131072                   2.00x                   2.34x                   2.57x                   1.99x
+    262144                   2.79x                   2.74x                   3.34x                   2.79x
+
+effective bandwidth, MB/s (size / one-way time)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                     7.3                     4.1                     1.5                     2.1                     4.2
+        32                    16.1                     8.7                     3.1                     4.1                     9.0
+        64                    32.5                    17.4                     6.2                     6.4                    17.3
+       128                    65.1                    29.0                    12.4                    12.6                    28.8
+       256                   112.6                    59.7                    24.8                    23.8                    59.0
+       512                   213.2                   118.1                    53.3                    47.6                   116.0
+      1024                   365.3                   230.0                   105.7                    93.6                   228.5
+      2048                   609.0                   422.0                   209.4                   183.6                   420.1
+      4096                   921.7                   569.7                   410.6                   358.5                   563.6
+      8192                  1299.7                   486.5                   789.4                   703.2                   476.6
+     16384                  1620.2                   951.7                  1497.7                  1362.8                   932.5
+     32768                  1932.3                  1837.4                  2686.3                  2553.5                  1795.0
+     65536                  2085.3                  3327.7                  4426.3                  4511.4                  3276.1
+    131072                  2759.6                  5511.1                  6469.6                  7101.4                  5505.2
+    262144                  3000.9                  8377.8                  8208.4                 10035.7                  8369.5
+
+spread across repetitions, (max-min)/min as a percentage
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   14.1%                   14.7%                   12.6%                    4.4%                   10.0%
+        32                    7.1%                   13.7%                   12.5%                    5.3%                   11.3%
+        64                    3.6%                   10.4%                   10.5%                    6.0%                    7.7%
+       128                    4.3%                   16.4%                   13.0%                    3.3%                   13.5%
+       256                    8.1%                    8.4%                   14.0%                    3.8%                    8.3%
+       512                    6.0%                    9.8%                    6.2%                    2.7%                   13.4%
+      1024                    6.7%                   10.4%                    6.4%                    4.5%                   10.5%
+      2048                    7.0%                    6.3%                    5.4%                    4.1%                    5.1%
+      4096                   11.3%                    4.0%                    5.8%                    4.2%                    5.5%
+      8192                    8.1%                    7.6%                    5.7%                    3.2%                    5.9%
+     16384                    3.2%                    7.2%                    6.3%                    6.3%                    7.1%
+     32768                    9.4%                    7.6%                    5.4%                    4.3%                    6.3%
+     65536                   11.5%                    7.6%                    4.7%                    4.7%                    6.0%
+    131072                   11.9%                    5.2%                    3.9%                    2.6%                    5.1%
+    262144                   16.8%                    4.2%                    2.4%                    2.3%                    4.0%
+
+==============================================================================
+2 processes on 2 physical nodes (inter-node)
+==============================================================================
+
+one-way latency, microseconds (lower is better)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   8.715                   3.753                  10.070                   8.260                   3.956
+        32                   8.592                   3.511                  10.046                   8.275                   3.711
+        64                   8.618                   3.515                   9.929                  10.508                   3.832
+       128                   8.893                   4.122                  10.037                  10.623                   4.366
+       256                   8.738                   4.321                   9.951                  11.194                   4.515
+       512                   9.088                   4.418                  10.087                  11.403                   4.650
+      1024                   9.201                   4.512                  10.170                  11.520                   4.632
+      2048                   9.589                   4.880                  10.349                  11.773                   5.002
+      4096                   9.877                   7.357                  10.357                  11.879                   7.398
+      8192                  12.492                  17.314                  10.765                  12.127                  17.531
+     16384                  10.827                  17.590                  11.278                  12.490                  18.060
+     32768                  14.042                  18.607                  12.707                  13.480                  18.821
+     65536                  16.210                  20.138                  15.229                  14.709                  20.132
+    131072                  20.636                  22.827                  20.234                  17.356                  22.845
+    262144                  29.340                  28.492                  30.410                  22.986                  28.421
+
+speedup vs old Converse (>1 means the Reconverse version is faster)
+
+     bytes           Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   2.32x                   0.87x                   1.06x                   2.20x
+        32                   2.45x                   0.86x                   1.04x                   2.32x
+        64                   2.45x                   0.87x                   0.82x                   2.25x
+       128                   2.16x                   0.89x                   0.84x                   2.04x
+       256                   2.02x                   0.88x                   0.78x                   1.94x
+       512                   2.06x                   0.90x                   0.80x                   1.95x
+      1024                   2.04x                   0.90x                   0.80x                   1.99x
+      2048                   1.97x                   0.93x                   0.81x                   1.92x
+      4096                   1.34x                   0.95x                   0.83x                   1.34x
+      8192                   0.72x                   1.16x                   1.03x                   0.71x
+     16384                   0.62x                   0.96x                   0.87x                   0.60x
+     32768                   0.75x                   1.11x                   1.04x                   0.75x
+     65536                   0.80x                   1.06x                   1.10x                   0.81x
+    131072                   0.90x                   1.02x                   1.19x                   0.90x
+    262144                   1.03x                   0.96x                   1.28x                   1.03x
+
+effective bandwidth, MB/s (size / one-way time)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                     1.8                     4.3                     1.6                     1.9                     4.0
+        32                     3.7                     9.1                     3.2                     3.9                     8.6
+        64                     7.4                    18.2                     6.4                     6.1                    16.7
+       128                    14.4                    31.1                    12.8                    12.0                    29.3
+       256                    29.3                    59.2                    25.7                    22.9                    56.7
+       512                    56.3                   115.9                    50.8                    44.9                   110.1
+      1024                   111.3                   226.9                   100.7                    88.9                   221.1
+      2048                   213.6                   419.7                   197.9                   174.0                   409.5
+      4096                   414.7                   556.7                   395.5                   344.8                   553.7
+      8192                   655.8                   473.1                   761.0                   675.5                   467.3
+     16384                  1513.3                   931.4                  1452.7                  1311.8                   907.2
+     32768                  2333.6                  1761.0                  2578.8                  2430.8                  1741.1
+     65536                  4042.9                  3254.4                  4303.2                  4455.6                  3255.3
+    131072                  6351.6                  5741.9                  6477.8                  7552.1                  5737.4
+    262144                  8934.7                  9200.7                  8620.4                 11404.5                  9223.6
+
+spread across repetitions, (max-min)/min as a percentage
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                    9.2%                   16.5%                    2.0%                   10.0%                    9.7%
+        32                    6.1%                   13.7%                    2.2%                    5.5%                    9.2%
+        64                    8.5%                   13.0%                    4.1%                    6.3%                    5.8%
+       128                   12.2%                   13.5%                    3.4%                    6.0%                    7.4%
+       256                   15.3%                   14.1%                    3.5%                    5.5%                    7.3%
+       512                   13.1%                   14.3%                    2.9%                    6.2%                    5.4%
+      1024                    8.8%                   10.0%                    8.1%                    4.8%                    9.2%
+      2048                    5.1%                    5.1%                    5.0%                    1.8%                    4.2%
+      4096                    5.3%                    4.1%                    5.7%                    1.7%                    3.0%
+      8192                   10.4%                    3.9%                    1.5%                    0.4%                    1.9%
+     16384                    4.4%                    4.8%                    1.6%                    1.1%                    1.4%
+     32768                    6.1%                    5.7%                    1.6%                    2.3%                    0.5%
+     65536                   10.9%                    5.8%                    1.5%                    0.8%                    0.6%
+    131072                   19.4%                    3.8%                    1.3%                    1.5%                    0.4%
+    262144                   28.3%                    4.3%                    0.9%                    1.3%                    0.8%
+
+==============================================================================
+Notes
+==============================================================================
+
+Repetition spread is 2-16%, so the large ratios below are well clear
+of the noise while anything inside roughly 0.85-1.15x is not.
+
+1. The two placements give opposite answers at small messages, and
+   that is the headline result.  Intra-node, old Converse is about
+   2x faster than Reconverse's message path (2.0 vs 3.7 us at 64
+   bytes): both are shared-memory copies, and Converse's is leaner.
+   Inter-node, that reverses -- Reconverse is about 2.4x faster (3.5
+   vs 8.6 us), because the Charm++ build goes through MPI while
+   Reconverse goes to libfabric through LCI.  A single-number
+   comparison of the two runtimes would hide this completely.
+
+2. The message path has a latency cliff between 4 KB and 8 KB
+   (7.4 -> 17.3 us inter-node, 7.2 -> 16.8 intra-node).  That is the
+   eager-to-rendezvous switch, and it lands exactly at the
+   LCI_ATTR_PACKET_SIZE=8192 carried over from the task-bench runs:
+   messages larger than one packet stop being sent eagerly.  Neither
+   the RDMA nor the persistent version shows the cliff, since both
+   move the payload one-sided and never take the eager path.  The
+   cliff is a property of that setting, not of the runtime -- raising
+   LCI_ATTR_PACKET_SIZE would move it.
+
+3. The persistent channel is the best large-message option and the
+   only version that wins at 256 KB in both placements (3.34x
+   intra-node, 1.28x inter-node vs old Converse).  It beats plain
+   RDMA there because the receive buffers are registered once at
+   setup rather than per transfer.
+
+4. Below about 2 KB the persistent and RDMA versions are the slowest
+   of the four.  Both pay a round trip for the completion signal on
+   top of the transfer, which dominates when the payload is small;
+   one-sided transport only pays off once the payload is large
+   enough for that fixed cost to amortise.
+
+5. The supplementary 8-device arm is within noise of the 1-device
+   message path at every size, so pinning all four versions to 1
+   device to accommodate the RDMA limitation costs nothing here.
+

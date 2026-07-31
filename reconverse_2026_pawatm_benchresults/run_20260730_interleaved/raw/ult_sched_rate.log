@@ -1,0 +1,1272 @@
+=== ult sched_rate layer reconverse pes 1 threads 1 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 1 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 1001 dispatches in 0.000157 s -> 6.390 M/s, 0.1565 us each (create 0.477 us/thread)
+[PE 0] rep 1: 1001 dispatches in 0.000160 s -> 6.266 M/s, 0.1596 us each (create 0.477 us/thread)
+[PE 0] rep 2: 1001 dispatches in 0.000159 s -> 6.314 M/s, 0.1584 us each (create 0.238 us/thread)
+[PE 0] rep 3: 1001 dispatches in 0.000161 s -> 6.202 M/s, 0.1612 us each (create 0.000 us/thread)
+[PE 0] rep 4: 1001 dispatches in 0.000154 s -> 6.499 M/s, 0.1539 us each (create 0.477 us/thread)
+[PE 0] threads=1 yields=1000: best 0.1539 us/dispatch (6.499 M dispatches/s), mean 0.1579 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1,1000,0.153865,0.157914,6.499223
+=== ult sched_rate layer converse pes 1 threads 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 1 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 1001 dispatches in 0.000304 s -> 3.294 M/s, 0.3036 us each (create 5.110 us/thread)
+[PE 0] rep 1: 1001 dispatches in 0.000295 s -> 3.396 M/s, 0.2945 us each (create 5.130 us/thread)
+[PE 0] rep 2: 1001 dispatches in 0.000297 s -> 3.374 M/s, 0.2964 us each (create 0.360 us/thread)
+[PE 0] rep 3: 1001 dispatches in 0.000303 s -> 3.303 M/s, 0.3028 us each (create 0.231 us/thread)
+[PE 0] rep 4: 1001 dispatches in 0.000295 s -> 3.398 M/s, 0.2943 us each (create 0.260 us/thread)
+[PE 0] threads=1 yields=1000: best 0.2943 us/dispatch (3.398 M dispatches/s), mean 0.2983 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1,1000,0.294272,0.298309,3.398220
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 2 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 2 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 2002 dispatches in 0.000317 s -> 6.309 M/s, 0.1585 us each (create 0.477 us/thread)
+[PE 0] rep 1: 2002 dispatches in 0.000323 s -> 6.197 M/s, 0.1614 us each (create 0.358 us/thread)
+[PE 0] rep 2: 2002 dispatches in 0.000317 s -> 6.309 M/s, 0.1585 us each (create 0.238 us/thread)
+[PE 0] rep 3: 2002 dispatches in 0.000317 s -> 6.323 M/s, 0.1582 us each (create 0.119 us/thread)
+[PE 0] rep 4: 2002 dispatches in 0.000318 s -> 6.295 M/s, 0.1589 us each (create 0.238 us/thread)
+[PE 0] threads=2 yields=1000: best 0.1582 us/dispatch (6.323 M dispatches/s), mean 0.1591 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2,1000,0.158152,0.159081,6.323040
+=== ult sched_rate layer converse pes 1 threads 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 2 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 2002 dispatches in 0.000597 s -> 3.355 M/s, 0.2981 us each (create 4.529 us/thread)
+[PE 0] rep 1: 2002 dispatches in 0.000593 s -> 3.375 M/s, 0.2963 us each (create 0.295 us/thread)
+[PE 0] rep 2: 2002 dispatches in 0.000596 s -> 3.359 M/s, 0.2977 us each (create 0.180 us/thread)
+[PE 0] rep 3: 2002 dispatches in 0.000598 s -> 3.347 M/s, 0.2988 us each (create 0.160 us/thread)
+[PE 0] rep 4: 2002 dispatches in 0.000609 s -> 3.285 M/s, 0.3044 us each (create 0.161 us/thread)
+[PE 0] threads=2 yields=1000: best 0.2963 us/dispatch (3.375 M dispatches/s), mean 0.2990 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2,1000,0.296263,0.299038,3.375382
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 4 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 4 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 4004 dispatches in 0.000711 s -> 5.630 M/s, 0.1776 us each (create 0.358 us/thread)
+[PE 0] rep 1: 4004 dispatches in 0.000651 s -> 6.152 M/s, 0.1626 us each (create 0.179 us/thread)
+[PE 0] rep 2: 4004 dispatches in 0.000653 s -> 6.129 M/s, 0.1632 us each (create 0.119 us/thread)
+[PE 0] rep 3: 4004 dispatches in 0.000655 s -> 6.109 M/s, 0.1637 us each (create 0.119 us/thread)
+[PE 0] rep 4: 4004 dispatches in 0.000646 s -> 6.195 M/s, 0.1614 us each (create 0.119 us/thread)
+[PE 0] threads=4 yields=1000: best 0.1614 us/dispatch (6.195 M dispatches/s), mean 0.1657 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,4,1000,0.161427,0.165690,6.194760
+=== ult sched_rate layer converse pes 1 threads 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 4 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 4004 dispatches in 0.001200 s -> 3.337 M/s, 0.2996 us each (create 2.497 us/thread)
+[PE 0] rep 1: 4004 dispatches in 0.001196 s -> 3.347 M/s, 0.2987 us each (create 0.137 us/thread)
+[PE 0] rep 2: 4004 dispatches in 0.001225 s -> 3.268 M/s, 0.3060 us each (create 0.153 us/thread)
+[PE 0] rep 3: 4004 dispatches in 0.001276 s -> 3.139 M/s, 0.3186 us each (create 0.153 us/thread)
+[PE 0] rep 4: 4004 dispatches in 0.001279 s -> 3.131 M/s, 0.3194 us each (create 0.135 us/thread)
+[PE 0] threads=4 yields=1000: best 0.2987 us/dispatch (3.347 M dispatches/s), mean 0.3085 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,4,1000,0.298735,0.308458,3.347445
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 8 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 8 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 8008 dispatches in 0.001428 s -> 5.606 M/s, 0.1784 us each (create 0.298 us/thread)
+[PE 0] rep 1: 8008 dispatches in 0.001377 s -> 5.817 M/s, 0.1719 us each (create 0.149 us/thread)
+[PE 0] rep 2: 8008 dispatches in 0.001352 s -> 5.924 M/s, 0.1688 us each (create 0.179 us/thread)
+[PE 0] rep 3: 8008 dispatches in 0.001438 s -> 5.568 M/s, 0.1796 us each (create 0.149 us/thread)
+[PE 0] rep 4: 8008 dispatches in 0.001362 s -> 5.878 M/s, 0.1701 us each (create 0.119 us/thread)
+[PE 0] threads=8 yields=1000: best 0.1688 us/dispatch (5.924 M dispatches/s), mean 0.1738 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,8,1000,0.168810,0.173759,5.923807
+=== ult sched_rate layer converse pes 1 threads 8 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 8 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 8008 dispatches in 0.002400 s -> 3.337 M/s, 0.2997 us each (create 1.815 us/thread)
+[PE 0] rep 1: 8008 dispatches in 0.002397 s -> 3.341 M/s, 0.2993 us each (create 0.155 us/thread)
+[PE 0] rep 2: 8008 dispatches in 0.002403 s -> 3.333 M/s, 0.3000 us each (create 0.184 us/thread)
+[PE 0] rep 3: 8008 dispatches in 0.002396 s -> 3.342 M/s, 0.2992 us each (create 0.142 us/thread)
+[PE 0] rep 4: 8008 dispatches in 0.002403 s -> 3.332 M/s, 0.3001 us each (create 0.136 us/thread)
+[PE 0] threads=8 yields=1000: best 0.2992 us/dispatch (3.342 M dispatches/s), mean 0.2997 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,8,1000,0.299224,0.299673,3.341973
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 16 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 16 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 16016 dispatches in 0.002595 s -> 6.171 M/s, 0.1621 us each (create 0.253 us/thread)
+[PE 0] rep 1: 16016 dispatches in 0.002605 s -> 6.147 M/s, 0.1627 us each (create 0.283 us/thread)
+[PE 0] rep 2: 16016 dispatches in 0.002628 s -> 6.095 M/s, 0.1641 us each (create 0.194 us/thread)
+[PE 0] rep 3: 16016 dispatches in 0.002737 s -> 5.852 M/s, 0.1709 us each (create 0.209 us/thread)
+[PE 0] rep 4: 16016 dispatches in 0.002691 s -> 5.952 M/s, 0.1680 us each (create 0.194 us/thread)
+[PE 0] threads=16 yields=1000: best 0.1621 us/dispatch (6.171 M dispatches/s), mean 0.1655 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,16,1000,0.162052,0.165544,6.170859
+=== ult sched_rate layer converse pes 1 threads 16 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 16 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 16016 dispatches in 0.005127 s -> 3.124 M/s, 0.3201 us each (create 0.807 us/thread)
+[PE 0] rep 1: 16016 dispatches in 0.005179 s -> 3.092 M/s, 0.3234 us each (create 0.244 us/thread)
+[PE 0] rep 2: 16016 dispatches in 0.005110 s -> 3.134 M/s, 0.3191 us each (create 0.232 us/thread)
+[PE 0] rep 3: 16016 dispatches in 0.005118 s -> 3.129 M/s, 0.3196 us each (create 0.213 us/thread)
+[PE 0] rep 4: 16016 dispatches in 0.005100 s -> 3.140 M/s, 0.3184 us each (create 0.205 us/thread)
+[PE 0] threads=16 yields=1000: best 0.3184 us/dispatch (3.140 M dispatches/s), mean 0.3201 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,16,1000,0.318423,0.320110,3.140479
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 32 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 32 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 32032 dispatches in 0.005386 s -> 5.947 M/s, 0.1681 us each (create 0.238 us/thread)
+[PE 0] rep 1: 32032 dispatches in 0.005268 s -> 6.080 M/s, 0.1645 us each (create 0.216 us/thread)
+[PE 0] rep 2: 32032 dispatches in 0.005644 s -> 5.675 M/s, 0.1762 us each (create 0.179 us/thread)
+[PE 0] rep 3: 32032 dispatches in 0.005613 s -> 5.707 M/s, 0.1752 us each (create 0.216 us/thread)
+[PE 0] rep 4: 32032 dispatches in 0.005625 s -> 5.695 M/s, 0.1756 us each (create 0.194 us/thread)
+[PE 0] threads=32 yields=1000: best 0.1645 us/dispatch (6.080 M dispatches/s), mean 0.1719 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,32,1000,0.164464,0.171928,6.080374
+=== ult sched_rate layer converse pes 1 threads 32 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 32 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 32032 dispatches in 0.010178 s -> 3.147 M/s, 0.3177 us each (create 0.662 us/thread)
+[PE 0] rep 1: 32032 dispatches in 0.010374 s -> 3.088 M/s, 0.3239 us each (create 0.222 us/thread)
+[PE 0] rep 2: 32032 dispatches in 0.010328 s -> 3.101 M/s, 0.3224 us each (create 0.217 us/thread)
+[PE 0] rep 3: 32032 dispatches in 0.010359 s -> 3.092 M/s, 0.3234 us each (create 0.196 us/thread)
+[PE 0] rep 4: 32032 dispatches in 0.010371 s -> 3.089 M/s, 0.3238 us each (create 0.209 us/thread)
+[PE 0] threads=32 yields=1000: best 0.3177 us/dispatch (3.147 M dispatches/s), mean 0.3222 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,32,1000,0.317737,0.322242,3.147259
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 64 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 64064 dispatches in 0.011795 s -> 5.432 M/s, 0.1841 us each (create 0.369 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.011175 s -> 5.733 M/s, 0.1744 us each (create 0.216 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.011435 s -> 5.603 M/s, 0.1785 us each (create 0.194 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.011612 s -> 5.517 M/s, 0.1813 us each (create 0.197 us/thread)
+[PE 0] rep 4: 64064 dispatches in 0.011600 s -> 5.523 M/s, 0.1811 us each (create 0.194 us/thread)
+[PE 0] threads=64 yields=1000: best 0.1744 us/dispatch (5.733 M dispatches/s), mean 0.1799 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.174441,0.179872,5.732594
+=== ult sched_rate layer converse pes 1 threads 64 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 64064 dispatches in 0.020481 s -> 3.128 M/s, 0.3197 us each (create 0.353 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.020451 s -> 3.133 M/s, 0.3192 us each (create 0.205 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.020620 s -> 3.107 M/s, 0.3219 us each (create 0.206 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.021027 s -> 3.047 M/s, 0.3282 us each (create 0.196 us/thread)
+[PE 0] rep 4: 64064 dispatches in 0.020735 s -> 3.090 M/s, 0.3237 us each (create 0.204 us/thread)
+[PE 0] threads=64 yields=1000: best 0.3192 us/dispatch (3.133 M dispatches/s), mean 0.3225 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.319223,0.322531,3.132610
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 128 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 128 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 128128 dispatches in 0.023363 s -> 5.484 M/s, 0.1823 us each (create 0.276 us/thread)
+[PE 0] rep 1: 128128 dispatches in 0.023347 s -> 5.488 M/s, 0.1822 us each (create 0.192 us/thread)
+[PE 0] rep 2: 128128 dispatches in 0.023556 s -> 5.439 M/s, 0.1838 us each (create 0.184 us/thread)
+[PE 0] rep 3: 128128 dispatches in 0.023533 s -> 5.445 M/s, 0.1837 us each (create 0.175 us/thread)
+[PE 0] rep 4: 128128 dispatches in 0.023499 s -> 5.453 M/s, 0.1834 us each (create 0.177 us/thread)
+[PE 0] threads=128 yields=1000: best 0.1822 us/dispatch (5.488 M dispatches/s), mean 0.1831 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,128,1000,0.182215,0.183094,5.488009
+=== ult sched_rate layer converse pes 1 threads 128 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 128 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 128128 dispatches in 0.041202 s -> 3.110 M/s, 0.3216 us each (create 0.277 us/thread)
+[PE 0] rep 1: 128128 dispatches in 0.041176 s -> 3.112 M/s, 0.3214 us each (create 0.198 us/thread)
+[PE 0] rep 2: 128128 dispatches in 0.039367 s -> 3.255 M/s, 0.3072 us each (create 0.190 us/thread)
+[PE 0] rep 3: 128128 dispatches in 0.041226 s -> 3.108 M/s, 0.3218 us each (create 0.196 us/thread)
+[PE 0] rep 4: 128128 dispatches in 0.041369 s -> 3.097 M/s, 0.3229 us each (create 0.197 us/thread)
+[PE 0] threads=128 yields=1000: best 0.3072 us/dispatch (3.255 M dispatches/s), mean 0.3190 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,128,1000,0.307245,0.318963,3.254736
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 256 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 256 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 256256 dispatches in 0.049284 s -> 5.200 M/s, 0.1923 us each (create 0.237 us/thread)
+[PE 0] rep 1: 256256 dispatches in 0.049484 s -> 5.179 M/s, 0.1931 us each (create 0.172 us/thread)
+[PE 0] rep 2: 256256 dispatches in 0.049807 s -> 5.145 M/s, 0.1944 us each (create 0.168 us/thread)
+[PE 0] rep 3: 256256 dispatches in 0.049541 s -> 5.173 M/s, 0.1933 us each (create 0.163 us/thread)
+[PE 0] rep 4: 256256 dispatches in 0.049832 s -> 5.142 M/s, 0.1945 us each (create 0.166 us/thread)
+[PE 0] threads=256 yields=1000: best 0.1923 us/dispatch (5.200 M dispatches/s), mean 0.1935 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,256,1000,0.192321,0.193516,5.199630
+=== ult sched_rate layer converse pes 1 threads 256 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 256 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 256256 dispatches in 0.083357 s -> 3.074 M/s, 0.3253 us each (create 1.340 us/thread)
+[PE 0] rep 1: 256256 dispatches in 0.083655 s -> 3.063 M/s, 0.3265 us each (create 0.920 us/thread)
+[PE 0] rep 2: 256256 dispatches in 0.083759 s -> 3.059 M/s, 0.3269 us each (create 1.229 us/thread)
+[PE 0] rep 3: 256256 dispatches in 0.086067 s -> 2.977 M/s, 0.3359 us each (create 0.905 us/thread)
+[PE 0] rep 4: 256256 dispatches in 0.098037 s -> 2.614 M/s, 0.3826 us each (create 1.367 us/thread)
+[PE 0] threads=256 yields=1000: best 0.3253 us/dispatch (3.074 M dispatches/s), mean 0.3394 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,256,1000,0.325289,0.339407,3.074192
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 512 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 512 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 512512 dispatches in 0.083014 s -> 6.174 M/s, 0.1620 us each (create 0.170 us/thread)
+[PE 0] rep 1: 512512 dispatches in 0.078257 s -> 6.549 M/s, 0.1527 us each (create 0.132 us/thread)
+[PE 0] rep 2: 512512 dispatches in 0.073744 s -> 6.950 M/s, 0.1439 us each (create 0.119 us/thread)
+[PE 0] rep 3: 512512 dispatches in 0.069938 s -> 7.328 M/s, 0.1365 us each (create 0.114 us/thread)
+[PE 0] rep 4: 512512 dispatches in 0.066404 s -> 7.718 M/s, 0.1296 us each (create 0.105 us/thread)
+[PE 0] threads=512 yields=1000: best 0.1296 us/dispatch (7.718 M dispatches/s), mean 0.1449 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,512,1000,0.129565,0.144916,7.718105
+=== ult sched_rate layer converse pes 1 threads 512 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 512 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 512512 dispatches in 0.154723 s -> 3.312 M/s, 0.3019 us each (create 3.207 us/thread)
+[PE 0] rep 1: 512512 dispatches in 0.145640 s -> 3.519 M/s, 0.2842 us each (create 3.030 us/thread)
+[PE 0] rep 2: 512512 dispatches in 0.135897 s -> 3.771 M/s, 0.2652 us each (create 2.643 us/thread)
+[PE 0] rep 3: 512512 dispatches in 0.124807 s -> 4.106 M/s, 0.2435 us each (create 2.347 us/thread)
+[PE 0] rep 4: 512512 dispatches in 0.117722 s -> 4.354 M/s, 0.2297 us each (create 2.106 us/thread)
+[PE 0] threads=512 yields=1000: best 0.2297 us/dispatch (4.354 M dispatches/s), mean 0.2649 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,512,1000,0.229696,0.264887,4.353572
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 1024 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 1024 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 1025024 dispatches in 0.227152 s -> 4.513 M/s, 0.2216 us each (create 0.200 us/thread)
+[PE 0] rep 1: 1025024 dispatches in 0.226461 s -> 4.526 M/s, 0.2209 us each (create 0.167 us/thread)
+[PE 0] rep 2: 1025024 dispatches in 0.215407 s -> 4.759 M/s, 0.2101 us each (create 0.155 us/thread)
+[PE 0] rep 3: 1025024 dispatches in 0.191938 s -> 5.340 M/s, 0.1873 us each (create 0.140 us/thread)
+[PE 0] rep 4: 1025024 dispatches in 0.168693 s -> 6.076 M/s, 0.1646 us each (create 0.122 us/thread)
+[PE 0] threads=1024 yields=1000: best 0.1646 us/dispatch (6.076 M dispatches/s), mean 0.2009 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1024,1000,0.164575,0.200903,6.076266
+=== ult sched_rate layer converse pes 1 threads 1024 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 1024 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 1025024 dispatches in 0.316945 s -> 3.234 M/s, 0.3092 us each (create 3.303 us/thread)
+[PE 0] rep 1: 1025024 dispatches in 0.260366 s -> 3.937 M/s, 0.2540 us each (create 2.733 us/thread)
+[PE 0] rep 2: 1025024 dispatches in 0.247288 s -> 4.145 M/s, 0.2413 us each (create 2.276 us/thread)
+[PE 0] rep 3: 1025024 dispatches in 0.245620 s -> 4.173 M/s, 0.2396 us each (create 2.155 us/thread)
+[PE 0] rep 4: 1025024 dispatches in 0.246576 s -> 4.157 M/s, 0.2406 us each (create 1.427 us/thread)
+[PE 0] threads=1024 yields=1000: best 0.2396 us/dispatch (4.173 M dispatches/s), mean 0.2569 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1024,1000,0.239624,0.256930,4.173205
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 1 threads 2048 ===
+Charm++> Running in SMP mode on 1 nodes and 1 PEs
+ULT scheduling rate: 2048 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 2050048 dispatches in 0.347153 s -> 5.905 M/s, 0.1693 us each (create 0.140 us/thread)
+[PE 0] rep 1: 2050048 dispatches in 0.346687 s -> 5.913 M/s, 0.1691 us each (create 0.119 us/thread)
+[PE 0] rep 2: 2050048 dispatches in 0.343411 s -> 5.970 M/s, 0.1675 us each (create 0.119 us/thread)
+[PE 0] rep 3: 2050048 dispatches in 0.288018 s -> 7.118 M/s, 0.1405 us each (create 0.107 us/thread)
+[PE 0] rep 4: 2050048 dispatches in 0.256297 s -> 7.999 M/s, 0.1250 us each (create 0.095 us/thread)
+[PE 0] threads=2048 yields=1000: best 0.1250 us/dispatch (7.999 M dispatches/s), mean 0.1543 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2048,1000,0.125020,0.154296,7.998709
+=== ult sched_rate layer converse pes 1 threads 2048 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 1 worker threads (PEs) + 1 comm threads per process, 1 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 2048 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 1 PEs
+[PE 0] rep 0: 2050048 dispatches in 0.494157 s -> 4.149 M/s, 0.2410 us each (create 2.515 us/thread)
+[PE 0] rep 1: 2050048 dispatches in 0.491957 s -> 4.167 M/s, 0.2400 us each (create 2.731 us/thread)
+[PE 0] rep 2: 2050048 dispatches in 0.495525 s -> 4.137 M/s, 0.2417 us each (create 2.182 us/thread)
+[PE 0] rep 3: 2050048 dispatches in 0.453296 s -> 4.523 M/s, 0.2211 us each (create 1.904 us/thread)
+[PE 0] rep 4: 2050048 dispatches in 0.406606 s -> 5.042 M/s, 0.1983 us each (create 1.784 us/thread)
+[PE 0] threads=2048 yields=1000: best 0.1983 us/dispatch (5.042 M dispatches/s), mean 0.2284 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2048,1000,0.198340,0.228438,5.041858
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 4 threads 1 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 1 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 1001 dispatches in 0.000111 s -> 9.029 M/s, 0.1108 us each (create 2.861 us/thread)
+[PE 0] rep 0: 1001 dispatches in 0.000125 s -> 8.012 M/s, 0.1248 us each (create 0.477 us/thread)
+[PE 3] rep 0: 1001 dispatches in 0.000124 s -> 8.090 M/s, 0.1236 us each (create 3.815 us/thread)
+[PE 2] rep 0: 1001 dispatches in 0.000125 s -> 8.028 M/s, 0.1246 us each (create 3.099 us/thread)
+[PE 1] rep 1: 1001 dispatches in 0.000104 s -> 9.630 M/s, 0.1038 us each (create 5.960 us/thread)
+[PE 0] rep 1: 1001 dispatches in 0.000117 s -> 8.551 M/s, 0.1169 us each (create 0.477 us/thread)
+[PE 3] rep 1: 1001 dispatches in 0.000116 s -> 8.603 M/s, 0.1162 us each (create 3.576 us/thread)
+[PE 2] rep 1: 1001 dispatches in 0.000116 s -> 8.603 M/s, 0.1162 us each (create 3.576 us/thread)
+[PE 1] rep 2: 1001 dispatches in 0.000099 s -> 10.117 M/s, 0.0988 us each (create 0.238 us/thread)
+[PE 0] rep 2: 1001 dispatches in 0.000116 s -> 8.603 M/s, 0.1162 us each (create 0.238 us/thread)
+[PE 3] rep 2: 1001 dispatches in 0.000119 s -> 8.431 M/s, 0.1186 us each (create 0.238 us/thread)
+[PE 2] rep 2: 1001 dispatches in 0.000119 s -> 8.397 M/s, 0.1191 us each (create 0.238 us/thread)
+[PE 1] rep 3: 1001 dispatches in 0.000101 s -> 9.949 M/s, 0.1005 us each (create 0.000 us/thread)
+[PE 0] rep 3: 1001 dispatches in 0.000119 s -> 8.414 M/s, 0.1189 us each (create 0.000 us/thread)
+[PE 3] rep 3: 1001 dispatches in 0.000115 s -> 8.711 M/s, 0.1148 us each (create 0.238 us/thread)
+[PE 2] rep 3: 1001 dispatches in 0.000121 s -> 8.297 M/s, 0.1205 us each (create 0.238 us/thread)
+[PE 1] rep 4: 1001 dispatches in 0.000102 s -> 9.810 M/s, 0.1019 us each (create 0.000 us/thread)
+[PE 1] threads=1 yields=1000: best 0.0988 us/dispatch (10.117 M dispatches/s), mean 0.1032 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,1,1000,0.098845,0.103180,10.116863
+[PE 0] rep 4: 1001 dispatches in 0.000117 s -> 8.551 M/s, 0.1169 us each (create 0.238 us/thread)
+[PE 0] threads=1 yields=1000: best 0.1162 us/dispatch (8.603 M dispatches/s), mean 0.1188 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1,1000,0.116232,0.118757,8.603480
+[PE 3] rep 4: 1001 dispatches in 0.000118 s -> 8.448 M/s, 0.1184 us each (create 0.238 us/thread)
+[PE 3] threads=1 yields=1000: best 0.1148 us/dispatch (8.711 M dispatches/s), mean 0.1183 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,1,1000,0.114803,0.118328,8.710577
+[PE 2] rep 4: 1001 dispatches in 0.000115 s -> 8.675 M/s, 0.1153 us each (create 0.000 us/thread)
+[PE 2] threads=1 yields=1000: best 0.1153 us/dispatch (8.675 M dispatches/s), mean 0.1191 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,1,1000,0.115279,0.119138,8.674583
+=== ult sched_rate layer converse pes 4 threads 1 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 1 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 1001 dispatches in 0.000307 s -> 3.260 M/s, 0.3067 us each (create 5.982 us/thread)
+[PE 0] rep 0: 1001 dispatches in 0.000332 s -> 3.017 M/s, 0.3315 us each (create 3.997 us/thread)
+[PE 3] rep 0: 1001 dispatches in 0.000345 s -> 2.901 M/s, 0.3447 us each (create 5.420 us/thread)
+[PE 2] rep 0: 1001 dispatches in 0.000352 s -> 2.845 M/s, 0.3515 us each (create 6.331 us/thread)
+[PE 1] rep 1: 1001 dispatches in 0.000300 s -> 3.334 M/s, 0.2999 us each (create 4.749 us/thread)
+[PE 0] rep 1: 1001 dispatches in 0.000330 s -> 3.031 M/s, 0.3299 us each (create 4.058 us/thread)
+[PE 3] rep 1: 1001 dispatches in 0.000384 s -> 2.607 M/s, 0.3836 us each (create 4.238 us/thread)
+[PE 2] rep 1: 1001 dispatches in 0.000379 s -> 2.644 M/s, 0.3782 us each (create 4.749 us/thread)
+[PE 1] rep 2: 1001 dispatches in 0.000304 s -> 3.294 M/s, 0.3036 us each (create 0.271 us/thread)
+[PE 0] rep 2: 1001 dispatches in 0.000340 s -> 2.948 M/s, 0.3392 us each (create 0.270 us/thread)
+[PE 3] rep 2: 1001 dispatches in 0.000357 s -> 2.801 M/s, 0.3571 us each (create 0.251 us/thread)
+[PE 2] rep 2: 1001 dispatches in 0.000375 s -> 2.666 M/s, 0.3751 us each (create 0.261 us/thread)
+[PE 1] rep 3: 1001 dispatches in 0.000308 s -> 3.245 M/s, 0.3081 us each (create 0.200 us/thread)
+[PE 0] rep 3: 1001 dispatches in 0.000339 s -> 2.950 M/s, 0.3390 us each (create 0.210 us/thread)
+[PE 3] rep 3: 1001 dispatches in 0.000358 s -> 2.795 M/s, 0.3578 us each (create 0.241 us/thread)
+[PE 2] rep 3: 1001 dispatches in 0.000371 s -> 2.699 M/s, 0.3706 us each (create 0.200 us/thread)
+[PE 1] rep 4: 1001 dispatches in 0.000305 s -> 3.277 M/s, 0.3051 us each (create 0.191 us/thread)
+[PE 1] threads=1 yields=1000: best 0.2999 us/dispatch (3.334 M dispatches/s), mean 0.3047 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,1,1000,0.299926,0.304695,3.334155
+[PE 0] rep 4: 1001 dispatches in 0.000308 s -> 3.248 M/s, 0.3079 us each (create 0.200 us/thread)
+[PE 0] threads=1 yields=1000: best 0.3079 us/dispatch (3.248 M dispatches/s), mean 0.3295 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1,1000,0.307924,0.329505,3.247554
+[Partition 0][Node 0] End of program
+[PE 3] rep 4: 1001 dispatches in 0.000304 s -> 3.293 M/s, 0.3037 us each (create 0.180 us/thread)
+[PE 3] threads=1 yields=1000: best 0.3037 us/dispatch (3.293 M dispatches/s), mean 0.3494 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,1,1000,0.303710,0.349364,3.292612
+[PE 2] rep 4: 1001 dispatches in 0.000300 s -> 3.338 M/s, 0.2996 us each (create 0.201 us/thread)
+[PE 2] threads=1 yields=1000: best 0.2996 us/dispatch (3.338 M dispatches/s), mean 0.3550 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,1,1000,0.299605,0.354987,3.337724
+=== ult sched_rate layer reconverse pes 4 threads 2 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 2 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 2] rep 0: 2002 dispatches in 0.000334 s -> 5.989 M/s, 0.1670 us each (create 4.411 us/thread)
+[PE 0] rep 0: 2002 dispatches in 0.000342 s -> 5.856 M/s, 0.1708 us each (create 0.477 us/thread)
+[PE 3] rep 0: 2002 dispatches in 0.000339 s -> 5.913 M/s, 0.1691 us each (create 5.007 us/thread)
+[PE 1] rep 0: 2002 dispatches in 0.000375 s -> 5.345 M/s, 0.1871 us each (create 7.153 us/thread)
+[PE 2] rep 1: 2002 dispatches in 0.000342 s -> 5.852 M/s, 0.1709 us each (create 0.119 us/thread)
+[PE 0] rep 1: 2002 dispatches in 0.000353 s -> 5.677 M/s, 0.1761 us each (create 0.238 us/thread)
+[PE 3] rep 1: 2002 dispatches in 0.000347 s -> 5.763 M/s, 0.1735 us each (create 0.238 us/thread)
+[PE 1] rep 1: 2002 dispatches in 0.000378 s -> 5.291 M/s, 0.1890 us each (create 0.358 us/thread)
+[PE 2] rep 2: 2002 dispatches in 0.000341 s -> 5.872 M/s, 0.1703 us each (create 0.119 us/thread)
+[PE 0] rep 2: 2002 dispatches in 0.000345 s -> 5.811 M/s, 0.1721 us each (create 0.238 us/thread)
+[PE 3] rep 2: 2002 dispatches in 0.000341 s -> 5.864 M/s, 0.1705 us each (create 0.238 us/thread)
+[PE 1] rep 2: 2002 dispatches in 0.000366 s -> 5.467 M/s, 0.1829 us each (create 0.119 us/thread)
+[PE 2] rep 3: 2002 dispatches in 0.000340 s -> 5.897 M/s, 0.1696 us each (create 0.119 us/thread)
+[PE 0] rep 3: 2002 dispatches in 0.000345 s -> 5.807 M/s, 0.1722 us each (create 0.119 us/thread)
+[PE 3] rep 3: 2002 dispatches in 0.000343 s -> 5.839 M/s, 0.1713 us each (create 0.119 us/thread)
+[PE 1] rep 3: 2002 dispatches in 0.000381 s -> 5.258 M/s, 0.1902 us each (create 0.119 us/thread)
+[PE 2] rep 4: 2002 dispatches in 0.000345 s -> 5.811 M/s, 0.1721 us each (create 0.119 us/thread)
+[PE 2] threads=2 yields=1000: best 0.1670 us/dispatch (5.989 M dispatches/s), mean 0.1700 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,2,1000,0.166964,0.169966,5.989299
+[PE 3] rep 4: 2002 dispatches in 0.000348 s -> 5.759 M/s, 0.1736 us each (create 0.119 us/thread)
+[PE 3] threads=2 yields=1000: best 0.1691 us/dispatch (5.913 M dispatches/s), mean 0.1716 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,2,1000,0.169108,0.171609,5.913378
+[PE 0] rep 4: 2002 dispatches in 0.000353 s -> 5.670 M/s, 0.1764 us each (create 0.119 us/thread)
+[PE 0] threads=2 yields=1000: best 0.1708 us/dispatch (5.856 M dispatches/s), mean 0.1735 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2,1000,0.170775,0.173514,5.855646
+[PE 1] rep 4: 2002 dispatches in 0.000375 s -> 5.345 M/s, 0.1871 us each (create 0.119 us/thread)
+[PE 1] threads=2 yields=1000: best 0.1829 us/dispatch (5.467 M dispatches/s), mean 0.1873 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,2,1000,0.182923,0.187257,5.466795
+=== ult sched_rate layer converse pes 4 threads 2 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 2 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 2002 dispatches in 0.000606 s -> 3.305 M/s, 0.3025 us each (create 6.281 us/thread)
+[PE 2] rep 0: 2002 dispatches in 0.000694 s -> 2.883 M/s, 0.3468 us each (create 6.548 us/thread)
+[PE 3] rep 0: 2002 dispatches in 0.000684 s -> 2.926 M/s, 0.3418 us each (create 6.513 us/thread)
+[PE 0] rep 0: 2002 dispatches in 0.000835 s -> 2.398 M/s, 0.4170 us each (create 4.644 us/thread)
+[PE 1] rep 1: 2002 dispatches in 0.000613 s -> 3.266 M/s, 0.3062 us each (create 0.215 us/thread)
+[PE 2] rep 1: 2002 dispatches in 0.000699 s -> 2.864 M/s, 0.3491 us each (create 0.195 us/thread)
+[PE 3] rep 1: 2002 dispatches in 0.000687 s -> 2.912 M/s, 0.3434 us each (create 0.195 us/thread)
+[PE 1] rep 2: 2002 dispatches in 0.000616 s -> 3.251 M/s, 0.3076 us each (create 0.150 us/thread)
+[PE 0] rep 1: 2002 dispatches in 0.000843 s -> 2.376 M/s, 0.4209 us each (create 0.276 us/thread)
+[PE 2] rep 2: 2002 dispatches in 0.000701 s -> 2.858 M/s, 0.3499 us each (create 0.170 us/thread)
+[PE 3] rep 2: 2002 dispatches in 0.000693 s -> 2.888 M/s, 0.3463 us each (create 0.151 us/thread)
+[PE 1] rep 3: 2002 dispatches in 0.000611 s -> 3.278 M/s, 0.3051 us each (create 0.141 us/thread)
+[PE 0] rep 2: 2002 dispatches in 0.000830 s -> 2.412 M/s, 0.4145 us each (create 0.175 us/thread)
+[PE 3] rep 3: 2002 dispatches in 0.000687 s -> 2.913 M/s, 0.3433 us each (create 0.155 us/thread)
+[PE 2] rep 3: 2002 dispatches in 0.000699 s -> 2.865 M/s, 0.3491 us each (create 0.146 us/thread)
+[PE 1] rep 4: 2002 dispatches in 0.000621 s -> 3.226 M/s, 0.3100 us each (create 0.121 us/thread)
+[PE 1] threads=2 yields=1000: best 0.3025 us/dispatch (3.305 M dispatches/s), mean 0.3063 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,2,1000,0.302533,0.306278,3.305419
+[PE 2] rep 4: 2002 dispatches in 0.000619 s -> 3.234 M/s, 0.3092 us each (create 0.115 us/thread)
+[PE 2] threads=2 yields=1000: best 0.3092 us/dispatch (3.234 M dispatches/s), mean 0.3408 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,2,1000,0.309244,0.340840,3.233690
+[PE 3] rep 4: 2002 dispatches in 0.000629 s -> 3.181 M/s, 0.3144 us each (create 0.140 us/thread)
+[PE 3] threads=2 yields=1000: best 0.3144 us/dispatch (3.181 M dispatches/s), mean 0.3378 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,2,1000,0.314384,0.337820,3.180822
+[PE 0] rep 3: 2002 dispatches in 0.000735 s -> 2.724 M/s, 0.3672 us each (create 0.155 us/thread)
+[PE 0] rep 4: 2002 dispatches in 0.000625 s -> 3.202 M/s, 0.3123 us each (create 0.170 us/thread)
+[PE 0] threads=2 yields=1000: best 0.3123 us/dispatch (3.202 M dispatches/s), mean 0.3864 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2,1000,0.312333,0.386375,3.201714
+[Partition 0][Node 0] End of program
+=== ult sched_rate layer reconverse pes 4 threads 4 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 4 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 0] rep 0: 4004 dispatches in 0.000691 s -> 5.793 M/s, 0.1726 us each (create 0.358 us/thread)
+[PE 3] rep 0: 4004 dispatches in 0.000670 s -> 5.972 M/s, 0.1674 us each (create 6.795 us/thread)
+[PE 2] rep 0: 4004 dispatches in 0.000676 s -> 5.920 M/s, 0.1689 us each (create 9.894 us/thread)
+[PE 1] rep 0: 4004 dispatches in 0.000732 s -> 5.469 M/s, 0.1829 us each (create 2.623 us/thread)
+[PE 0] rep 1: 4004 dispatches in 0.000688 s -> 5.817 M/s, 0.1719 us each (create 0.238 us/thread)
+[PE 3] rep 1: 4004 dispatches in 0.000696 s -> 5.755 M/s, 0.1738 us each (create 0.060 us/thread)
+[PE 2] rep 1: 4004 dispatches in 0.000681 s -> 5.882 M/s, 0.1700 us each (create 0.060 us/thread)
+[PE 1] rep 1: 4004 dispatches in 0.000746 s -> 5.364 M/s, 0.1864 us each (create 0.119 us/thread)
+[PE 0] rep 2: 4004 dispatches in 0.000744 s -> 5.381 M/s, 0.1858 us each (create 0.179 us/thread)
+[PE 2] rep 2: 4004 dispatches in 0.000682 s -> 5.868 M/s, 0.1704 us each (create 0.060 us/thread)
+[PE 3] rep 2: 4004 dispatches in 0.000697 s -> 5.742 M/s, 0.1742 us each (create 0.060 us/thread)
+[PE 1] rep 2: 4004 dispatches in 0.000748 s -> 5.354 M/s, 0.1868 us each (create 0.060 us/thread)
+[PE 0] rep 3: 4004 dispatches in 0.000671 s -> 5.964 M/s, 0.1677 us each (create 0.179 us/thread)
+[PE 2] rep 3: 4004 dispatches in 0.000678 s -> 5.903 M/s, 0.1694 us each (create 0.060 us/thread)
+[PE 3] rep 3: 4004 dispatches in 0.000681 s -> 5.882 M/s, 0.1700 us each (create 0.060 us/thread)
+[PE 1] rep 3: 4004 dispatches in 0.000741 s -> 5.400 M/s, 0.1852 us each (create 0.119 us/thread)
+[PE 0] rep 4: 4004 dispatches in 0.000679 s -> 5.893 M/s, 0.1697 us each (create 0.179 us/thread)
+[PE 0] threads=4 yields=1000: best 0.1677 us/dispatch (5.964 M dispatches/s), mean 0.1736 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,4,1000,0.167679,0.173550,5.963776
+[PE 2] rep 4: 4004 dispatches in 0.000680 s -> 5.891 M/s, 0.1698 us each (create 0.119 us/thread)
+[PE 2] threads=4 yields=1000: best 0.1689 us/dispatch (5.920 M dispatches/s), mean 0.1697 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,4,1000,0.168929,0.169704,5.919631
+[PE 3] rep 4: 4004 dispatches in 0.000698 s -> 5.740 M/s, 0.1742 us each (create 0.060 us/thread)
+[PE 3] threads=4 yields=1000: best 0.1674 us/dispatch (5.972 M dispatches/s), mean 0.1719 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,4,1000,0.167441,0.171919,5.972259
+[PE 1] rep 4: 4004 dispatches in 0.000737 s -> 5.433 M/s, 0.1841 us each (create 0.060 us/thread)
+[PE 1] threads=4 yields=1000: best 0.1829 us/dispatch (5.469 M dispatches/s), mean 0.1851 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,4,1000,0.182863,0.185066,5.468575
+=== ult sched_rate layer converse pes 4 threads 4 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 4 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 4004 dispatches in 0.001222 s -> 3.276 M/s, 0.3052 us each (create 2.116 us/thread)
+[PE 2] rep 0: 4004 dispatches in 0.001466 s -> 2.730 M/s, 0.3662 us each (create 2.016 us/thread)
+[PE 0] rep 0: 4004 dispatches in 0.001644 s -> 2.435 M/s, 0.4106 us each (create 2.397 us/thread)
+[PE 1] rep 1: 4004 dispatches in 0.001216 s -> 3.293 M/s, 0.3037 us each (create 0.105 us/thread)
+[PE 3] rep 0: 4004 dispatches in 0.002108 s -> 1.899 M/s, 0.5265 us each (create 2.542 us/thread)
+[PE 2] rep 1: 4004 dispatches in 0.001464 s -> 2.735 M/s, 0.3657 us each (create 0.113 us/thread)
+[PE 0] rep 1: 4004 dispatches in 0.001624 s -> 2.465 M/s, 0.4057 us each (create 0.143 us/thread)
+[PE 1] rep 2: 4004 dispatches in 0.001291 s -> 3.102 M/s, 0.3223 us each (create 0.115 us/thread)
+[PE 2] rep 2: 4004 dispatches in 0.001464 s -> 2.736 M/s, 0.3655 us each (create 0.118 us/thread)
+[PE 1] rep 3: 4004 dispatches in 0.001223 s -> 3.273 M/s, 0.3055 us each (create 0.113 us/thread)
+[PE 3] rep 1: 4004 dispatches in 0.002089 s -> 1.917 M/s, 0.5218 us each (create 0.153 us/thread)
+[PE 0] rep 2: 4004 dispatches in 0.001619 s -> 2.472 M/s, 0.4045 us each (create 0.148 us/thread)
+[PE 2] rep 3: 4004 dispatches in 0.001477 s -> 2.710 M/s, 0.3690 us each (create 0.095 us/thread)
+[PE 1] rep 4: 4004 dispatches in 0.001225 s -> 3.270 M/s, 0.3059 us each (create 0.105 us/thread)
+[PE 1] threads=4 yields=1000: best 0.3037 us/dispatch (3.293 M dispatches/s), mean 0.3085 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,4,1000,0.303665,0.308514,3.293107
+[PE 0] rep 3: 4004 dispatches in 0.001474 s -> 2.717 M/s, 0.3681 us each (create 0.123 us/thread)
+[PE 3] rep 2: 4004 dispatches in 0.001792 s -> 2.235 M/s, 0.4475 us each (create 0.160 us/thread)
+[PE 2] rep 4: 4004 dispatches in 0.001197 s -> 3.345 M/s, 0.2990 us each (create 0.108 us/thread)
+[PE 2] threads=4 yields=1000: best 0.2990 us/dispatch (3.345 M dispatches/s), mean 0.3531 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,4,1000,0.298963,0.353088,3.344898
+[PE 0] rep 4: 4004 dispatches in 0.001265 s -> 3.166 M/s, 0.3159 us each (create 0.125 us/thread)
+[PE 0] threads=4 yields=1000: best 0.3159 us/dispatch (3.166 M dispatches/s), mean 0.3809 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,4,1000,0.315855,0.380938,3.166006
+[Partition 0][Node 0] End of program
+[PE 3] rep 3: 4004 dispatches in 0.001291 s -> 3.102 M/s, 0.3224 us each (create 0.125 us/thread)
+[PE 3] rep 4: 4004 dispatches in 0.001192 s -> 3.360 M/s, 0.2976 us each (create 0.133 us/thread)
+[PE 3] threads=4 yields=1000: best 0.2976 us/dispatch (3.360 M dispatches/s), mean 0.4231 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,4,1000,0.297597,0.423141,3.360250
+=== ult sched_rate layer reconverse pes 4 threads 8 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 8 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 8008 dispatches in 0.001022 s -> 7.835 M/s, 0.1276 us each (create 0.983 us/thread)
+[PE 0] rep 0: 8008 dispatches in 0.001280 s -> 6.256 M/s, 0.1598 us each (create 0.268 us/thread)
+[PE 3] rep 0: 8008 dispatches in 0.001261 s -> 6.353 M/s, 0.1574 us each (create 1.281 us/thread)
+[PE 2] rep 0: 8008 dispatches in 0.001274 s -> 6.288 M/s, 0.1590 us each (create 1.311 us/thread)
+[PE 1] rep 1: 8008 dispatches in 0.001029 s -> 7.780 M/s, 0.1285 us each (create 0.089 us/thread)
+[PE 0] rep 1: 8008 dispatches in 0.001336 s -> 5.993 M/s, 0.1669 us each (create 0.179 us/thread)
+[PE 3] rep 1: 8008 dispatches in 0.001263 s -> 6.339 M/s, 0.1578 us each (create 0.119 us/thread)
+[PE 2] rep 1: 8008 dispatches in 0.001287 s -> 6.223 M/s, 0.1607 us each (create 0.119 us/thread)
+[PE 1] rep 2: 8008 dispatches in 0.001026 s -> 7.804 M/s, 0.1281 us each (create 0.119 us/thread)
+[PE 0] rep 2: 8008 dispatches in 0.001260 s -> 6.354 M/s, 0.1574 us each (create 0.149 us/thread)
+[PE 3] rep 2: 8008 dispatches in 0.001258 s -> 6.364 M/s, 0.1571 us each (create 0.149 us/thread)
+[PE 1] rep 3: 8008 dispatches in 0.001029 s -> 7.786 M/s, 0.1284 us each (create 0.089 us/thread)
+[PE 2] rep 2: 8008 dispatches in 0.001283 s -> 6.242 M/s, 0.1602 us each (create 0.149 us/thread)
+[PE 1] rep 4: 8008 dispatches in 0.001018 s -> 7.864 M/s, 0.1272 us each (create 0.089 us/thread)
+[PE 1] threads=8 yields=1000: best 0.1272 us/dispatch (7.864 M dispatches/s), mean 0.1280 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,8,1000,0.127159,0.127980,7.864197
+[PE 0] rep 3: 8008 dispatches in 0.001276 s -> 6.277 M/s, 0.1593 us each (create 0.119 us/thread)
+[PE 3] rep 3: 8008 dispatches in 0.001260 s -> 6.357 M/s, 0.1573 us each (create 0.119 us/thread)
+[PE 2] rep 3: 8008 dispatches in 0.001270 s -> 6.304 M/s, 0.1586 us each (create 0.119 us/thread)
+[PE 0] rep 4: 8008 dispatches in 0.001314 s -> 6.095 M/s, 0.1641 us each (create 0.149 us/thread)
+[PE 0] threads=8 yields=1000: best 0.1574 us/dispatch (6.354 M dispatches/s), mean 0.1615 us
+[PE 3] rep 4: 8008 dispatches in 0.001281 s -> 6.251 M/s, 0.1600 us each (create 0.089 us/thread)
+[PE 3] threads=8 yields=1000: best 0.1571 us/dispatch (6.364 M dispatches/s), mean 0.1579 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,8,1000,0.157140,0.157920,6.363772
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,8,1000,0.157378,0.161498,6.354140
+[PE 2] rep 4: 8008 dispatches in 0.001287 s -> 6.221 M/s, 0.1607 us each (create 0.089 us/thread)
+[PE 2] threads=8 yields=1000: best 0.1586 us/dispatch (6.304 M dispatches/s), mean 0.1599 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,8,1000,0.158628,0.159861,6.304052
+=== ult sched_rate layer converse pes 4 threads 8 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 8 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 8008 dispatches in 0.002530 s -> 3.165 M/s, 0.3160 us each (create 1.532 us/thread)
+[PE 2] rep 0: 8008 dispatches in 0.002933 s -> 2.731 M/s, 0.3662 us each (create 1.626 us/thread)
+[PE 0] rep 0: 8008 dispatches in 0.003259 s -> 2.457 M/s, 0.4070 us each (create 1.176 us/thread)
+[PE 1] rep 1: 8008 dispatches in 0.002440 s -> 3.281 M/s, 0.3047 us each (create 0.141 us/thread)
+[PE 3] rep 0: 8008 dispatches in 0.003763 s -> 2.128 M/s, 0.4699 us each (create 1.974 us/thread)
+[PE 2] rep 1: 8008 dispatches in 0.002874 s -> 2.787 M/s, 0.3588 us each (create 0.141 us/thread)
+[PE 0] rep 1: 8008 dispatches in 0.003295 s -> 2.430 M/s, 0.4115 us each (create 0.166 us/thread)
+[PE 1] rep 2: 8008 dispatches in 0.002453 s -> 3.264 M/s, 0.3063 us each (create 0.145 us/thread)
+[PE 2] rep 2: 8008 dispatches in 0.002809 s -> 2.851 M/s, 0.3508 us each (create 0.149 us/thread)
+[PE 3] rep 1: 8008 dispatches in 0.003842 s -> 2.085 M/s, 0.4797 us each (create 0.180 us/thread)
+[PE 1] rep 3: 8008 dispatches in 0.002448 s -> 3.271 M/s, 0.3057 us each (create 0.134 us/thread)
+[PE 0] rep 2: 8008 dispatches in 0.003281 s -> 2.441 M/s, 0.4097 us each (create 0.187 us/thread)
+[PE 2] rep 3: 8008 dispatches in 0.002978 s -> 2.689 M/s, 0.3719 us each (create 0.140 us/thread)
+[PE 1] rep 4: 8008 dispatches in 0.002464 s -> 3.249 M/s, 0.3077 us each (create 0.122 us/thread)
+[PE 1] threads=8 yields=1000: best 0.3047 us/dispatch (3.281 M dispatches/s), mean 0.3081 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,8,1000,0.304746,0.308107,3.281425
+[PE 3] rep 2: 8008 dispatches in 0.003693 s -> 2.169 M/s, 0.4611 us each (create 0.199 us/thread)
+[PE 0] rep 3: 8008 dispatches in 0.002981 s -> 2.687 M/s, 0.3722 us each (create 0.150 us/thread)
+[PE 2] rep 4: 8008 dispatches in 0.002487 s -> 3.219 M/s, 0.3106 us each (create 0.128 us/thread)
+[PE 2] threads=8 yields=1000: best 0.3106 us/dispatch (3.219 M dispatches/s), mean 0.3517 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,8,1000,0.310616,0.351654,3.219410
+[PE 3] rep 3: 8008 dispatches in 0.002683 s -> 2.985 M/s, 0.3350 us each (create 0.181 us/thread)
+[PE 0] rep 4: 8008 dispatches in 0.002562 s -> 3.126 M/s, 0.3199 us each (create 0.135 us/thread)
+[PE 0] threads=8 yields=1000: best 0.3199 us/dispatch (3.126 M dispatches/s), mean 0.3841 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,8,1000,0.319940,0.384056,3.125583
+[Partition 0][Node 0] End of program
+[PE 3] rep 4: 8008 dispatches in 0.002430 s -> 3.295 M/s, 0.3035 us each (create 0.154 us/thread)
+[PE 3] threads=8 yields=1000: best 0.3035 us/dispatch (3.295 M dispatches/s), mean 0.4099 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,8,1000,0.303476,0.409857,3.295156
+=== ult sched_rate layer reconverse pes 4 threads 16 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 16 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 0] rep 0: 16016 dispatches in 0.002702 s -> 5.929 M/s, 0.1687 us each (create 0.268 us/thread)
+[PE 3] rep 0: 16016 dispatches in 0.002706 s -> 5.919 M/s, 0.1690 us each (create 0.820 us/thread)
+[PE 2] rep 0: 16016 dispatches in 0.002797 s -> 5.725 M/s, 0.1747 us each (create 0.879 us/thread)
+[PE 1] rep 0: 16016 dispatches in 0.002964 s -> 5.403 M/s, 0.1851 us each (create 1.118 us/thread)
+[PE 0] rep 1: 16016 dispatches in 0.002774 s -> 5.773 M/s, 0.1732 us each (create 0.253 us/thread)
+[PE 3] rep 1: 16016 dispatches in 0.002717 s -> 5.895 M/s, 0.1696 us each (create 0.194 us/thread)
+[PE 2] rep 1: 16016 dispatches in 0.002835 s -> 5.649 M/s, 0.1770 us each (create 0.194 us/thread)
+[PE 1] rep 1: 16016 dispatches in 0.002982 s -> 5.370 M/s, 0.1862 us each (create 0.209 us/thread)
+[PE 0] rep 2: 16016 dispatches in 0.002763 s -> 5.797 M/s, 0.1725 us each (create 0.224 us/thread)
+[PE 3] rep 2: 16016 dispatches in 0.002753 s -> 5.819 M/s, 0.1719 us each (create 0.209 us/thread)
+[PE 2] rep 2: 16016 dispatches in 0.002863 s -> 5.594 M/s, 0.1788 us each (create 0.194 us/thread)
+[PE 1] rep 2: 16016 dispatches in 0.003031 s -> 5.283 M/s, 0.1893 us each (create 0.209 us/thread)
+[PE 0] rep 3: 16016 dispatches in 0.002771 s -> 5.780 M/s, 0.1730 us each (create 0.238 us/thread)
+[PE 3] rep 3: 16016 dispatches in 0.002709 s -> 5.913 M/s, 0.1691 us each (create 0.149 us/thread)
+[PE 2] rep 3: 16016 dispatches in 0.002824 s -> 5.672 M/s, 0.1763 us each (create 0.149 us/thread)
+[PE 1] rep 3: 16016 dispatches in 0.003003 s -> 5.333 M/s, 0.1875 us each (create 0.149 us/thread)
+[PE 0] rep 4: 16016 dispatches in 0.002729 s -> 5.869 M/s, 0.1704 us each (create 0.194 us/thread)
+[PE 0] threads=16 yields=1000: best 0.1687 us/dispatch (5.929 M dispatches/s), mean 0.1716 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,16,1000,0.168676,0.171564,5.928512
+[PE 3] rep 4: 16016 dispatches in 0.002709 s -> 5.913 M/s, 0.1691 us each (create 0.164 us/thread)
+[PE 3] threads=16 yields=1000: best 0.1690 us/dispatch (5.919 M dispatches/s), mean 0.1697 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,16,1000,0.168959,0.169742,5.918588
+[PE 2] rep 4: 16016 dispatches in 0.002824 s -> 5.671 M/s, 0.1763 us each (create 0.164 us/thread)
+[PE 2] threads=16 yields=1000: best 0.1747 us/dispatch (5.725 M dispatches/s), mean 0.1766 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,16,1000,0.174661,0.176620,5.725388
+[PE 1] rep 4: 16016 dispatches in 0.003024 s -> 5.296 M/s, 0.1888 us each (create 0.164 us/thread)
+[PE 1] threads=16 yields=1000: best 0.1851 us/dispatch (5.403 M dispatches/s), mean 0.1874 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,16,1000,0.185096,0.187385,5.402604
+=== ult sched_rate layer converse pes 4 threads 16 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 16 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 16016 dispatches in 0.004933 s -> 3.247 M/s, 0.3080 us each (create 0.952 us/thread)
+[PE 2] rep 0: 16016 dispatches in 0.005880 s -> 2.724 M/s, 0.3671 us each (create 0.966 us/thread)
+[PE 0] rep 0: 16016 dispatches in 0.006567 s -> 2.439 M/s, 0.4100 us each (create 0.879 us/thread)
+[PE 1] rep 1: 16016 dispatches in 0.004907 s -> 3.264 M/s, 0.3064 us each (create 0.182 us/thread)
+[PE 3] rep 0: 16016 dispatches in 0.008278 s -> 1.935 M/s, 0.5168 us each (create 1.153 us/thread)
+[PE 2] rep 1: 16016 dispatches in 0.005860 s -> 2.733 M/s, 0.3659 us each (create 0.175 us/thread)
+[PE 1] rep 2: 16016 dispatches in 0.004980 s -> 3.216 M/s, 0.3109 us each (create 0.187 us/thread)
+[PE 0] rep 1: 16016 dispatches in 0.006556 s -> 2.443 M/s, 0.4093 us each (create 0.218 us/thread)
+[PE 2] rep 2: 16016 dispatches in 0.005935 s -> 2.698 M/s, 0.3706 us each (create 0.186 us/thread)
+[PE 1] rep 3: 16016 dispatches in 0.004909 s -> 3.262 M/s, 0.3065 us each (create 0.159 us/thread)
+[PE 3] rep 1: 16016 dispatches in 0.008407 s -> 1.905 M/s, 0.5249 us each (create 0.232 us/thread)
+[PE 0] rep 2: 16016 dispatches in 0.006555 s -> 2.443 M/s, 0.4093 us each (create 0.228 us/thread)
+[PE 2] rep 3: 16016 dispatches in 0.005887 s -> 2.721 M/s, 0.3676 us each (create 0.153 us/thread)
+[PE 1] rep 4: 16016 dispatches in 0.004936 s -> 3.245 M/s, 0.3082 us each (create 0.160 us/thread)
+[PE 1] threads=16 yields=1000: best 0.3064 us/dispatch (3.264 M dispatches/s), mean 0.3080 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,16,1000,0.306364,0.307997,3.264092
+[PE 0] rep 3: 16016 dispatches in 0.005834 s -> 2.745 M/s, 0.3643 us each (create 0.182 us/thread)
+[PE 3] rep 2: 16016 dispatches in 0.007166 s -> 2.235 M/s, 0.4474 us each (create 0.237 us/thread)
+[PE 2] rep 4: 16016 dispatches in 0.004778 s -> 3.352 M/s, 0.2983 us each (create 0.153 us/thread)
+[PE 2] threads=16 yields=1000: best 0.2983 us/dispatch (3.352 M dispatches/s), mean 0.3539 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,16,1000,0.298337,0.353895,3.351916
+[PE 0] rep 4: 16016 dispatches in 0.005101 s -> 3.140 M/s, 0.3185 us each (create 0.196 us/thread)
+[PE 0] threads=16 yields=1000: best 0.3185 us/dispatch (3.140 M dispatches/s), mean 0.3823 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,16,1000,0.318478,0.382276,3.139936
+[Partition 0][Node 0] End of program
+[PE 3] rep 3: 16016 dispatches in 0.005254 s -> 3.049 M/s, 0.3280 us each (create 0.195 us/thread)
+[PE 3] rep 4: 16016 dispatches in 0.004847 s -> 3.304 M/s, 0.3026 us each (create 0.200 us/thread)
+[PE 3] threads=16 yields=1000: best 0.3026 us/dispatch (3.304 M dispatches/s), mean 0.4240 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,16,1000,0.302630,0.423957,3.304365
+=== ult sched_rate layer reconverse pes 4 threads 32 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 32 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 2] rep 0: 32032 dispatches in 0.004718 s -> 6.789 M/s, 0.1473 us each (create 0.454 us/thread)
+[PE 0] rep 0: 32032 dispatches in 0.005454 s -> 5.874 M/s, 0.1703 us each (create 0.253 us/thread)
+[PE 3] rep 0: 32032 dispatches in 0.005288 s -> 6.057 M/s, 0.1651 us each (create 0.477 us/thread)
+[PE 1] rep 0: 32032 dispatches in 0.005673 s -> 5.646 M/s, 0.1771 us each (create 0.611 us/thread)
+[PE 2] rep 1: 32032 dispatches in 0.004209 s -> 7.610 M/s, 0.1314 us each (create 0.127 us/thread)
+[PE 0] rep 1: 32032 dispatches in 0.005168 s -> 6.198 M/s, 0.1613 us each (create 0.216 us/thread)
+[PE 3] rep 1: 32032 dispatches in 0.005111 s -> 6.268 M/s, 0.1595 us each (create 0.156 us/thread)
+[PE 1] rep 1: 32032 dispatches in 0.005536 s -> 5.786 M/s, 0.1728 us each (create 0.164 us/thread)
+[PE 2] rep 2: 32032 dispatches in 0.004209 s -> 7.611 M/s, 0.1314 us each (create 0.134 us/thread)
+[PE 3] rep 2: 32032 dispatches in 0.005176 s -> 6.189 M/s, 0.1616 us each (create 0.164 us/thread)
+[PE 0] rep 2: 32032 dispatches in 0.005206 s -> 6.152 M/s, 0.1625 us each (create 0.186 us/thread)
+[PE 1] rep 2: 32032 dispatches in 0.005540 s -> 5.782 M/s, 0.1729 us each (create 0.179 us/thread)
+[PE 2] rep 3: 32032 dispatches in 0.004228 s -> 7.576 M/s, 0.1320 us each (create 0.112 us/thread)
+[PE 3] rep 3: 32032 dispatches in 0.005200 s -> 6.160 M/s, 0.1623 us each (create 0.164 us/thread)
+[PE 0] rep 3: 32032 dispatches in 0.005207 s -> 6.152 M/s, 0.1626 us each (create 0.164 us/thread)
+[PE 2] rep 4: 32032 dispatches in 0.004255 s -> 7.528 M/s, 0.1328 us each (create 0.119 us/thread)
+[PE 2] threads=32 yields=1000: best 0.1314 us/dispatch (7.611 M dispatches/s), mean 0.1350 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,32,1000,0.131394,0.134983,7.610715
+[PE 1] rep 3: 32032 dispatches in 0.005528 s -> 5.795 M/s, 0.1726 us each (create 0.156 us/thread)
+[PE 3] rep 4: 32032 dispatches in 0.005171 s -> 6.194 M/s, 0.1614 us each (create 0.142 us/thread)
+[PE 3] threads=32 yields=1000: best 0.1595 us/dispatch (6.268 M dispatches/s), mean 0.1620 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,32,1000,0.159544,0.162001,6.267877
+[PE 0] rep 4: 32032 dispatches in 0.005248 s -> 6.104 M/s, 0.1638 us each (create 0.179 us/thread)
+[PE 0] threads=32 yields=1000: best 0.1613 us/dispatch (6.198 M dispatches/s), mean 0.1641 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,32,1000,0.161345,0.164105,6.197903
+[PE 1] rep 4: 32032 dispatches in 0.005604 s -> 5.716 M/s, 0.1749 us each (create 0.149 us/thread)
+[PE 1] threads=32 yields=1000: best 0.1726 us/dispatch (5.795 M dispatches/s), mean 0.1741 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,32,1000,0.172569,0.174079,5.794779
+=== ult sched_rate layer converse pes 4 threads 32 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 32 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 32032 dispatches in 0.009864 s -> 3.247 M/s, 0.3079 us each (create 0.790 us/thread)
+[PE 2] rep 0: 32032 dispatches in 0.011914 s -> 2.689 M/s, 0.3719 us each (create 0.640 us/thread)
+[PE 0] rep 0: 32032 dispatches in 0.013054 s -> 2.454 M/s, 0.4075 us each (create 0.444 us/thread)
+[PE 1] rep 1: 32032 dispatches in 0.009817 s -> 3.263 M/s, 0.3065 us each (create 1.230 us/thread)
+[PE 3] rep 0: 32032 dispatches in 0.016603 s -> 1.929 M/s, 0.5183 us each (create 0.797 us/thread)
+[PE 2] rep 1: 32032 dispatches in 0.012110 s -> 2.645 M/s, 0.3781 us each (create 1.263 us/thread)
+[PE 1] rep 2: 32032 dispatches in 0.009789 s -> 3.272 M/s, 0.3056 us each (create 0.309 us/thread)
+[PE 0] rep 1: 32032 dispatches in 0.013037 s -> 2.457 M/s, 0.4070 us each (create 0.199 us/thread)
+[PE 2] rep 2: 32032 dispatches in 0.012055 s -> 2.657 M/s, 0.3764 us each (create 0.316 us/thread)
+[PE 1] rep 3: 32032 dispatches in 0.009765 s -> 3.280 M/s, 0.3049 us each (create 0.161 us/thread)
+[PE 3] rep 1: 32032 dispatches in 0.016681 s -> 1.920 M/s, 0.5208 us each (create 1.491 us/thread)
+[PE 0] rep 2: 32032 dispatches in 0.013041 s -> 2.456 M/s, 0.4071 us each (create 0.203 us/thread)
+[PE 1] rep 4: 32032 dispatches in 0.009786 s -> 3.273 M/s, 0.3055 us each (create 0.162 us/thread)
+[PE 1] threads=32 yields=1000: best 0.3049 us/dispatch (3.280 M dispatches/s), mean 0.3061 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,32,1000,0.304861,0.306079,3.280183
+[PE 2] rep 3: 32032 dispatches in 0.011743 s -> 2.728 M/s, 0.3666 us each (create 0.153 us/thread)
+[PE 0] rep 3: 32032 dispatches in 0.011657 s -> 2.748 M/s, 0.3639 us each (create 0.181 us/thread)
+[PE 3] rep 2: 32032 dispatches in 0.014265 s -> 2.246 M/s, 0.4453 us each (create 0.401 us/thread)
+[PE 2] rep 4: 32032 dispatches in 0.009772 s -> 3.278 M/s, 0.3051 us each (create 0.163 us/thread)
+[PE 2] threads=32 yields=1000: best 0.3051 us/dispatch (3.278 M dispatches/s), mean 0.3596 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,32,1000,0.305068,0.359607,3.277953
+[PE 0] rep 4: 32032 dispatches in 0.010287 s -> 3.114 M/s, 0.3211 us each (create 0.182 us/thread)
+[PE 0] threads=32 yields=1000: best 0.3211 us/dispatch (3.114 M dispatches/s), mean 0.3813 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,32,1000,0.321133,0.381340,3.113972
+[Partition 0][Node 0] End of program
+[PE 3] rep 3: 32032 dispatches in 0.010924 s -> 2.932 M/s, 0.3410 us each (create 0.195 us/thread)
+[PE 3] rep 4: 32032 dispatches in 0.009829 s -> 3.259 M/s, 0.3069 us each (create 0.206 us/thread)
+[PE 3] threads=32 yields=1000: best 0.3069 us/dispatch (3.259 M dispatches/s), mean 0.4265 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,32,1000,0.306862,0.426460,3.258795
+=== ult sched_rate layer reconverse pes 4 threads 64 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 64064 dispatches in 0.011333 s -> 5.653 M/s, 0.1769 us each (create 0.402 us/thread)
+[PE 0] rep 0: 64064 dispatches in 0.011606 s -> 5.520 M/s, 0.1812 us each (create 0.402 us/thread)
+[PE 2] rep 0: 64064 dispatches in 0.011488 s -> 5.577 M/s, 0.1793 us each (create 0.298 us/thread)
+[PE 1] rep 0: 64064 dispatches in 0.012383 s -> 5.174 M/s, 0.1933 us each (create 0.328 us/thread)
+[PE 3] rep 1: 64064 dispatches in 0.011142 s -> 5.750 M/s, 0.1739 us each (create 0.160 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.011616 s -> 5.515 M/s, 0.1813 us each (create 0.224 us/thread)
+[PE 2] rep 1: 64064 dispatches in 0.011355 s -> 5.642 M/s, 0.1773 us each (create 0.160 us/thread)
+[PE 1] rep 1: 64064 dispatches in 0.012345 s -> 5.190 M/s, 0.1927 us each (create 0.168 us/thread)
+[PE 3] rep 2: 64064 dispatches in 0.011238 s -> 5.701 M/s, 0.1754 us each (create 0.168 us/thread)
+[PE 2] rep 2: 64064 dispatches in 0.011430 s -> 5.605 M/s, 0.1784 us each (create 0.168 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.011728 s -> 5.463 M/s, 0.1831 us each (create 0.205 us/thread)
+[PE 1] rep 2: 64064 dispatches in 0.012454 s -> 5.144 M/s, 0.1944 us each (create 0.168 us/thread)
+[PE 3] rep 3: 64064 dispatches in 0.011342 s -> 5.649 M/s, 0.1770 us each (create 0.160 us/thread)
+[PE 2] rep 3: 64064 dispatches in 0.011344 s -> 5.648 M/s, 0.1771 us each (create 0.175 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.011718 s -> 5.467 M/s, 0.1829 us each (create 0.209 us/thread)
+[PE 1] rep 3: 64064 dispatches in 0.012313 s -> 5.203 M/s, 0.1922 us each (create 0.160 us/thread)
+[PE 3] rep 4: 64064 dispatches in 0.011342 s -> 5.648 M/s, 0.1770 us each (create 0.160 us/thread)
+[PE 3] threads=64 yields=1000: best 0.1739 us/dispatch (5.750 M dispatches/s), mean 0.1761 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,64,1000,0.173916,0.176063,5.749891
+[PE 2] rep 4: 64064 dispatches in 0.011467 s -> 5.587 M/s, 0.1790 us each (create 0.156 us/thread)
+[PE 2] threads=64 yields=1000: best 0.1771 us/dispatch (5.648 M dispatches/s), mean 0.1782 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,64,1000,0.177069,0.178209,5.647531
+[PE 0] rep 4: 64064 dispatches in 0.011690 s -> 5.480 M/s, 0.1825 us each (create 0.194 us/thread)
+[PE 0] threads=64 yields=1000: best 0.1812 us/dispatch (5.520 M dispatches/s), mean 0.1822 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.181170,0.182188,5.519687
+[PE 1] rep 4: 64064 dispatches in 0.012481 s -> 5.133 M/s, 0.1948 us each (create 0.160 us/thread)
+[PE 1] threads=64 yields=1000: best 0.1922 us/dispatch (5.203 M dispatches/s), mean 0.1935 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,64,1000,0.192204,0.193481,5.202802
+=== ult sched_rate layer converse pes 4 threads 64 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 64 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 64064 dispatches in 0.021637 s -> 2.961 M/s, 0.3377 us each (create 0.450 us/thread)
+[PE 1] rep 0: 64064 dispatches in 0.022019 s -> 2.909 M/s, 0.3437 us each (create 0.545 us/thread)
+[PE 0] rep 0: 64064 dispatches in 0.025219 s -> 2.540 M/s, 0.3937 us each (create 0.341 us/thread)
+[PE 2] rep 0: 64064 dispatches in 0.030708 s -> 2.086 M/s, 0.4793 us each (create 0.561 us/thread)
+[PE 3] rep 1: 64064 dispatches in 0.021463 s -> 2.985 M/s, 0.3350 us each (create 1.976 us/thread)
+[PE 1] rep 1: 64064 dispatches in 0.021920 s -> 2.923 M/s, 0.3422 us each (create 2.365 us/thread)
+[PE 0] rep 1: 64064 dispatches in 0.025230 s -> 2.539 M/s, 0.3938 us each (create 0.193 us/thread)
+[PE 3] rep 2: 64064 dispatches in 0.021534 s -> 2.975 M/s, 0.3361 us each (create 0.221 us/thread)
+[PE 1] rep 2: 64064 dispatches in 0.021861 s -> 2.931 M/s, 0.3412 us each (create 0.350 us/thread)
+[PE 2] rep 1: 64064 dispatches in 0.030885 s -> 2.074 M/s, 0.4821 us each (create 2.360 us/thread)
+[PE 0] rep 2: 64064 dispatches in 0.025151 s -> 2.547 M/s, 0.3926 us each (create 0.225 us/thread)
+[PE 3] rep 3: 64064 dispatches in 0.021581 s -> 2.968 M/s, 0.3369 us each (create 0.276 us/thread)
+[PE 1] rep 3: 64064 dispatches in 0.021931 s -> 2.921 M/s, 0.3423 us each (create 0.339 us/thread)
+[PE 2] rep 2: 64064 dispatches in 0.030820 s -> 2.079 M/s, 0.4811 us each (create 0.275 us/thread)
+[PE 0] rep 3: 64064 dispatches in 0.025248 s -> 2.537 M/s, 0.3941 us each (create 0.193 us/thread)
+[PE 3] rep 4: 64064 dispatches in 0.021523 s -> 2.977 M/s, 0.3360 us each (create 0.151 us/thread)
+[PE 3] threads=64 yields=1000: best 0.3350 us/dispatch (2.985 M dispatches/s), mean 0.3363 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,64,1000,0.335023,0.336345,2.984866
+[PE 1] rep 4: 64064 dispatches in 0.021816 s -> 2.937 M/s, 0.3405 us each (create 0.188 us/thread)
+[PE 1] threads=64 yields=1000: best 0.3405 us/dispatch (2.937 M dispatches/s), mean 0.3420 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,64,1000,0.340541,0.341991,2.936508
+[PE 2] rep 3: 64064 dispatches in 0.022959 s -> 2.790 M/s, 0.3584 us each (create 0.344 us/thread)
+[PE 0] rep 4: 64064 dispatches in 0.021651 s -> 2.959 M/s, 0.3380 us each (create 0.196 us/thread)
+[PE 0] threads=64 yields=1000: best 0.3380 us/dispatch (2.959 M dispatches/s), mean 0.3824 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,64,1000,0.337958,0.382430,2.958951
+[Partition 0][Node 0] End of program
+[PE 2] rep 4: 64064 dispatches in 0.019452 s -> 3.293 M/s, 0.3036 us each (create 0.188 us/thread)
+[PE 2] threads=64 yields=1000: best 0.3036 us/dispatch (3.293 M dispatches/s), mean 0.4209 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,64,1000,0.303639,0.420906,3.293380
+=== ult sched_rate layer reconverse pes 4 threads 128 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 128 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 2] rep 0: 128128 dispatches in 0.017616 s -> 7.273 M/s, 0.1375 us each (create 0.171 us/thread)
+[PE 3] rep 0: 128128 dispatches in 0.021462 s -> 5.970 M/s, 0.1675 us each (create 0.220 us/thread)
+[PE 0] rep 0: 128128 dispatches in 0.022304 s -> 5.745 M/s, 0.1741 us each (create 0.285 us/thread)
+[PE 1] rep 0: 128128 dispatches in 0.023279 s -> 5.504 M/s, 0.1817 us each (create 0.231 us/thread)
+[PE 2] rep 1: 128128 dispatches in 0.017200 s -> 7.450 M/s, 0.1342 us each (create 0.117 us/thread)
+[PE 3] rep 1: 128128 dispatches in 0.021348 s -> 6.002 M/s, 0.1666 us each (create 0.145 us/thread)
+[PE 0] rep 1: 128128 dispatches in 0.021990 s -> 5.827 M/s, 0.1716 us each (create 0.184 us/thread)
+[PE 2] rep 2: 128128 dispatches in 0.017195 s -> 7.452 M/s, 0.1342 us each (create 0.117 us/thread)
+[PE 1] rep 1: 128128 dispatches in 0.023222 s -> 5.518 M/s, 0.1812 us each (create 0.155 us/thread)
+[PE 3] rep 2: 128128 dispatches in 0.021514 s -> 5.955 M/s, 0.1679 us each (create 0.145 us/thread)
+[PE 2] rep 3: 128128 dispatches in 0.017221 s -> 7.440 M/s, 0.1344 us each (create 0.114 us/thread)
+[PE 0] rep 2: 128128 dispatches in 0.022000 s -> 5.824 M/s, 0.1717 us each (create 0.175 us/thread)
+[PE 1] rep 2: 128128 dispatches in 0.023383 s -> 5.480 M/s, 0.1825 us each (create 0.156 us/thread)
+[PE 2] rep 4: 128128 dispatches in 0.017295 s -> 7.409 M/s, 0.1350 us each (create 0.114 us/thread)
+[PE 2] threads=128 yields=1000: best 0.1342 us/dispatch (7.452 M dispatches/s), mean 0.1351 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,128,1000,0.134200,0.135062,7.451578
+[PE 3] rep 3: 128128 dispatches in 0.021516 s -> 5.955 M/s, 0.1679 us each (create 0.140 us/thread)
+[PE 0] rep 3: 128128 dispatches in 0.021973 s -> 5.831 M/s, 0.1715 us each (create 0.162 us/thread)
+[PE 1] rep 3: 128128 dispatches in 0.023399 s -> 5.476 M/s, 0.1826 us each (create 0.151 us/thread)
+[PE 3] rep 4: 128128 dispatches in 0.021564 s -> 5.942 M/s, 0.1683 us each (create 0.186 us/thread)
+[PE 3] threads=128 yields=1000: best 0.1666 us/dispatch (6.002 M dispatches/s), mean 0.1677 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,128,1000,0.166616,0.167651,6.001807
+[PE 0] rep 4: 128128 dispatches in 0.022013 s -> 5.821 M/s, 0.1718 us each (create 0.160 us/thread)
+[PE 0] threads=128 yields=1000: best 0.1715 us/dispatch (5.831 M dispatches/s), mean 0.1721 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,128,1000,0.171490,0.172139,5.831248
+[PE 1] rep 4: 128128 dispatches in 0.023557 s -> 5.439 M/s, 0.1839 us each (create 0.153 us/thread)
+[PE 1] threads=128 yields=1000: best 0.1812 us/dispatch (5.518 M dispatches/s), mean 0.1824 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,128,1000,0.181240,0.182381,5.517534
+=== ult sched_rate layer converse pes 4 threads 128 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 128 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 128128 dispatches in 0.037384 s -> 3.427 M/s, 0.2918 us each (create 0.371 us/thread)
+[PE 0] rep 0: 128128 dispatches in 0.039680 s -> 3.229 M/s, 0.3097 us each (create 0.199 us/thread)
+[PE 2] rep 0: 128128 dispatches in 0.042502 s -> 3.015 M/s, 0.3317 us each (create 0.454 us/thread)
+[PE 1] rep 1: 128128 dispatches in 0.037349 s -> 3.431 M/s, 0.2915 us each (create 2.531 us/thread)
+[PE 0] rep 1: 128128 dispatches in 0.039827 s -> 3.217 M/s, 0.3108 us each (create 0.142 us/thread)
+[PE 2] rep 1: 128128 dispatches in 0.042521 s -> 3.013 M/s, 0.3319 us each (create 2.472 us/thread)
+[PE 3] rep 0: 128128 dispatches in 0.071144 s -> 1.801 M/s, 0.5553 us each (create 0.462 us/thread)
+[PE 1] rep 2: 128128 dispatches in 0.037345 s -> 3.431 M/s, 0.2915 us each (create 0.181 us/thread)
+[PE 0] rep 2: 128128 dispatches in 0.040101 s -> 3.195 M/s, 0.3130 us each (create 0.147 us/thread)
+[PE 2] rep 2: 128128 dispatches in 0.042683 s -> 3.002 M/s, 0.3331 us each (create 0.218 us/thread)
+[PE 1] rep 3: 128128 dispatches in 0.037575 s -> 3.410 M/s, 0.2933 us each (create 0.283 us/thread)
+[PE 0] rep 3: 128128 dispatches in 0.040372 s -> 3.174 M/s, 0.3151 us each (create 0.141 us/thread)
+[PE 2] rep 3: 128128 dispatches in 0.042608 s -> 3.007 M/s, 0.3325 us each (create 0.280 us/thread)
+[PE 3] rep 1: 128128 dispatches in 0.072004 s -> 1.779 M/s, 0.5620 us each (create 3.086 us/thread)
+[PE 1] rep 4: 128128 dispatches in 0.037661 s -> 3.402 M/s, 0.2939 us each (create 0.159 us/thread)
+[PE 1] threads=128 yields=1000: best 0.2915 us/dispatch (3.431 M dispatches/s), mean 0.2924 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,128,1000,0.291467,0.292386,3.430926
+[PE 0] rep 4: 128128 dispatches in 0.038189 s -> 3.355 M/s, 0.2981 us each (create 0.145 us/thread)
+[PE 0] threads=128 yields=1000: best 0.2981 us/dispatch (3.355 M dispatches/s), mean 0.3093 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,128,1000,0.298057,0.309330,3.355068
+[Partition 0][Node 0] End of program
+[PE 2] rep 4: 128128 dispatches in 0.037830 s -> 3.387 M/s, 0.2952 us each (create 0.161 us/thread)
+[PE 2] threads=128 yields=1000: best 0.2952 us/dispatch (3.387 M dispatches/s), mean 0.3249 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,128,1000,0.295249,0.324901,3.386970
+[PE 3] rep 2: 128128 dispatches in 0.049229 s -> 2.603 M/s, 0.3842 us each (create 0.237 us/thread)
+[PE 3] rep 3: 128128 dispatches in 0.039767 s -> 3.222 M/s, 0.3104 us each (create 0.352 us/thread)
+[PE 3] rep 4: 128128 dispatches in 0.039833 s -> 3.217 M/s, 0.3109 us each (create 0.199 us/thread)
+[PE 3] threads=128 yields=1000: best 0.3104 us/dispatch (3.222 M dispatches/s), mean 0.4245 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,128,1000,0.310371,0.424541,3.221947
+=== ult sched_rate layer reconverse pes 4 threads 256 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 256 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 2] rep 0: 256256 dispatches in 0.034318 s -> 7.467 M/s, 0.1339 us each (create 0.147 us/thread)
+[PE 3] rep 0: 256256 dispatches in 0.034333 s -> 7.464 M/s, 0.1340 us each (create 0.146 us/thread)
+[PE 1] rep 0: 256256 dispatches in 0.036934 s -> 6.938 M/s, 0.1441 us each (create 0.162 us/thread)
+[PE 0] rep 0: 256256 dispatches in 0.046676 s -> 5.490 M/s, 0.1821 us each (create 0.219 us/thread)
+[PE 2] rep 1: 256256 dispatches in 0.036899 s -> 6.945 M/s, 0.1440 us each (create 2.465 us/thread)
+[PE 3] rep 1: 256256 dispatches in 0.035911 s -> 7.136 M/s, 0.1401 us each (create 2.542 us/thread)
+[PE 1] rep 1: 256256 dispatches in 0.038768 s -> 6.610 M/s, 0.1513 us each (create 2.586 us/thread)
+[PE 0] rep 1: 256256 dispatches in 0.046581 s -> 5.501 M/s, 0.1818 us each (create 0.156 us/thread)
+[PE 3] rep 2: 256256 dispatches in 0.035773 s -> 7.163 M/s, 0.1396 us each (create 0.140 us/thread)
+[PE 2] rep 2: 256256 dispatches in 0.036807 s -> 6.962 M/s, 0.1436 us each (create 0.134 us/thread)
+[PE 1] rep 2: 256256 dispatches in 0.038746 s -> 6.614 M/s, 0.1512 us each (create 0.126 us/thread)
+[PE 3] rep 3: 256256 dispatches in 0.035846 s -> 7.149 M/s, 0.1399 us each (create 0.120 us/thread)
+[PE 2] rep 3: 256256 dispatches in 0.036575 s -> 7.006 M/s, 0.1427 us each (create 0.118 us/thread)
+[PE 0] rep 2: 256256 dispatches in 0.046814 s -> 5.474 M/s, 0.1827 us each (create 0.165 us/thread)
+[PE 1] rep 3: 256256 dispatches in 0.039088 s -> 6.556 M/s, 0.1525 us each (create 0.121 us/thread)
+[PE 3] rep 4: 256256 dispatches in 0.035676 s -> 7.183 M/s, 0.1392 us each (create 0.121 us/thread)
+[PE 3] threads=256 yields=1000: best 0.1340 us/dispatch (7.464 M dispatches/s), mean 0.1386 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,256,1000,0.133979,0.138564,7.463841
+[PE 2] rep 4: 256256 dispatches in 0.036867 s -> 6.951 M/s, 0.1439 us each (create 0.117 us/thread)
+[PE 2] threads=256 yields=1000: best 0.1339 us/dispatch (7.467 M dispatches/s), mean 0.1416 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,256,1000,0.133921,0.141628,7.467108
+[PE 1] rep 4: 256256 dispatches in 0.038877 s -> 6.591 M/s, 0.1517 us each (create 0.124 us/thread)
+[PE 1] threads=256 yields=1000: best 0.1441 us/dispatch (6.938 M dispatches/s), mean 0.1502 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,256,1000,0.144128,0.150173,6.938278
+[PE 0] rep 3: 256256 dispatches in 0.046547 s -> 5.505 M/s, 0.1816 us each (create 0.161 us/thread)
+[PE 0] rep 4: 256256 dispatches in 0.046678 s -> 5.490 M/s, 0.1822 us each (create 0.156 us/thread)
+[PE 0] threads=256 yields=1000: best 0.1816 us/dispatch (5.505 M dispatches/s), mean 0.1821 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,256,1000,0.181643,0.182080,5.505297
+=== ult sched_rate layer converse pes 4 threads 256 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 256 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 256256 dispatches in 0.076319 s -> 3.358 M/s, 0.2978 us each (create 0.900 us/thread)
+[PE 0] rep 0: 256256 dispatches in 0.083040 s -> 3.086 M/s, 0.3241 us each (create 0.965 us/thread)
+[PE 2] rep 0: 256256 dispatches in 0.087926 s -> 2.914 M/s, 0.3431 us each (create 0.943 us/thread)
+[PE 3] rep 0: 256256 dispatches in 0.090928 s -> 2.818 M/s, 0.3548 us each (create 0.909 us/thread)
+[PE 1] rep 1: 256256 dispatches in 0.076418 s -> 3.353 M/s, 0.2982 us each (create 0.508 us/thread)
+[PE 0] rep 1: 256256 dispatches in 0.083902 s -> 3.054 M/s, 0.3274 us each (create 0.663 us/thread)
+[PE 2] rep 1: 256256 dispatches in 0.088003 s -> 2.912 M/s, 0.3434 us each (create 0.594 us/thread)
+[PE 3] rep 1: 256256 dispatches in 0.090744 s -> 2.824 M/s, 0.3541 us each (create 0.525 us/thread)
+[PE 1] rep 2: 256256 dispatches in 0.076346 s -> 3.357 M/s, 0.2979 us each (create 0.798 us/thread)
+[PE 0] rep 2: 256256 dispatches in 0.082717 s -> 3.098 M/s, 0.3228 us each (create 0.893 us/thread)
+[PE 2] rep 2: 256256 dispatches in 0.088083 s -> 2.909 M/s, 0.3437 us each (create 0.819 us/thread)
+[PE 3] rep 2: 256256 dispatches in 0.090199 s -> 2.841 M/s, 0.3520 us each (create 0.806 us/thread)
+[PE 1] rep 3: 256256 dispatches in 0.076817 s -> 3.336 M/s, 0.2998 us each (create 0.490 us/thread)
+[PE 0] rep 3: 256256 dispatches in 0.082642 s -> 3.101 M/s, 0.3225 us each (create 0.686 us/thread)
+[PE 2] rep 3: 256256 dispatches in 0.089539 s -> 2.862 M/s, 0.3494 us each (create 0.540 us/thread)
+[PE 3] rep 3: 256256 dispatches in 0.090471 s -> 2.832 M/s, 0.3531 us each (create 0.522 us/thread)
+[PE 1] rep 4: 256256 dispatches in 0.077239 s -> 3.318 M/s, 0.3014 us each (create 0.737 us/thread)
+[PE 1] threads=256 yields=1000: best 0.2978 us/dispatch (3.358 M dispatches/s), mean 0.2990 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,256,1000,0.297822,0.299027,3.357714
+[PE 0] rep 4: 256256 dispatches in 0.076812 s -> 3.336 M/s, 0.2997 us each (create 0.905 us/thread)
+[PE 0] threads=256 yields=1000: best 0.2997 us/dispatch (3.336 M dispatches/s), mean 0.3193 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,256,1000,0.299748,0.319300,3.336138
+[Partition 0][Node 0] End of program
+[PE 2] rep 4: 256256 dispatches in 0.075666 s -> 3.387 M/s, 0.2953 us each (create 0.815 us/thread)
+[PE 2] threads=256 yields=1000: best 0.2953 us/dispatch (3.387 M dispatches/s), mean 0.3350 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,256,1000,0.295274,0.334991,3.386684
+[PE 3] rep 4: 256256 dispatches in 0.071472 s -> 3.585 M/s, 0.2789 us each (create 0.793 us/thread)
+[PE 3] threads=256 yields=1000: best 0.2789 us/dispatch (3.585 M dispatches/s), mean 0.3386 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,256,1000,0.278910,0.338579,3.585386
+=== ult sched_rate layer reconverse pes 4 threads 512 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 512 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 512512 dispatches in 0.070407 s -> 7.279 M/s, 0.1374 us each (create 0.134 us/thread)
+[PE 2] rep 0: 512512 dispatches in 0.071079 s -> 7.210 M/s, 0.1387 us each (create 0.129 us/thread)
+[PE 1] rep 0: 512512 dispatches in 0.077158 s -> 6.642 M/s, 0.1505 us each (create 0.143 us/thread)
+[PE 0] rep 0: 512512 dispatches in 0.096220 s -> 5.326 M/s, 0.1877 us each (create 0.190 us/thread)
+[PE 3] rep 1: 512512 dispatches in 0.075803 s -> 6.761 M/s, 0.1479 us each (create 1.324 us/thread)
+[PE 2] rep 1: 512512 dispatches in 0.075399 s -> 6.797 M/s, 0.1471 us each (create 1.279 us/thread)
+[PE 1] rep 1: 512512 dispatches in 0.081554 s -> 6.284 M/s, 0.1591 us each (create 1.315 us/thread)
+[PE 0] rep 1: 512512 dispatches in 0.096611 s -> 5.305 M/s, 0.1885 us each (create 0.151 us/thread)
+[PE 3] rep 2: 512512 dispatches in 0.074825 s -> 6.850 M/s, 0.1460 us each (create 0.331 us/thread)
+[PE 2] rep 2: 512512 dispatches in 0.075696 s -> 6.771 M/s, 0.1477 us each (create 0.323 us/thread)
+[PE 1] rep 2: 512512 dispatches in 0.081562 s -> 6.284 M/s, 0.1591 us each (create 0.323 us/thread)
+[PE 3] rep 3: 512512 dispatches in 0.075408 s -> 6.797 M/s, 0.1471 us each (create 0.242 us/thread)
+[PE 2] rep 3: 512512 dispatches in 0.076266 s -> 6.720 M/s, 0.1488 us each (create 0.258 us/thread)
+[PE 0] rep 2: 512512 dispatches in 0.096485 s -> 5.312 M/s, 0.1883 us each (create 0.147 us/thread)
+[PE 1] rep 3: 512512 dispatches in 0.081719 s -> 6.272 M/s, 0.1594 us each (create 0.268 us/thread)
+[PE 3] rep 4: 512512 dispatches in 0.075097 s -> 6.825 M/s, 0.1465 us each (create 0.553 us/thread)
+[PE 3] threads=512 yields=1000: best 0.1374 us/dispatch (7.279 M dispatches/s), mean 0.1450 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,512,1000,0.137377,0.144988,7.279260
+[PE 2] rep 4: 512512 dispatches in 0.075787 s -> 6.763 M/s, 0.1479 us each (create 0.525 us/thread)
+[PE 2] threads=512 yields=1000: best 0.1387 us/dispatch (7.210 M dispatches/s), mean 0.1460 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,512,1000,0.138688,0.146037,7.210454
+[PE 1] rep 4: 512512 dispatches in 0.081682 s -> 6.274 M/s, 0.1594 us each (create 0.581 us/thread)
+[PE 1] threads=512 yields=1000: best 0.1505 us/dispatch (6.642 M dispatches/s), mean 0.1575 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,512,1000,0.150549,0.157528,6.642372
+[PE 0] rep 3: 512512 dispatches in 0.096744 s -> 5.298 M/s, 0.1888 us each (create 0.149 us/thread)
+[PE 0] rep 4: 512512 dispatches in 0.096818 s -> 5.294 M/s, 0.1889 us each (create 0.146 us/thread)
+[PE 0] threads=512 yields=1000: best 0.1877 us/dispatch (5.326 M dispatches/s), mean 0.1884 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,512,1000,0.187742,0.188435,5.326472
+=== ult sched_rate layer converse pes 4 threads 512 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 512 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 512512 dispatches in 0.152647 s -> 3.357 M/s, 0.2978 us each (create 2.558 us/thread)
+[PE 0] rep 0: 512512 dispatches in 0.162982 s -> 3.145 M/s, 0.3180 us each (create 2.513 us/thread)
+[PE 2] rep 0: 512512 dispatches in 0.168555 s -> 3.041 M/s, 0.3289 us each (create 2.687 us/thread)
+[PE 3] rep 0: 512512 dispatches in 0.169687 s -> 3.020 M/s, 0.3311 us each (create 2.799 us/thread)
+[PE 1] rep 1: 512512 dispatches in 0.153384 s -> 3.341 M/s, 0.2993 us each (create 2.593 us/thread)
+[PE 0] rep 1: 512512 dispatches in 0.164426 s -> 3.117 M/s, 0.3208 us each (create 2.522 us/thread)
+[PE 2] rep 1: 512512 dispatches in 0.169663 s -> 3.021 M/s, 0.3310 us each (create 2.566 us/thread)
+[PE 3] rep 1: 512512 dispatches in 0.169588 s -> 3.022 M/s, 0.3309 us each (create 2.628 us/thread)
+[PE 1] rep 2: 512512 dispatches in 0.153149 s -> 3.346 M/s, 0.2988 us each (create 2.485 us/thread)
+[PE 0] rep 2: 512512 dispatches in 0.166227 s -> 3.083 M/s, 0.3243 us each (create 2.405 us/thread)
+[PE 2] rep 2: 512512 dispatches in 0.171827 s -> 2.983 M/s, 0.3353 us each (create 2.511 us/thread)
+[PE 3] rep 2: 512512 dispatches in 0.172863 s -> 2.965 M/s, 0.3373 us each (create 2.551 us/thread)
+[PE 1] rep 3: 512512 dispatches in 0.166218 s -> 3.083 M/s, 0.3243 us each (create 2.398 us/thread)
+[PE 0] rep 3: 512512 dispatches in 0.188590 s -> 2.718 M/s, 0.3680 us each (create 2.350 us/thread)
+[PE 3] rep 3: 512512 dispatches in 0.168539 s -> 3.041 M/s, 0.3288 us each (create 2.459 us/thread)
+[PE 2] rep 3: 512512 dispatches in 0.202363 s -> 2.533 M/s, 0.3948 us each (create 2.414 us/thread)
+[PE 1] rep 4: 512512 dispatches in 0.161580 s -> 3.172 M/s, 0.3153 us each (create 2.566 us/thread)
+[PE 1] threads=512 yields=1000: best 0.2978 us/dispatch (3.357 M dispatches/s), mean 0.3071 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,512,1000,0.297841,0.307106,3.357495
+[PE 3] rep 4: 512512 dispatches in 0.140581 s -> 3.646 M/s, 0.2743 us each (create 2.136 us/thread)
+[PE 3] threads=512 yields=1000: best 0.2743 us/dispatch (3.646 M dispatches/s), mean 0.3205 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,512,1000,0.274299,0.320484,3.645659
+[PE 0] rep 4: 512512 dispatches in 0.158115 s -> 3.241 M/s, 0.3085 us each (create 2.378 us/thread)
+[PE 0] threads=512 yields=1000: best 0.3085 us/dispatch (3.241 M dispatches/s), mean 0.3279 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,512,1000,0.308509,0.327930,3.241397
+[Partition 0][Node 0] End of program
+[PE 2] rep 4: 512512 dispatches in 0.150789 s -> 3.399 M/s, 0.2942 us each (create 2.393 us/thread)
+[PE 2] threads=512 yields=1000: best 0.2942 us/dispatch (3.399 M dispatches/s), mean 0.3368 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,512,1000,0.294215,0.336849,3.398873
+=== ult sched_rate layer reconverse pes 4 threads 1024 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 1024 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 1025024 dispatches in 0.160794 s -> 6.375 M/s, 0.1569 us each (create 1.553 us/thread)
+[PE 2] rep 0: 1025024 dispatches in 0.161768 s -> 6.336 M/s, 0.1578 us each (create 1.523 us/thread)
+[PE 1] rep 0: 1025024 dispatches in 0.162831 s -> 6.295 M/s, 0.1589 us each (create 2.030 us/thread)
+[PE 0] rep 0: 1025024 dispatches in 0.210383 s -> 4.872 M/s, 0.2052 us each (create 0.180 us/thread)
+[PE 3] rep 1: 1025024 dispatches in 0.159147 s -> 6.441 M/s, 0.1553 us each (create 1.162 us/thread)
+[PE 2] rep 1: 1025024 dispatches in 0.160112 s -> 6.402 M/s, 0.1562 us each (create 1.202 us/thread)
+[PE 1] rep 1: 1025024 dispatches in 0.160714 s -> 6.378 M/s, 0.1568 us each (create 0.992 us/thread)
+[PE 0] rep 1: 1025024 dispatches in 0.210001 s -> 4.881 M/s, 0.2049 us each (create 0.146 us/thread)
+[PE 3] rep 2: 1025024 dispatches in 0.164087 s -> 6.247 M/s, 0.1601 us each (create 1.034 us/thread)
+[PE 2] rep 2: 1025024 dispatches in 0.163154 s -> 6.283 M/s, 0.1592 us each (create 1.080 us/thread)
+[PE 1] rep 2: 1025024 dispatches in 0.165730 s -> 6.185 M/s, 0.1617 us each (create 0.699 us/thread)
+[PE 3] rep 3: 1025024 dispatches in 0.163474 s -> 6.270 M/s, 0.1595 us each (create 0.836 us/thread)
+[PE 2] rep 3: 1025024 dispatches in 0.163645 s -> 6.264 M/s, 0.1596 us each (create 0.855 us/thread)
+[PE 1] rep 3: 1025024 dispatches in 0.165189 s -> 6.205 M/s, 0.1612 us each (create 0.151 us/thread)
+[PE 0] rep 2: 1025024 dispatches in 0.211132 s -> 4.855 M/s, 0.2060 us each (create 0.145 us/thread)
+[PE 3] rep 4: 1025024 dispatches in 0.162533 s -> 6.307 M/s, 0.1586 us each (create 0.570 us/thread)
+[PE 3] threads=1024 yields=1000: best 0.1553 us/dispatch (6.441 M dispatches/s), mean 0.1581 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,1024,1000,0.155262,0.158052,6.440746
+[PE 2] rep 4: 1025024 dispatches in 0.162209 s -> 6.319 M/s, 0.1582 us each (create 0.570 us/thread)
+[PE 2] threads=1024 yields=1000: best 0.1562 us/dispatch (6.402 M dispatches/s), mean 0.1582 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,1024,1000,0.156203,0.158218,6.401922
+[PE 1] rep 4: 1025024 dispatches in 0.165431 s -> 6.196 M/s, 0.1614 us each (create 0.149 us/thread)
+[PE 1] threads=1024 yields=1000: best 0.1568 us/dispatch (6.378 M dispatches/s), mean 0.1600 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,1024,1000,0.156790,0.159976,6.377942
+[PE 0] rep 3: 1025024 dispatches in 0.198328 s -> 5.168 M/s, 0.1935 us each (create 0.146 us/thread)
+[PE 0] rep 4: 1025024 dispatches in 0.155243 s -> 6.603 M/s, 0.1515 us each (create 0.122 us/thread)
+[PE 0] threads=1024 yields=1000: best 0.1515 us/dispatch (6.603 M dispatches/s), mean 0.1922 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1024,1000,0.151453,0.192207,6.602720
+=== ult sched_rate layer converse pes 4 threads 1024 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 1024 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 1] rep 0: 1025024 dispatches in 0.326575 s -> 3.139 M/s, 0.3186 us each (create 2.685 us/thread)
+[PE 0] rep 0: 1025024 dispatches in 0.364218 s -> 2.814 M/s, 0.3553 us each (create 2.540 us/thread)
+[PE 2] rep 0: 1025024 dispatches in 0.397403 s -> 2.579 M/s, 0.3877 us each (create 2.747 us/thread)
+[PE 1] rep 1: 1025024 dispatches in 0.315298 s -> 3.251 M/s, 0.3076 us each (create 2.982 us/thread)
+[PE 3] rep 0: 1025024 dispatches in 0.465136 s -> 2.204 M/s, 0.4538 us each (create 3.303 us/thread)
+[PE 0] rep 1: 1025024 dispatches in 0.331550 s -> 3.092 M/s, 0.3235 us each (create 2.738 us/thread)
+[PE 2] rep 1: 1025024 dispatches in 0.362719 s -> 2.826 M/s, 0.3539 us each (create 2.815 us/thread)
+[PE 1] rep 2: 1025024 dispatches in 0.280764 s -> 3.651 M/s, 0.2739 us each (create 2.413 us/thread)
+[PE 0] rep 2: 1025024 dispatches in 0.307183 s -> 3.337 M/s, 0.2997 us each (create 2.219 us/thread)
+[PE 3] rep 1: 1025024 dispatches in 0.410354 s -> 2.498 M/s, 0.4003 us each (create 2.507 us/thread)
+[PE 2] rep 2: 1025024 dispatches in 0.335630 s -> 3.054 M/s, 0.3274 us each (create 2.330 us/thread)
+[PE 1] rep 3: 1025024 dispatches in 0.255297 s -> 4.015 M/s, 0.2491 us each (create 2.180 us/thread)
+[PE 0] rep 3: 1025024 dispatches in 0.262576 s -> 3.904 M/s, 0.2562 us each (create 2.059 us/thread)
+[PE 2] rep 3: 1025024 dispatches in 0.270047 s -> 3.796 M/s, 0.2635 us each (create 1.849 us/thread)
+[PE 1] rep 4: 1025024 dispatches in 0.236029 s -> 4.343 M/s, 0.2303 us each (create 1.246 us/thread)
+[PE 1] threads=1024 yields=1000: best 0.2303 us/dispatch (4.343 M dispatches/s), mean 0.2759 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,1024,1000,0.230266,0.275889,4.342795
+[PE 3] rep 2: 1025024 dispatches in 0.391388 s -> 2.619 M/s, 0.3818 us each (create 2.378 us/thread)
+[PE 0] rep 4: 1025024 dispatches in 0.239366 s -> 4.282 M/s, 0.2335 us each (create 1.482 us/thread)
+[PE 0] threads=1024 yields=1000: best 0.2335 us/dispatch (4.282 M dispatches/s), mean 0.2936 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,1024,1000,0.233523,0.293631,4.282237
+[Partition 0][Node 0] End of program
+[PE 2] rep 4: 1025024 dispatches in 0.234140 s -> 4.378 M/s, 0.2284 us each (create 1.246 us/thread)
+[PE 2] threads=1024 yields=1000: best 0.2284 us/dispatch (4.378 M dispatches/s), mean 0.3122 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,1024,1000,0.228424,0.312176,4.377822
+[PE 3] rep 3: 1025024 dispatches in 0.254506 s -> 4.028 M/s, 0.2483 us each (create 2.175 us/thread)
+[PE 3] rep 4: 1025024 dispatches in 0.199266 s -> 5.144 M/s, 0.1944 us each (create 1.255 us/thread)
+[PE 3] threads=1024 yields=1000: best 0.1944 us/dispatch (5.144 M dispatches/s), mean 0.3357 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,1024,1000,0.194401,0.335729,5.143996
+=== ult sched_rate layer reconverse pes 4 threads 2048 ===
+Charm++> Running in SMP mode on 1 nodes and 4 PEs
+ULT scheduling rate: 2048 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 2050048 dispatches in 0.253158 s -> 8.098 M/s, 0.1235 us each (create 1.907 us/thread)
+[PE 2] rep 0: 2050048 dispatches in 0.290922 s -> 7.047 M/s, 0.1419 us each (create 2.164 us/thread)
+[PE 1] rep 0: 2050048 dispatches in 0.290887 s -> 7.048 M/s, 0.1419 us each (create 2.139 us/thread)
+[PE 0] rep 0: 2050048 dispatches in 0.310932 s -> 6.593 M/s, 0.1517 us each (create 0.133 us/thread)
+[PE 3] rep 1: 2050048 dispatches in 0.259496 s -> 7.900 M/s, 0.1266 us each (create 1.348 us/thread)
+[PE 2] rep 1: 2050048 dispatches in 0.296494 s -> 6.914 M/s, 0.1446 us each (create 1.507 us/thread)
+[PE 1] rep 1: 2050048 dispatches in 0.298752 s -> 6.862 M/s, 0.1457 us each (create 1.776 us/thread)
+[PE 0] rep 1: 2050048 dispatches in 0.313943 s -> 6.530 M/s, 0.1531 us each (create 0.110 us/thread)
+[PE 3] rep 2: 2050048 dispatches in 0.256326 s -> 7.998 M/s, 0.1250 us each (create 1.095 us/thread)
+[PE 2] rep 2: 2050048 dispatches in 0.258616 s -> 7.927 M/s, 0.1262 us each (create 1.235 us/thread)
+[PE 1] rep 2: 2050048 dispatches in 0.295673 s -> 6.934 M/s, 0.1442 us each (create 1.185 us/thread)
+[PE 0] rep 2: 2050048 dispatches in 0.312146 s -> 6.568 M/s, 0.1523 us each (create 0.121 us/thread)
+[PE 3] rep 3: 2050048 dispatches in 0.255544 s -> 8.022 M/s, 0.1247 us each (create 1.174 us/thread)
+[PE 2] rep 3: 2050048 dispatches in 0.239457 s -> 8.561 M/s, 0.1168 us each (create 1.140 us/thread)
+[PE 1] rep 3: 2050048 dispatches in 0.276376 s -> 7.418 M/s, 0.1348 us each (create 1.332 us/thread)
+[PE 0] rep 3: 2050048 dispatches in 0.282187 s -> 7.265 M/s, 0.1376 us each (create 0.108 us/thread)
+[PE 3] rep 4: 2050048 dispatches in 0.255232 s -> 8.032 M/s, 0.1245 us each (create 0.884 us/thread)
+[PE 3] threads=2048 yields=1000: best 0.1235 us/dispatch (8.098 M dispatches/s), mean 0.1249 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,2048,1000,0.123489,0.124851,8.097889
+[PE 2] rep 4: 2050048 dispatches in 0.239339 s -> 8.565 M/s, 0.1167 us each (create 0.866 us/thread)
+[PE 2] threads=2048 yields=1000: best 0.1167 us/dispatch (8.565 M dispatches/s), mean 0.1292 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,2048,1000,0.116748,0.129249,8.565462
+[PE 1] rep 4: 2050048 dispatches in 0.241097 s -> 8.503 M/s, 0.1176 us each (create 0.862 us/thread)
+[PE 1] threads=2048 yields=1000: best 0.1176 us/dispatch (8.503 M dispatches/s), mean 0.1369 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,2048,1000,0.117606,0.136854,8.502993
+[PE 0] rep 4: 2050048 dispatches in 0.255743 s -> 8.016 M/s, 0.1247 us each (create 0.085 us/thread)
+[PE 0] threads=2048 yields=1000: best 0.1247 us/dispatch (8.016 M dispatches/s), mean 0.1439 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2048,1000,0.124750,0.143894,8.016039
+=== ult sched_rate layer converse pes 4 threads 2048 ===
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 8.1.32.110 (ANL base 3.4a2)
+MPI BUILD INFO : Thu Feb 06 22:53 2025 (git hash f9c5634)
+ (MPI standard: 3.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 1 processes, 4 worker threads (PEs) + 1 comm threads per process, 4 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+ULT scheduling rate: 2048 threads x 1000 yields, 5 reps (+1 warmup), 65536 byte stacks, on 4 PEs
+[PE 3] rep 0: 2050048 dispatches in 0.537257 s -> 3.816 M/s, 0.2621 us each (create 2.181 us/thread)
+[PE 2] rep 0: 2050048 dispatches in 0.534338 s -> 3.837 M/s, 0.2606 us each (create 2.195 us/thread)
+[PE 1] rep 0: 2050048 dispatches in 0.558216 s -> 3.673 M/s, 0.2723 us each (create 2.517 us/thread)
+[PE 0] rep 0: 2050048 dispatches in 0.547541 s -> 3.744 M/s, 0.2671 us each (create 2.166 us/thread)
+[PE 3] rep 1: 2050048 dispatches in 0.542162 s -> 3.781 M/s, 0.2645 us each (create 2.007 us/thread)
+[PE 2] rep 1: 2050048 dispatches in 0.536174 s -> 3.823 M/s, 0.2615 us each (create 2.028 us/thread)
+[PE 1] rep 1: 2050048 dispatches in 0.560729 s -> 3.656 M/s, 0.2735 us each (create 2.362 us/thread)
+[PE 0] rep 1: 2050048 dispatches in 0.550092 s -> 3.727 M/s, 0.2683 us each (create 1.902 us/thread)
+[PE 3] rep 2: 2050048 dispatches in 0.544368 s -> 3.766 M/s, 0.2655 us each (create 1.904 us/thread)
+[PE 2] rep 2: 2050048 dispatches in 0.539181 s -> 3.802 M/s, 0.2630 us each (create 1.868 us/thread)
+[PE 0] rep 2: 2050048 dispatches in 0.549444 s -> 3.731 M/s, 0.2680 us each (create 1.820 us/thread)
+[PE 1] rep 2: 2050048 dispatches in 0.562873 s -> 3.642 M/s, 0.2746 us each (create 2.183 us/thread)
+[PE 3] rep 3: 2050048 dispatches in 0.541596 s -> 3.785 M/s, 0.2642 us each (create 1.670 us/thread)
+[PE 1] rep 3: 2050048 dispatches in 0.482300 s -> 4.251 M/s, 0.2353 us each (create 1.872 us/thread)
+[PE 2] rep 3: 2050048 dispatches in 0.534587 s -> 3.835 M/s, 0.2608 us each (create 1.581 us/thread)
+[PE 0] rep 3: 2050048 dispatches in 0.526515 s -> 3.894 M/s, 0.2568 us each (create 1.510 us/thread)
+[PE 1] rep 4: 2050048 dispatches in 0.481520 s -> 4.257 M/s, 0.2349 us each (create 1.747 us/thread)
+[PE 1] threads=2048 yields=1000: best 0.2349 us/dispatch (4.257 M dispatches/s), mean 0.2581 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,1,2048,1000,0.234882,0.258105,4.257449
+[PE 3] rep 4: 2050048 dispatches in 0.534605 s -> 3.835 M/s, 0.2608 us each (create 1.766 us/thread)
+[PE 3] threads=2048 yields=1000: best 0.2608 us/dispatch (3.835 M dispatches/s), mean 0.2634 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,3,2048,1000,0.260777,0.263407,3.834700
+[PE 2] rep 4: 2050048 dispatches in 0.527618 s -> 3.885 M/s, 0.2574 us each (create 1.754 us/thread)
+[PE 2] threads=2048 yields=1000: best 0.2574 us/dispatch (3.885 M dispatches/s), mean 0.2607 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,2,2048,1000,0.257369,0.260667,3.885478
+[PE 0] rep 4: 2050048 dispatches in 0.513435 s -> 3.993 M/s, 0.2505 us each (create 1.672 us/thread)
+[PE 0] threads=2048 yields=1000: best 0.2505 us/dispatch (3.993 M dispatches/s), mean 0.2621 us
+Format: DATA,sched_rate,{pe},{threads},{yields},{best us/dispatch},{mean us/dispatch},{best M dispatch/s}
+DATA,sched_rate,0,2048,1000,0.250450,0.262143,3.992810
+[Partition 0][Node 0] End of program
