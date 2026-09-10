@@ -1,0 +1,569 @@
++ export LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/math_libs/13.2/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/lib64:/opt/cray/libfabric/2.3.1/lib64:/u/rao1/charm_reconverse/lib
++ LD_LIBRARY_PATH=/opt/cray/pe/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/math_libs/13.2/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/26.5/cuda/13.2/lib64:/opt/cray/libfabric/2.3.1/lib64:/u/rao1/charm_reconverse/lib
++ export PMI_MAX_KVS_ENTRIES=512
++ PMI_MAX_KVS_ENTRIES=512
++ export LCI_ATTR_PACKET_SIZE=8192
++ LCI_ATTR_PACKET_SIZE=8192
++ export LCI_ATTR_USE_REG_CACHE=0
++ LCI_ATTR_USE_REG_CACHE=0
++ OUT=/u/rao1/bench_results/cr_pingpong_final
++ mkdir -p /u/rao1/bench_results/cr_pingpong_final/raw
++ RB=/u/rao1/reconverse/build_release/tests
++ RBP=/u/rao1/reconverse_persist/build_release/tests
++ CONV=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ ARGS='1000 16 67108864 2'
++ ND=1
++ REPS=5
++ VERSIONS='converse recon_normal recon_rdma recon_persist recon_normal_nd8'
++ SMOKE=/u/rao1/bench_results/cr_pingpong_final/raw/smoke.log
++ :
++ smoke_failed=0
++ for place in 1node 2node
++ for ver in $VERSIONS
++ echo '=== smoke 1node converse ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 1node converse
++ echo '  smoke ok: 1node converse'
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_normal ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 1node recon_normal
++ echo '  smoke ok: 1node recon_normal'
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_rdma ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 1node recon_rdma
++ echo '  smoke ok: 1node recon_rdma'
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_persist ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 1node recon_persist
++ echo '  smoke ok: 1node recon_persist'
++ for ver in $VERSIONS
++ echo '=== smoke 1node recon_normal_nd8 ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 1node recon_normal_nd8
++ echo '  smoke ok: 1node recon_normal_nd8'
++ for place in 1node 2node
++ for ver in $VERSIONS
++ echo '=== smoke 2node converse ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 2node converse
++ echo '  smoke ok: 2node converse'
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_normal ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 2node recon_normal
++ echo '  smoke ok: 2node recon_normal'
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_rdma ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 2node recon_rdma
++ echo '  smoke ok: 2node recon_rdma'
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_persist ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 2node recon_persist
++ echo '  smoke ok: 2node recon_persist'
++ for ver in $VERSIONS
++ echo '=== smoke 2node recon_normal_nd8 ==='
++ ARGS_OVERRIDE='20 16 67108864 2'
++ launch 2node recon_normal_nd8
++ echo '  smoke ok: 2node recon_normal_nd8'
++ '[' 0 '!=' 0 ']'
++ echo 'smoke passed for all configurations at the full 16 B - 64 MB range'
+smoke passed for all configurations at the full 16 B - 64 MB range
++ for place in 1node 2node
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for place in 1node 2node
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
++ for ver in $VERSIONS
++ :
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
+++ echo 5
++ nver=5
+++ seq 1 5
++ for rep in $(seq 1 "$REPS")
++ for place in 1node 2node
++ shift_by=0
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
++ ordered='converse recon_normal recon_rdma recon_persist recon_normal_nd8 '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_converse.log
++ echo '=== place 1node version converse rep 1 ==='
++ launch 1node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal.log
++ echo '=== place 1node version recon_normal rep 1 ==='
++ launch 1node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_rdma.log
++ echo '=== place 1node version recon_rdma rep 1 ==='
++ launch 1node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_persist.log
++ echo '=== place 1node version recon_persist rep 1 ==='
++ launch 1node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal_nd8.log
++ echo '=== place 1node version recon_normal_nd8 rep 1 ==='
++ launch 1node recon_normal_nd8
++ for place in 1node 2node
++ shift_by=0
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
++ ordered='converse recon_normal recon_rdma recon_persist recon_normal_nd8 '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_converse.log
++ echo '=== place 2node version converse rep 1 ==='
++ launch 2node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal.log
++ echo '=== place 2node version recon_normal rep 1 ==='
++ launch 2node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_rdma.log
++ echo '=== place 2node version recon_rdma rep 1 ==='
++ launch 2node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_persist.log
++ echo '=== place 2node version recon_persist rep 1 ==='
++ launch 2node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal_nd8.log
++ echo '=== place 2node version recon_normal_nd8 rep 1 ==='
++ launch 2node recon_normal_nd8
++ echo 'rep 1 of 5 complete'
+rep 1 of 5 complete
++ for rep in $(seq 1 "$REPS")
++ for place in 1node 2node
++ shift_by=1
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
++ ordered='recon_normal recon_rdma recon_persist recon_normal_nd8 converse '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal.log
++ echo '=== place 1node version recon_normal rep 2 ==='
++ launch 1node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_rdma.log
++ echo '=== place 1node version recon_rdma rep 2 ==='
++ launch 1node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_persist.log
++ echo '=== place 1node version recon_persist rep 2 ==='
++ launch 1node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal_nd8.log
++ echo '=== place 1node version recon_normal_nd8 rep 2 ==='
++ launch 1node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_converse.log
++ echo '=== place 1node version converse rep 2 ==='
++ launch 1node converse
++ for place in 1node 2node
++ shift_by=1
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
++ ordered='recon_normal recon_rdma recon_persist recon_normal_nd8 converse '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal.log
++ echo '=== place 2node version recon_normal rep 2 ==='
++ launch 2node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_rdma.log
++ echo '=== place 2node version recon_rdma rep 2 ==='
++ launch 2node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_persist.log
++ echo '=== place 2node version recon_persist rep 2 ==='
++ launch 2node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal_nd8.log
++ echo '=== place 2node version recon_normal_nd8 rep 2 ==='
++ launch 2node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_converse.log
++ echo '=== place 2node version converse rep 2 ==='
++ launch 2node converse
++ echo 'rep 2 of 5 complete'
+rep 2 of 5 complete
++ for rep in $(seq 1 "$REPS")
++ for place in 1node 2node
++ shift_by=2
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
++ ordered='recon_rdma recon_persist recon_normal_nd8 converse recon_normal '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_rdma.log
++ echo '=== place 1node version recon_rdma rep 3 ==='
++ launch 1node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_persist.log
++ echo '=== place 1node version recon_persist rep 3 ==='
++ launch 1node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal_nd8.log
++ echo '=== place 1node version recon_normal_nd8 rep 3 ==='
++ launch 1node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_converse.log
++ echo '=== place 1node version converse rep 3 ==='
++ launch 1node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal.log
++ echo '=== place 1node version recon_normal rep 3 ==='
++ launch 1node recon_normal
++ for place in 1node 2node
++ shift_by=2
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
++ ordered='recon_rdma recon_persist recon_normal_nd8 converse recon_normal '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_rdma.log
++ echo '=== place 2node version recon_rdma rep 3 ==='
++ launch 2node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_persist.log
++ echo '=== place 2node version recon_persist rep 3 ==='
++ launch 2node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal_nd8.log
++ echo '=== place 2node version recon_normal_nd8 rep 3 ==='
++ launch 2node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_converse.log
++ echo '=== place 2node version converse rep 3 ==='
++ launch 2node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal.log
++ echo '=== place 2node version recon_normal rep 3 ==='
++ launch 2node recon_normal
++ echo 'rep 3 of 5 complete'
+rep 3 of 5 complete
++ for rep in $(seq 1 "$REPS")
++ for place in 1node 2node
++ shift_by=3
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
++ ordered='recon_persist recon_normal_nd8 converse recon_normal recon_rdma '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_persist.log
++ echo '=== place 1node version recon_persist rep 4 ==='
++ launch 1node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal_nd8.log
++ echo '=== place 1node version recon_normal_nd8 rep 4 ==='
++ launch 1node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_converse.log
++ echo '=== place 1node version converse rep 4 ==='
++ launch 1node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal.log
++ echo '=== place 1node version recon_normal rep 4 ==='
++ launch 1node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_rdma.log
++ echo '=== place 1node version recon_rdma rep 4 ==='
++ launch 1node recon_rdma
++ for place in 1node 2node
++ shift_by=3
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
++ ordered='recon_persist recon_normal_nd8 converse recon_normal recon_rdma '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_persist.log
++ echo '=== place 2node version recon_persist rep 4 ==='
++ launch 2node recon_persist
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal_nd8.log
++ echo '=== place 2node version recon_normal_nd8 rep 4 ==='
++ launch 2node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_converse.log
++ echo '=== place 2node version converse rep 4 ==='
++ launch 2node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal.log
++ echo '=== place 2node version recon_normal rep 4 ==='
++ launch 2node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_rdma.log
++ echo '=== place 2node version recon_rdma rep 4 ==='
++ launch 2node recon_rdma
++ echo 'rep 4 of 5 complete'
+rep 4 of 5 complete
++ for rep in $(seq 1 "$REPS")
++ for place in 1node 2node
++ shift_by=4
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
++ ordered='recon_normal_nd8 converse recon_normal recon_rdma recon_persist '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal_nd8.log
++ echo '=== place 1node version recon_normal_nd8 rep 5 ==='
++ launch 1node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_converse.log
++ echo '=== place 1node version converse rep 5 ==='
++ launch 1node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_normal.log
++ echo '=== place 1node version recon_normal rep 5 ==='
++ launch 1node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_rdma.log
++ echo '=== place 1node version recon_rdma rep 5 ==='
++ launch 1node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/1node_recon_persist.log
++ echo '=== place 1node version recon_persist rep 5 ==='
++ launch 1node recon_persist
++ for place in 1node 2node
++ shift_by=4
+++ set -- converse recon_normal recon_rdma recon_persist recon_normal_nd8
++++ seq 0 4
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=5
+++ eval echo -n '${5}\ '
++++ echo -n 'recon_normal_nd8 '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=1
+++ eval echo -n '${1}\ '
++++ echo -n 'converse '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=2
+++ eval echo -n '${2}\ '
++++ echo -n 'recon_normal '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=3
+++ eval echo -n '${3}\ '
++++ echo -n 'recon_rdma '
+++ for i in $(seq 0 $((nver - 1)))
+++ idx=4
+++ eval echo -n '${4}\ '
++++ echo -n 'recon_persist '
++ ordered='recon_normal_nd8 converse recon_normal recon_rdma recon_persist '
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal_nd8.log
++ echo '=== place 2node version recon_normal_nd8 rep 5 ==='
++ launch 2node recon_normal_nd8
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_converse.log
++ echo '=== place 2node version converse rep 5 ==='
++ launch 2node converse
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_normal.log
++ echo '=== place 2node version recon_normal rep 5 ==='
++ launch 2node recon_normal
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_rdma.log
++ echo '=== place 2node version recon_rdma rep 5 ==='
++ launch 2node recon_rdma
++ for ver in $ordered
++ log=/u/rao1/bench_results/cr_pingpong_final/raw/2node_recon_persist.log
++ echo '=== place 2node version recon_persist rep 5 ==='
++ launch 2node recon_persist
++ echo 'rep 5 of 5 complete'
+rep 5 of 5 complete
++ python3 /u/rao1/bench_scripts/analyze_pingpong.py /u/rao1/bench_results/cr_pingpong_final -o /u/rao1/bench_results/cr_pingpong_final/pingpong_results.txt
++ echo 'PINGPONG DONE'
+PINGPONG DONE

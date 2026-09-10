@@ -1,0 +1,331 @@
+Pingpong: one-way message latency
+==============================================================================
+
+Machine   : NCSA Delta CPU nodes, 2x AMD EPYC 7763, HPE Slingshot
+Iterations: 1000 per message size
+Sizes     : 16 B to 64 MB, doubling (23 sizes)
+Statistic : median of 5 repetitions
+
+Layout    : 2 processes, 1 PE each, in both sets.  The two sets differ
+            only in whether those processes share a physical node.
+
+Versions:
+  old Converse             charm/benchmarks/converse/pingpong, built
+                           -optimize -production -O3 against the
+                           mpi-linux-x86_64-smp build
+  Reconverse msg           tests/orig-converse/pingpong -- the same
+                           benchmark on the ordinary send path
+  Reconverse RDMA          tests/rdma_pingpong -- explicit one-sided
+                           get on a registered CmiNcpyBuffer, with a
+                           small message carrying the completion signal
+  Reconverse persist+RDMA  tests/persistent_pingpong -- the message
+                           benchmark with the timed sends routed
+                           through a PersistentHandle, which registers
+                           its receive buffers once at setup and moves
+                           the payload with a one-sided put
+
+Reconverse is built CMAKE_BUILD_TYPE=Release with autofetched LCI v2,
+from `main` plus the new persistent pingpong only.  Both processes are
+given 2 cores in every configuration, so the Converse comm thread does
+not change the placement relative to Reconverse, which has no comm
+thread.
+
+LCI devices: the four compared versions all run +lci_ndevices 1, NOT
+the 8 used for the task-bench runs.  Above one device the one-sided
+get aborts inside LCI:
+
+    backend_ofi_inline.hpp:post_get_impl:388
+      <lci:Assert failed: false> err : Invalid argument
+
+because the memory region is registered against one device while the
+get is posted on another.  It reproduces at 2 devices and at 8, and
+not at 1 or at the default, which is why reconverse's own CMake test
+for rdma_pingpong passes no device flag.  Running two versions at 8
+and two at 1 would make the columns incomparable, so all four use 1.
+With one PE per process there is no concurrency for extra devices to
+exploit in any case.
+
+LCI registration cache: DISABLED (LCI_ATTR_USE_REG_CACHE=0).  Reconverse
+commit 6b3233f enables it by default for autofetched LCI, but on these
+nodes LCI reports it as "not available (status=-22)" and it measures
+identically on and off at every size and version -- while ON, the message
+path SEGFAULTS in liblci-ucx.so at 32 MB and above.  Disabling it costs
+no bandwidth, removes the crash, and matches the original runs, which
+predate that commit and therefore had no cache either.
+
+'Reconverse msg (8 dev)' is a supplementary fifth arm, not one of the
+eight configurations: it is the message path at 8 devices, to show
+what the device count is worth where it does work.
+
+==============================================================================
+2 processes on 1 physical node (intra-node)
+==============================================================================
+
+one-way latency, microseconds (lower is better)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   2.017                   3.562                   9.864                   7.104                   3.413
+        32                   2.121                   3.273                   9.502                   6.875                   3.273
+        64                   2.077                   3.365                   9.461                   9.249                   3.242
+       128                   2.178                   3.760                   9.231                   9.378                   3.909
+       256                   2.945                   3.869                   8.779                  10.097                   4.030
+       512                   2.152                   4.033                   8.840                  10.103                   4.050
+      1024                   2.302                   4.009                   8.787                  10.249                   4.170
+      2048                   2.828                   4.298                   9.046                  10.405                   4.431
+      4096                   4.195                   4.569                   9.139                  10.479                   4.745
+      8192                   6.176                  15.626                   9.424                  10.796                  15.982
+     16384                   6.629                  16.151                   9.737                  11.141                  16.260
+     32768                   9.863                  16.825                  10.457                  11.751                  16.911
+     65536                  16.135                  18.098                  11.958                  13.121                  18.230
+    131072                  29.013                  20.862                  14.796                  15.693                  21.000
+    262144                  53.864                  26.895                  20.438                  21.576                  26.969
+    524288                 103.295                  38.125                  31.758                  32.835                  38.042
+   1048576                 202.357                  60.399                  54.169                  55.316                  60.355
+   2097152                 397.123                 105.568                  99.180                 100.353                 105.564
+   4194304                 699.718                 196.098                 189.297                 191.083                 197.295
+   8388608                1371.410                 375.609                 369.698                 372.902                 376.132
+  16777216                2745.315                 738.775                 728.706                 777.425                 743.164
+  33554432                5963.804                4800.470                1449.562                1631.586                7695.867
+  67108864               11042.458                9084.872                2886.105                3296.748               14204.552
+
+speedup vs old Converse (>1 means the Reconverse version is faster)
+
+     bytes           Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   0.57x                   0.20x                   0.28x                   0.59x
+        32                   0.65x                   0.22x                   0.31x                   0.65x
+        64                   0.62x                   0.22x                   0.22x                   0.64x
+       128                   0.58x                   0.24x                   0.23x                   0.56x
+       256                   0.76x                   0.34x                   0.29x                   0.73x
+       512                   0.53x                   0.24x                   0.21x                   0.53x
+      1024                   0.57x                   0.26x                   0.22x                   0.55x
+      2048                   0.66x                   0.31x                   0.27x                   0.64x
+      4096                   0.92x                   0.46x                   0.40x                   0.88x
+      8192                   0.40x                   0.66x                   0.57x                   0.39x
+     16384                   0.41x                   0.68x                   0.59x                   0.41x
+     32768                   0.59x                   0.94x                   0.84x                   0.58x
+     65536                   0.89x                   1.35x                   1.23x                   0.89x
+    131072                   1.39x                   1.96x                   1.85x                   1.38x
+    262144                   2.00x                   2.64x                   2.50x                   2.00x
+    524288                   2.71x                   3.25x                   3.15x                   2.72x
+   1048576                   3.35x                   3.74x                   3.66x                   3.35x
+   2097152                   3.76x                   4.00x                   3.96x                   3.76x
+   4194304                   3.57x                   3.70x                   3.66x                   3.55x
+   8388608                   3.65x                   3.71x                   3.68x                   3.65x
+  16777216                   3.72x                   3.77x                   3.53x                   3.69x
+  33554432                   1.24x                   4.11x                   3.66x                   0.77x
+  67108864                   1.22x                   3.83x                   3.35x                   0.78x
+
+effective bandwidth, MB/s (size / one-way time)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                     7.9                     4.5                     1.6                     2.3                     4.7
+        32                    15.1                     9.8                     3.4                     4.7                     9.8
+        64                    30.8                    19.0                     6.8                     6.9                    19.7
+       128                    58.8                    34.0                    13.9                    13.6                    32.7
+       256                    86.9                    66.2                    29.2                    25.4                    63.5
+       512                   238.0                   126.9                    57.9                    50.7                   126.4
+      1024                   444.7                   255.4                   116.5                    99.9                   245.6
+      2048                   724.2                   476.5                   226.4                   196.8                   462.1
+      4096                   976.4                   896.5                   448.2                   390.9                   863.2
+      8192                  1326.5                   524.3                   869.3                   758.8                   512.6
+     16384                  2471.7                  1014.4                  1682.6                  1470.6                  1007.6
+     32768                  3322.3                  1947.6                  3133.7                  2788.5                  1937.7
+     65536                  4061.8                  3621.2                  5480.7                  4994.9                  3594.9
+    131072                  4517.7                  6282.7                  8858.7                  8352.0                  6241.6
+    262144                  4866.8                  9746.8                 12826.3                 12149.7                  9720.0
+    524288                  5075.6                 13751.8                 16508.8                 15967.3                 13781.8
+   1048576                  5181.8                 17360.9                 19357.5                 18956.0                 17373.6
+   2097152                  5280.9                 19865.4                 21144.9                 20897.8                 19866.3
+   4194304                  5994.3                 21388.8                 22157.3                 21950.2                 21259.1
+   8388608                  6116.8                 22333.4                 22690.4                 22495.5                 22302.3
+  16777216                  6111.2                 22709.5                 23023.3                 21580.5                 22575.4
+  33554432                  5626.3                  6989.8                 23148.0                 20565.5                  4360.1
+  67108864                  6077.3                  7386.9                 23252.4                 20356.1                  4724.5
+
+spread across repetitions, (max-min)/min as a percentage
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   17.1%                   12.4%                   20.8%                    1.8%                   11.0%
+        32                   19.5%                   13.1%                   21.1%                    3.5%                   15.3%
+        64                   20.5%                   12.3%                   21.7%                    1.8%                   12.1%
+       128                   18.8%                   14.0%                   22.3%                    2.9%                   12.3%
+       256                    8.4%                   12.9%                   23.8%                    4.2%                   11.7%
+       512                   13.7%                   13.1%                   15.0%                   10.4%                   10.0%
+      1024                   12.5%                   14.6%                   14.8%                    9.4%                   10.7%
+      2048                    9.9%                   14.8%                   14.8%                    9.7%                   11.2%
+      4096                   12.8%                   14.3%                   16.4%                   10.5%                   14.0%
+      8192                   20.4%                   13.5%                   14.7%                   10.2%                   10.2%
+     16384                   32.2%                   16.2%                   16.9%                    9.6%                    9.7%
+     32768                   41.4%                   15.5%                   23.1%                   10.1%                    9.2%
+     65536                   49.1%                   18.1%                   28.1%                   18.2%                   11.7%
+    131072                   53.3%                   23.2%                   40.8%                   25.7%                   17.2%
+    262144                   57.2%                   24.6%                   59.3%                   26.6%                   19.2%
+    524288                   42.3%                   27.5%                   77.6%                   30.2%                   21.7%
+   1048576                   50.9%                    7.2%                   92.0%                    5.3%                    5.4%
+   2097152                   39.0%                    3.0%                  100.3%                    2.9%                    3.2%
+   4194304                   46.3%                    1.9%                  104.6%                    3.7%                    0.9%
+   8388608                   48.4%                    1.6%                  106.7%                   10.2%                    1.8%
+  16777216                   52.0%                    0.9%                    0.9%                   10.5%                    1.1%
+  33554432                   70.8%                   46.6%                    0.8%                    6.2%                   27.5%
+  67108864                   77.3%                   46.6%                    1.6%                    5.0%                   27.7%
+
+==============================================================================
+2 processes on 2 physical nodes (inter-node)
+==============================================================================
+
+one-way latency, microseconds (lower is better)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   8.480                   3.374                   9.387                   6.741                   3.685
+        32                   8.549                   3.144                   9.188                   6.506                   3.563
+        64                   8.302                   3.099                   9.126                   8.913                   3.540
+       128                   8.834                   3.712                   8.852                   9.025                   4.252
+       256                   9.034                   3.888                   8.851                   9.531                   4.475
+       512                   9.009                   3.968                   8.945                   9.524                   4.480
+      1024                   8.930                   4.072                   9.026                   9.593                   4.351
+      2048                   8.999                   4.406                   9.206                   9.847                   4.632
+      4096                   9.292                   4.703                   9.303                   9.935                   5.030
+      8192                  11.723                  16.043                   9.623                  10.213                  16.841
+     16384                  10.228                  16.401                  10.095                  10.578                  17.193
+     32768                  13.059                  17.214                  11.181                  11.296                  17.951
+     65536                  15.165                  18.616                  13.146                  12.824                  19.257
+    131072                  19.116                  21.328                  17.059                  15.605                  22.065
+    262144                  25.645                  26.691                  24.487                  21.170                  27.608
+    524288                  38.615                  37.518                  37.124                  32.715                  38.202
+   1048576                  64.322                  59.251                  62.918                  56.154                  60.077
+   2097152                 122.780                 103.723                 121.465                 103.182                 104.534
+   4194304                 239.983                 192.669                 245.155                 197.561                 194.537
+   8388608                 469.077                 369.577                 479.097                 388.829                 371.104
+  16777216                 929.355                 710.846                 701.966                 777.307                 715.918
+  33554432                5678.712                5291.133                1396.802                1577.877                8010.175
+  67108864               10870.889               10262.294                2865.364                3169.808               15273.557
+
+speedup vs old Converse (>1 means the Reconverse version is faster)
+
+     bytes           Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                   2.51x                   0.90x                   1.26x                   2.30x
+        32                   2.72x                   0.93x                   1.31x                   2.40x
+        64                   2.68x                   0.91x                   0.93x                   2.35x
+       128                   2.38x                   1.00x                   0.98x                   2.08x
+       256                   2.32x                   1.02x                   0.95x                   2.02x
+       512                   2.27x                   1.01x                   0.95x                   2.01x
+      1024                   2.19x                   0.99x                   0.93x                   2.05x
+      2048                   2.04x                   0.98x                   0.91x                   1.94x
+      4096                   1.98x                   1.00x                   0.94x                   1.85x
+      8192                   0.73x                   1.22x                   1.15x                   0.70x
+     16384                   0.62x                   1.01x                   0.97x                   0.59x
+     32768                   0.76x                   1.17x                   1.16x                   0.73x
+     65536                   0.81x                   1.15x                   1.18x                   0.79x
+    131072                   0.90x                   1.12x                   1.23x                   0.87x
+    262144                   0.96x                   1.05x                   1.21x                   0.93x
+    524288                   1.03x                   1.04x                   1.18x                   1.01x
+   1048576                   1.09x                   1.02x                   1.15x                   1.07x
+   2097152                   1.18x                   1.01x                   1.19x                   1.17x
+   4194304                   1.25x                   0.98x                   1.21x                   1.23x
+   8388608                   1.27x                   0.98x                   1.21x                   1.26x
+  16777216                   1.31x                   1.32x                   1.20x                   1.30x
+  33554432                   1.07x                   4.07x                   3.60x                   0.71x
+  67108864                   1.06x                   3.79x                   3.43x                   0.71x
+
+effective bandwidth, MB/s (size / one-way time)
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                     1.9                     4.7                     1.7                     2.4                     4.3
+        32                     3.7                    10.2                     3.5                     4.9                     9.0
+        64                     7.7                    20.6                     7.0                     7.2                    18.1
+       128                    14.5                    34.5                    14.5                    14.2                    30.1
+       256                    28.3                    65.8                    28.9                    26.9                    57.2
+       512                    56.8                   129.0                    57.2                    53.8                   114.3
+      1024                   114.7                   251.5                   113.5                   106.7                   235.4
+      2048                   227.6                   464.8                   222.5                   208.0                   442.1
+      4096                   440.8                   870.9                   440.3                   412.3                   814.4
+      8192                   698.8                   510.6                   851.3                   802.1                   486.4
+     16384                  1601.8                   999.0                  1623.1                  1548.9                   952.9
+     32768                  2509.3                  1903.6                  2930.7                  2900.7                  1825.4
+     65536                  4321.5                  3520.4                  4985.3                  5110.6                  3403.2
+    131072                  6856.5                  6145.6                  7683.6                  8399.4                  5940.4
+    262144                 10221.9                  9821.5                 10705.4                 12383.0                  9495.3
+    524288                 13577.3                 13974.4                 14122.7                 16026.1                 13724.1
+   1048576                 16301.9                 17697.2                 16665.8                 18673.2                 17454.0
+   2097152                 17080.5                 20218.8                 17265.5                 20324.7                 20061.9
+   4194304                 17477.5                 21769.4                 17108.8                 21230.4                 21560.4
+   8388608                 17883.2                 22697.9                 17509.2                 21574.0                 22604.4
+  16777216                 18052.5                 23601.8                 23900.3                 21583.8                 23434.5
+  33554432                  5908.8                  6341.6                 24022.3                 21265.6                  4189.0
+  67108864                  6173.3                  6539.4                 23420.7                 21171.3                  4393.8
+
+spread across repetitions, (max-min)/min as a percentage
+
+     bytes             old Converse          Reconverse msg         Reconverse RDMA Reconverse persist+RDMA  Reconverse msg (8 dev)
+        16                  137.8%                   29.0%                   18.5%                   26.3%                   11.6%
+        32                  143.7%                   26.6%                   21.0%                   25.6%                    9.8%
+        64                   31.7%                   26.3%                   21.0%                   23.3%                    9.2%
+       128                   32.0%                   25.9%                   20.2%                   23.1%                   10.5%
+       256                   35.4%                   28.2%                   19.1%                   24.6%                    6.9%
+       512                   34.3%                   26.9%                   18.9%                   25.1%                   12.9%
+      1024                   20.8%                   19.2%                   18.8%                   25.0%                    3.5%
+      2048                   22.9%                   15.5%                   15.2%                   15.2%                    1.8%
+      4096                   18.5%                   15.3%                   13.5%                   14.9%                    1.9%
+      8192                   25.9%                   14.5%                   12.9%                   14.6%                    3.0%
+     16384                   19.3%                   16.2%                   12.0%                   14.0%                    1.7%
+     32768                   14.0%                   15.8%                   11.2%                   13.4%                    1.1%
+     65536                   12.6%                   15.1%                    9.1%                   11.3%                    1.3%
+    131072                    8.1%                   12.8%                    7.2%                    8.9%                    0.9%
+    262144                    6.6%                   10.6%                    4.5%                    6.6%                    1.3%
+    524288                    6.4%                    6.7%                    3.1%                    4.1%                    1.2%
+   1048576                   11.0%                    4.2%                    0.8%                    2.4%                    0.2%
+   2097152                   22.1%                    2.5%                    2.9%                    1.4%                    0.5%
+   4194304                   29.9%                    1.7%                    1.6%                    1.0%                    0.7%
+   8388608                   34.6%                    0.6%                    3.0%                    0.4%                    0.5%
+  16777216                   36.4%                    0.3%                    0.1%                    4.5%                    0.6%
+  33554432                   15.7%                    2.1%                    0.0%                    0.7%                    0.8%
+  67108864                    4.8%                    0.6%                    0.1%                    1.6%                    0.4%
+
+==============================================================================
+Notes
+==============================================================================
+
+Repetition spread (max-min)/min is 1-52% across the middle 90%
+of points, so ratios well outside that band are real and ones inside
+it are not.
+
+1. Small messages (64 B), old Converse vs the Reconverse message
+   path:
+     intra-node    2.08 us vs   3.36 us -- Converse faster by 1.62x
+     inter-node    8.30 us vs   3.10 us -- Reconverse faster by 2.68x
+
+2. Message-path latency step, 1node: 4 KB -> 8 KB takes 4.6 us -> 15.6 us
+   (3.42x).  This is the eager-to-rendezvous switch at
+   LCI_ATTR_PACKET_SIZE=8192; the one-sided versions do not show it.
+
+3. Peak effective bandwidth (GB/s) and the size it occurs at:
+     2 processes on 1 physical node (intra-node)
+       old Converse                 6.12 GB/s at 8 MB
+       Reconverse msg              22.71 GB/s at 16 MB
+       Reconverse RDMA             23.25 GB/s at 64 MB
+       Reconverse persist+RDMA     22.50 GB/s at 8 MB
+       Reconverse msg (8 dev)      22.58 GB/s at 16 MB
+     2 processes on 2 physical nodes (inter-node)
+       old Converse                18.05 GB/s at 16 MB
+       Reconverse msg              23.60 GB/s at 16 MB
+       Reconverse RDMA             24.02 GB/s at 32 MB
+       Reconverse persist+RDMA     21.58 GB/s at 16 MB
+       Reconverse msg (8 dev)      23.43 GB/s at 16 MB
+
+4. Bandwidth that COLLAPSES above its peak rather than holding:
+     1node   Reconverse msg             22.71 GB/s at 16 MB -> 7.39 at 64 MB (-67%)
+     1node   Reconverse msg (8 dev)     22.58 GB/s at 16 MB -> 4.72 at 64 MB (-79%)
+     2node   old Converse               18.05 GB/s at 16 MB -> 6.17 at 64 MB (-66%)
+     2node   Reconverse msg             23.60 GB/s at 16 MB -> 6.54 at 64 MB (-72%)
+     2node   Reconverse msg (8 dev)     23.43 GB/s at 16 MB -> 4.39 at 64 MB (-81%)
+   Only the copy-based/two-sided paths do this; the one-sided RDMA and
+   persistent versions hold their bandwidth to the top of the range.
+   It affects old Converse as well as Reconverse, so it is a property
+   of moving the payload through the CPU at these sizes, not of either
+   runtime -- note the onset sits at this machine's 32 MB L3 per CCX.
+
+5. The supplementary 8-device arm differs from the 1-device message
+   path by a median of 3.3% (max 15.1%) at sizes up to 16 MB, so the
+   device count buys nothing at one PE per process.  Above that both
+   arms fall off the cliff in note 4 and are not comparable there.
+

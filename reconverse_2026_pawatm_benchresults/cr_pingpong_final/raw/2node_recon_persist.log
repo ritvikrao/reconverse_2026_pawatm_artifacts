@@ -1,0 +1,190 @@
+=== place 2node version recon_persist rep 1 ===
++ local place=2node ver=recon_persist topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3927257]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [963629]: mask 0x3 set
+Reconverse> Starting Reconverse with 2 processes, 2 PEs (1 PE = 1 thread), and 1 PE per process
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=6.498456 microseconds one-way
+Size=32 bytes, time=6.399155 microseconds one-way
+Size=64 bytes, time=8.833289 microseconds one-way
+Size=128 bytes, time=9.025216 microseconds one-way
+Size=256 bytes, time=9.422064 microseconds one-way
+Size=512 bytes, time=9.426832 microseconds one-way
+Size=1024 bytes, time=9.472966 microseconds one-way
+Size=2048 bytes, time=9.698153 microseconds one-way
+Size=4096 bytes, time=9.785175 microseconds one-way
+Size=8192 bytes, time=10.071754 microseconds one-way
+Size=16384 bytes, time=10.398030 microseconds one-way
+Size=32768 bytes, time=11.060238 microseconds one-way
+Size=65536 bytes, time=12.592196 microseconds one-way
+Size=131072 bytes, time=15.369654 microseconds one-way
+Size=262144 bytes, time=21.072268 microseconds one-way
+Size=524288 bytes, time=32.537580 microseconds one-way
+Size=1048576 bytes, time=55.952191 microseconds one-way
+Size=2097152 bytes, time=103.041291 microseconds one-way
+Size=4194304 bytes, time=197.512150 microseconds one-way
+Size=8388608 bytes, time=388.764977 microseconds one-way
+Size=16777216 bytes, time=744.364023 microseconds one-way
+Size=33554432 bytes, time=1572.355151 microseconds one-way
+Size=67108864 bytes, time=3168.720126 microseconds one-way
+=== place 2node version recon_persist rep 2 ===
++ local place=2node ver=recon_persist topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3930693]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [966962]: mask 0x3 set
+Reconverse> Starting Reconverse with 2 processes, 2 PEs (1 PE = 1 thread), and 1 PE per process
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=6.740808 microseconds one-way
+Size=32 bytes, time=6.505728 microseconds one-way
+Size=64 bytes, time=8.912921 microseconds one-way
+Size=128 bytes, time=8.930206 microseconds one-way
+Size=256 bytes, time=9.531379 microseconds one-way
+Size=512 bytes, time=9.524226 microseconds one-way
+Size=1024 bytes, time=9.593129 microseconds one-way
+Size=2048 bytes, time=9.846687 microseconds one-way
+Size=4096 bytes, time=9.935141 microseconds one-way
+Size=8192 bytes, time=10.213017 microseconds one-way
+Size=16384 bytes, time=10.577559 microseconds one-way
+Size=32768 bytes, time=11.296391 microseconds one-way
+Size=65536 bytes, time=12.823582 microseconds one-way
+Size=131072 bytes, time=15.604854 microseconds one-way
+Size=262144 bytes, time=21.169662 microseconds one-way
+Size=524288 bytes, time=32.714725 microseconds one-way
+Size=1048576 bytes, time=56.154132 microseconds one-way
+Size=2097152 bytes, time=103.182197 microseconds one-way
+Size=4194304 bytes, time=197.560787 microseconds one-way
+Size=8388608 bytes, time=388.744473 microseconds one-way
+Size=16777216 bytes, time=777.479291 microseconds one-way
+Size=33554432 bytes, time=1583.221078 microseconds one-way
+Size=67108864 bytes, time=3169.808149 microseconds one-way
+=== place 2node version recon_persist rep 3 ===
++ local place=2node ver=recon_persist topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3934150]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [970330]: mask 0x3 set
+Reconverse> Starting Reconverse with 2 processes, 2 PEs (1 PE = 1 thread), and 1 PE per process
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=6.437898 microseconds one-way
+Size=32 bytes, time=6.477356 microseconds one-way
+Size=64 bytes, time=8.706570 microseconds one-way
+Size=128 bytes, time=8.802295 microseconds one-way
+Size=256 bytes, time=9.389520 microseconds one-way
+Size=512 bytes, time=9.370208 microseconds one-way
+Size=1024 bytes, time=9.446025 microseconds one-way
+Size=2048 bytes, time=9.679437 microseconds one-way
+Size=4096 bytes, time=9.771109 microseconds one-way
+Size=8192 bytes, time=10.056257 microseconds one-way
+Size=16384 bytes, time=10.398865 microseconds one-way
+Size=32768 bytes, time=11.146665 microseconds one-way
+Size=65536 bytes, time=12.546420 microseconds one-way
+Size=131072 bytes, time=15.343428 microseconds one-way
+Size=262144 bytes, time=21.014929 microseconds one-way
+Size=524288 bytes, time=32.521963 microseconds one-way
+Size=1048576 bytes, time=55.989861 microseconds one-way
+Size=2097152 bytes, time=103.058100 microseconds one-way
+Size=4194304 bytes, time=197.487354 microseconds one-way
+Size=8388608 bytes, time=388.829112 microseconds one-way
+Size=16777216 bytes, time=777.307034 microseconds one-way
+Size=33554432 bytes, time=1577.288270 microseconds one-way
+Size=67108864 bytes, time=3175.574183 microseconds one-way
+=== place 2node version recon_persist rep 4 ===
++ local place=2node ver=recon_persist topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3937631]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [973721]: mask 0x3 set
+Reconverse> Starting Reconverse with 2 processes, 2 PEs (1 PE = 1 thread), and 1 PE per process
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=8.132219 microseconds one-way
+Size=32 bytes, time=8.039117 microseconds one-way
+Size=64 bytes, time=10.736108 microseconds one-way
+Size=128 bytes, time=10.835886 microseconds one-way
+Size=256 bytes, time=11.703253 microseconds one-way
+Size=512 bytes, time=11.726141 microseconds one-way
+Size=1024 bytes, time=11.803269 microseconds one-way
+Size=2048 bytes, time=11.152864 microseconds one-way
+Size=4096 bytes, time=11.223912 microseconds one-way
+Size=8192 bytes, time=11.519670 microseconds one-way
+Size=16384 bytes, time=11.849761 microseconds one-way
+Size=32768 bytes, time=12.541056 microseconds one-way
+Size=65536 bytes, time=13.964772 microseconds one-way
+Size=131072 bytes, time=16.703129 microseconds one-way
+Size=262144 bytes, time=22.396088 microseconds one-way
+Size=524288 bytes, time=33.863068 microseconds one-way
+Size=1048576 bytes, time=57.276845 microseconds one-way
+Size=2097152 bytes, time=104.472399 microseconds one-way
+Size=4194304 bytes, time=199.365377 microseconds one-way
+Size=8388608 bytes, time=390.327454 microseconds one-way
+Size=16777216 bytes, time=777.514219 microseconds one-way
+Size=33554432 bytes, time=1583.189607 microseconds one-way
+Size=67108864 bytes, time=3126.700401 microseconds one-way
+=== place 2node version recon_persist rep 5 ===
++ local place=2node ver=recon_persist topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong
++ flags='+ppn 1 +lci_ndevices 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/reconverse_persist/build_release/tests/persistent_pingpong/reconverse_persistent_pingpong +ppn 1 +lci_ndevices 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3943236]: mask 0xc set
+cpu-bind=MASK - cn048, task  1  0 [979182]: mask 0xc set
+Reconverse> Starting Reconverse with 2 processes, 2 PEs (1 PE = 1 thread), and 1 PE per process
+Charm++> cpu affinity NOT enabled.
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=7.819414 microseconds one-way
+Size=32 bytes, time=7.727623 microseconds one-way
+Size=64 bytes, time=10.468602 microseconds one-way
+Size=128 bytes, time=10.621548 microseconds one-way
+Size=256 bytes, time=11.402845 microseconds one-way
+Size=512 bytes, time=11.227846 microseconds one-way
+Size=1024 bytes, time=11.261344 microseconds one-way
+Size=2048 bytes, time=10.625601 microseconds one-way
+Size=4096 bytes, time=10.700107 microseconds one-way
+Size=8192 bytes, time=10.933518 microseconds one-way
+Size=16384 bytes, time=11.250496 microseconds one-way
+Size=32768 bytes, time=11.956573 microseconds one-way
+Size=65536 bytes, time=13.415456 microseconds one-way
+Size=131072 bytes, time=16.222954 microseconds one-way
+Size=262144 bytes, time=21.885633 microseconds one-way
+Size=524288 bytes, time=33.307672 microseconds one-way
+Size=1048576 bytes, time=56.859016 microseconds one-way
+Size=2097152 bytes, time=104.078412 microseconds one-way
+Size=4194304 bytes, time=198.914766 microseconds one-way
+Size=8388608 bytes, time=390.092254 microseconds one-way
+Size=16777216 bytes, time=777.285695 microseconds one-way
+Size=33554432 bytes, time=1577.877045 microseconds one-way
+Size=67108864 bytes, time=3174.660444 microseconds one-way

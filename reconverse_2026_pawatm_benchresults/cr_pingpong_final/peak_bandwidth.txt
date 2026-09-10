@@ -1,0 +1,40 @@
+Peak bandwidth and saturation
+==============================================================================
+
+Bandwidth is size / median one-way time.  'peak GB/s' is the best value
+observed and 'at size' where it occurred; 'final step' is the gain over
+the last doubling, shown for reference.
+
+The verdict asks WHERE the maximum sits, not whether the last step was
+positive -- these curves are not monotonic.  A peak is a LOWER BOUND only
+when it sits at the largest size measured AND the curve was still climbing
+into it (>2% over the final doubling); then the range is too short.
+A maximum reached mid-range and then held or lost is a real peak, even if
+the curve ticks up again afterwards.
+
+==============================================================================
+2 processes on 2 physical nodes (inter-node)
+==============================================================================
+
+version                       peak GB/s      at size   final step  verdict
+old Converse                      18.05        16 MB         4.5%  peak observed (-66% by 64 MB)
+Reconverse msg                    23.60        16 MB         3.1%  peak observed (-72% by 64 MB)
+Reconverse RDMA                   24.02        32 MB        -2.5%  peak observed (-3% by 64 MB)
+Reconverse persist+RDMA           21.58        16 MB        -0.4%  peak observed (-2% by 64 MB)
+Reconverse msg (8 dev)            23.43        16 MB         4.9%  peak observed (-81% by 64 MB)
+
+==============================================================================
+2 processes on 1 physical node (intra-node)
+==============================================================================
+
+version                       peak GB/s      at size   final step  verdict
+old Converse                       6.12         8 MB         8.0%  peak observed (-1% by 64 MB)
+Reconverse msg                    22.71        16 MB         5.7%  peak observed (-67% by 64 MB)
+Reconverse RDMA                   23.25        64 MB         0.5%  peak at end, flat
+Reconverse persist+RDMA           22.50         8 MB        -1.0%  peak observed (-10% by 64 MB)
+Reconverse msg (8 dev)            22.58        16 MB         8.4%  peak observed (-79% by 64 MB)
+
+==============================================================================
+Every curve's maximum falls inside the measured range -- each peak
+was reached and then held or declined -- so the peak column is the
+achieved maximum bandwidth, not a lower bound.

@@ -1,0 +1,230 @@
+=== place 2node version converse rep 1 ===
++ local place=2node ver=converse topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3926490]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [962893]: mask 0x3 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 9.1.0.794 (ANL base 4.3.0a1)
+MPI BUILD INFO : Fri Jan 16 12:22 2026 (git hash ef29dc0)
+ (MPI standard: 4.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=8.480266 microseconds one-way
+Size=32 bytes, time=8.549005 microseconds one-way
+Size=64 bytes, time=8.302408 microseconds one-way
+Size=128 bytes, time=8.833874 microseconds one-way
+Size=256 bytes, time=9.034269 microseconds one-way
+Size=512 bytes, time=9.008867 microseconds one-way
+Size=1024 bytes, time=8.930430 microseconds one-way
+Size=2048 bytes, time=8.999064 microseconds one-way
+Size=4096 bytes, time=9.291927 microseconds one-way
+Size=8192 bytes, time=11.742876 microseconds one-way
+Size=16384 bytes, time=10.228273 microseconds one-way
+Size=32768 bytes, time=13.058659 microseconds one-way
+Size=65536 bytes, time=15.165016 microseconds one-way
+Size=131072 bytes, time=19.231554 microseconds one-way
+Size=262144 bytes, time=26.931518 microseconds one-way
+Size=524288 bytes, time=40.140106 microseconds one-way
+Size=1048576 bytes, time=67.951007 microseconds one-way
+Size=2097152 bytes, time=131.336883 microseconds one-way
+Size=4194304 bytes, time=261.112945 microseconds one-way
+Size=8388608 bytes, time=517.743989 microseconds one-way
+Size=16777216 bytes, time=1063.611745 microseconds one-way
+Size=33554432 bytes, time=5347.449046 microseconds one-way
+Size=67108864 bytes, time=10804.061772 microseconds one-way
+[Partition 0][Node 0] End of program
+=== place 2node version converse rep 2 ===
++ local place=2node ver=converse topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3931406]: mask 0xc set
+cpu-bind=MASK - cn048, task  1  0 [967651]: mask 0xc set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 9.1.0.794 (ANL base 4.3.0a1)
+MPI BUILD INFO : Fri Jan 16 12:22 2026 (git hash ef29dc0)
+ (MPI standard: 4.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=9.372622 microseconds one-way
+Size=32 bytes, time=8.952023 microseconds one-way
+Size=64 bytes, time=8.978462 microseconds one-way
+Size=128 bytes, time=9.447141 microseconds one-way
+Size=256 bytes, time=9.729044 microseconds one-way
+Size=512 bytes, time=9.741107 microseconds one-way
+Size=1024 bytes, time=9.137300 microseconds one-way
+Size=2048 bytes, time=9.435770 microseconds one-way
+Size=4096 bytes, time=9.557343 microseconds one-way
+Size=8192 bytes, time=11.722850 microseconds one-way
+Size=16384 bytes, time=10.699420 microseconds one-way
+Size=32768 bytes, time=13.334228 microseconds one-way
+Size=65536 bytes, time=15.428701 microseconds one-way
+Size=131072 bytes, time=19.116494 microseconds one-way
+Size=262144 bytes, time=25.584542 microseconds one-way
+Size=524288 bytes, time=37.737548 microseconds one-way
+Size=1048576 bytes, time=61.210069 microseconds one-way
+Size=2097152 bytes, time=107.576288 microseconds one-way
+Size=4194304 bytes, time=200.962468 microseconds one-way
+Size=8388608 bytes, time=384.693892 microseconds one-way
+Size=16777216 bytes, time=779.892119 microseconds one-way
+Size=33554432 bytes, time=6171.116679 microseconds one-way
+Size=67108864 bytes, time=10814.104855 microseconds one-way
+[Partition 0][Node 0] End of program
+=== place 2node version converse rep 3 ===
++ local place=2node ver=converse topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3934875]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [971018]: mask 0x3 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 9.1.0.794 (ANL base 4.3.0a1)
+MPI BUILD INFO : Fri Jan 16 12:22 2026 (git hash ef29dc0)
+ (MPI standard: 4.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=17.131554 microseconds one-way
+Size=32 bytes, time=16.673013 microseconds one-way
+Size=64 bytes, time=8.659267 microseconds one-way
+Size=128 bytes, time=9.701446 microseconds one-way
+Size=256 bytes, time=10.196566 microseconds one-way
+Size=512 bytes, time=9.952198 microseconds one-way
+Size=1024 bytes, time=9.284775 microseconds one-way
+Size=2048 bytes, time=9.583375 microseconds one-way
+Size=4096 bytes, time=9.722005 microseconds one-way
+Size=8192 bytes, time=12.829739 microseconds one-way
+Size=16384 bytes, time=10.820656 microseconds one-way
+Size=32768 bytes, time=13.563250 microseconds one-way
+Size=65536 bytes, time=15.683282 microseconds one-way
+Size=131072 bytes, time=19.413468 microseconds one-way
+Size=262144 bytes, time=27.251661 microseconds one-way
+Size=524288 bytes, time=40.133112 microseconds one-way
+Size=1048576 bytes, time=65.921723 microseconds one-way
+Size=2097152 bytes, time=123.827436 microseconds one-way
+Size=4194304 bytes, time=249.390232 microseconds one-way
+Size=8388608 bytes, time=468.188809 microseconds one-way
+Size=16777216 bytes, time=940.964766 microseconds one-way
+Size=33554432 bytes, time=5335.015521 microseconds one-way
+Size=67108864 bytes, time=10870.888770 microseconds one-way
+[Partition 0][Node 0] End of program
+=== place 2node version converse rep 4 ===
++ local place=2node ver=converse topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3938328]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [974404]: mask 0x3 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 9.1.0.794 (ANL base 4.3.0a1)
+MPI BUILD INFO : Fri Jan 16 12:22 2026 (git hash ef29dc0)
+ (MPI standard: 4.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=7.203542 microseconds one-way
+Size=32 bytes, time=7.050850 microseconds one-way
+Size=64 bytes, time=7.056466 microseconds one-way
+Size=128 bytes, time=7.587436 microseconds one-way
+Size=256 bytes, time=7.639624 microseconds one-way
+Size=512 bytes, time=7.567860 microseconds one-way
+Size=1024 bytes, time=7.722470 microseconds one-way
+Size=2048 bytes, time=7.980764 microseconds one-way
+Size=4096 bytes, time=8.202385 microseconds one-way
+Size=8192 bytes, time=10.505830 microseconds one-way
+Size=16384 bytes, time=9.083016 microseconds one-way
+Size=32768 bytes, time=11.894069 microseconds one-way
+Size=65536 bytes, time=13.923981 microseconds one-way
+Size=131072 bytes, time=17.958183 microseconds one-way
+Size=262144 bytes, time=25.561870 microseconds one-way
+Size=524288 bytes, time=38.466624 microseconds one-way
+Size=1048576 bytes, time=64.322185 microseconds one-way
+Size=2097152 bytes, time=122.780487 microseconds one-way
+Size=4194304 bytes, time=239.982731 microseconds one-way
+Size=8388608 bytes, time=469.077336 microseconds one-way
+Size=16777216 bytes, time=924.253146 microseconds one-way
+Size=33554432 bytes, time=5678.712401 microseconds one-way
+Size=67108864 bytes, time=10916.232165 microseconds one-way
+[Partition 0][Node 0] End of program
+=== place 2node version converse rep 5 ===
++ local place=2node ver=converse topo bin flags
++ case $place in
++ topo='-N 2 -n 2 --ntasks-per-node=1'
++ case $ver in
++ bin=/u/rao1/charm/benchmarks/converse/pingpong/pingpong
++ flags='+ppn 1'
++ local 'a=1000 16 67108864 2'
++ timeout 1200 srun --mpi=cray_shasta -N 2 -n 2 --ntasks-per-node=1 --cpus-per-task=2 --cpu-bind=verbose,cores /u/rao1/charm/benchmarks/converse/pingpong/pingpong +ppn 1 1000 16 67108864 2
+cpu-bind=MASK - cn046, task  0  0 [3942465]: mask 0x3 set
+cpu-bind=MASK - cn048, task  1  0 [978413]: mask 0x3 set
+Charm++> Running on MPI library: MPI VERSION    : CRAY MPICH version 9.1.0.794 (ANL base 4.3.0a1)
+MPI BUILD INFO : Fri Jan 16 12:22 2026 (git hash ef29dc0)
+ (MPI standard: 4.1)
+Charm++> Level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 2 processes, 1 worker threads (PEs) + 1 comm threads per process, 2 PEs total
+Charm++> The comm. thread both sends and receives messages
+Converse/Charm++ Commit ID: v8.0.1-devel-36-g3c3086b33
+Isomalloc> Synchronized global address space.
+Charm++> Running on 2 hosts (2 sockets x 1 cores x 1 PUs = 2-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Pingpong with iterations = 1000, minMsgSize = 16, maxMsgSize = 67108864, increase factor = 2
+Size=16 bytes, time=7.265783 microseconds one-way
+Size=32 bytes, time=6.842655 microseconds one-way
+Size=64 bytes, time=6.819125 microseconds one-way
+Size=128 bytes, time=7.348744 microseconds one-way
+Size=256 bytes, time=7.528315 microseconds one-way
+Size=512 bytes, time=7.411461 microseconds one-way
+Size=1024 bytes, time=7.684017 microseconds one-way
+Size=2048 bytes, time=7.797024 microseconds one-way
+Size=4096 bytes, time=8.216747 microseconds one-way
+Size=8192 bytes, time=10.191771 microseconds one-way
+Size=16384 bytes, time=9.068976 microseconds one-way
+Size=32768 bytes, time=11.988486 microseconds one-way
+Size=65536 bytes, time=13.991753 microseconds one-way
+Size=131072 bytes, time=18.050842 microseconds one-way
+Size=262144 bytes, time=25.645382 microseconds one-way
+Size=524288 bytes, time=38.615169 microseconds one-way
+Size=1048576 bytes, time=63.893406 microseconds one-way
+Size=2097152 bytes, time=121.859535 microseconds one-way
+Size=4194304 bytes, time=237.375886 microseconds one-way
+Size=8388608 bytes, time=473.292316 microseconds one-way
+Size=16777216 bytes, time=929.354830 microseconds one-way
+Size=33554432 bytes, time=5738.241515 microseconds one-way
+Size=67108864 bytes, time=11320.994035 microseconds one-way
+[Partition 0][Node 0] End of program
